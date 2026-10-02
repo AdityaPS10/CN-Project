@@ -1,0 +1,10 @@
+# Generated traffic logs / run metadata -- regenerable by re-running the
+# scenario scripts, and large/noisy in diffs. Keep the code, not the output.
+logs/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Controller's own runtime log (regenerated each run)
+controller.log
