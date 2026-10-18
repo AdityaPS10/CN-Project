@@ -1,0 +1,5 @@
+# Python 3.14 (system). Mininet 2.3.0 and Open vSwitch 3.7.1 come from apt, not pip.
+os-ken==4.2.2
+eventlet==0.41.2
+# Optional: only for loading and analysing the CSV with pandas.
+pandas==3.0.6

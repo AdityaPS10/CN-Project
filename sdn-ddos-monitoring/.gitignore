@@ -1,0 +1,8 @@
+.venv/
+.venv-osken/
+__pycache__/
+*.pyc
+*.bak
+run.log
+data/features.csv
+data/old_tests/
