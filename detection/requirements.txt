@@ -1,0 +1,2 @@
+# Member 3 detection module uses only the Python 3 standard library.
+# Tested with Python 3.14.2 (macOS). No packages to install.

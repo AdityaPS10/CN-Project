@@ -1,0 +1,205 @@
+timestamp,traffic_class,score,reason,rule
+1791259330.939,normal,0.0,within normal range,none
+1791259331.939,normal,0.0,within normal range,none
+1791259332.939,normal,0.033,within normal range,none
+1791259333.939,normal,0.0,within normal range,none
+1791259334.939,normal,0.017,within normal range,none
+1791259335.939,normal,0.05,within normal range,none
+1791259336.939,normal,0.033,within normal range,none
+1791259337.939,normal,0.0,within normal range,none
+1791259338.939,normal,0.0,within normal range,none
+1791259339.939,normal,0.0,within normal range,none
+1791259340.939,normal,0.0,within normal range,none
+1791259341.939,normal,0.0,within normal range,none
+1791259342.939,normal,0.017,within normal range,none
+1791259343.939,normal,0.033,within normal range,none
+1791259344.939,normal,0.017,within normal range,none
+1791259345.939,normal,0.017,within normal range,none
+1791259346.939,normal,0.017,within normal range,none
+1791259347.939,normal,0.0,within normal range,none
+1791259348.939,normal,0.0,within normal range,none
+1791259349.939,normal,0.0,within normal range,none
+1791259350.939,normal,0.0,within normal range,none
+1791259351.939,normal,0.0,within normal range,none
+1791259352.939,normal,0.0,within normal range,none
+1791259353.939,normal,0.0,within normal range,none
+1791259354.939,normal,0.0,within normal range,none
+1791259355.939,normal,0.0,within normal range,none
+1791259356.939,normal,0.017,within normal range,none
+1791259357.939,normal,0.017,within normal range,none
+1791259358.939,normal,0.017,within normal range,none
+1791259359.939,normal,0.0,within normal range,none
+1791259360.939,normal,0.017,within normal range,none
+1791259361.939,normal,0.0,within normal range,none
+1791259362.939,normal,0.0,within normal range,none
+1791259363.939,normal,0.017,within normal range,none
+1791259364.939,normal,0.017,within normal range,none
+1791259365.939,normal,0.0,within normal range,none
+1791259366.939,normal,0.0,within normal range,none
+1791259367.939,normal,0.0,within normal range,none
+1791259368.939,normal,0.0,within normal range,none
+1791259369.939,normal,0.0,within normal range,none
+1791259370.939,normal,0.0,within normal range,none
+1791259371.939,normal,0.0,within normal range,none
+1791259372.939,normal,0.0,within normal range,none
+1791259373.939,normal,0.0,within normal range,none
+1791259374.939,normal,0.0,within normal range,none
+1791259375.939,normal,0.0,within normal range,none
+1791259376.939,normal,0.0,within normal range,none
+1791259377.939,normal,0.0,within normal range,none
+1791259378.939,normal,0.0,within normal range,none
+1791259379.939,normal,0.0,within normal range,none
+1791259380.939,normal,0.0,within normal range,none
+1791259381.939,normal,0.0,within normal range,none
+1791259382.939,normal,0.133,within normal range,none
+1791259383.939,normal,0.4,within normal range,none
+1791259384.939,normal,0.633,within normal range,none
+1791259385.939,flash_crowd,1.25,"rate 62 above limit 60, gradual onset",threshold
+1791259386.939,flash_crowd,2.0,"rate 83 above limit 60, gradual onset",threshold
+1791259387.939,flash_crowd,2.0,"rate 94 above limit 60, gradual onset",threshold
+1791259388.939,flash_crowd,2.0,"rate 106 above limit 60, gradual onset",threshold
+1791259389.939,flash_crowd,2.367,"rate 142 above limit 60, gradual onset",threshold
+1791259390.939,flash_crowd,2.483,"rate 149 above limit 60, gradual onset",threshold
+1791259391.939,flash_crowd,2.5,"rate 150 above limit 60, gradual onset",threshold
+1791259392.939,flash_crowd,2.467,"rate 148 above limit 60, gradual onset",threshold
+1791259393.939,flash_crowd,2.433,"rate 146 above limit 60, gradual onset",threshold
+1791259394.939,flash_crowd,2.4,"rate 144 above limit 60, gradual onset",threshold
+1791259395.939,flash_crowd,2.45,"rate 147 above limit 60, gradual onset",threshold
+1791259396.939,flash_crowd,2.45,"rate 147 above limit 60, gradual onset",threshold
+1791259397.939,flash_crowd,2.483,"rate 149 above limit 60, gradual onset",threshold
+1791259398.939,flash_crowd,2.45,"rate 147 above limit 60, gradual onset",threshold
+1791259399.939,flash_crowd,2.467,"rate 148 above limit 60, gradual onset",threshold
+1791259400.939,flash_crowd,2.5,"rate 150 above limit 60, gradual onset",threshold
+1791259401.939,flash_crowd,2.467,"rate 148 above limit 60, gradual onset",threshold
+1791259402.939,flash_crowd,2.433,"rate 146 above limit 60, gradual onset",threshold
+1791259403.939,flash_crowd,2.467,"rate 148 above limit 60, gradual onset",threshold
+1791259404.939,flash_crowd,2.517,"rate 151 above limit 60, gradual onset",threshold
+1791259405.939,flash_crowd,2.0,"rate 68 above limit 60, gradual onset",threshold
+1791259406.939,flash_crowd,1.375,CUSUM sustained rise (S=55 > h=40),cusum
+1791259407.939,normal,0.75,within normal range,none
+1791259408.939,normal,0.125,within normal range,none
+1791259409.939,normal,0.033,within normal range,none
+1791259410.939,normal,0.0,within normal range,none
+1791259411.939,normal,0.0,within normal range,none
+1791259412.939,normal,0.0,within normal range,none
+1791259413.939,normal,0.0,within normal range,none
+1791259414.939,normal,0.0,within normal range,none
+1791259415.939,normal,0.0,within normal range,none
+1791259416.939,normal,0.0,within normal range,none
+1791259417.939,normal,0.0,within normal range,none
+1791259418.939,normal,0.0,within normal range,none
+1791259419.939,normal,0.0,within normal range,none
+1791259420.939,normal,0.0,within normal range,none
+1791259421.939,normal,0.0,within normal range,none
+1791259422.939,normal,0.0,within normal range,none
+1791259423.939,normal,0.0,within normal range,none
+1791259424.939,normal,0.0,within normal range,none
+1791259425.939,normal,0.0,within normal range,none
+1791259426.939,normal,0.0,within normal range,none
+1791259427.939,normal,0.0,within normal range,none
+1791259428.939,normal,0.0,within normal range,none
+1791259429.939,normal,0.0,within normal range,none
+1791259430.939,normal,0.0,within normal range,none
+1791259431.939,normal,0.0,within normal range,none
+1791259432.939,normal,0.0,within normal range,none
+1791259433.939,normal,0.0,within normal range,none
+1791259434.939,normal,0.0,within normal range,none
+1791259435.939,normal,0.0,within normal range,none
+1791259436.939,normal,0.0,within normal range,none
+1791259437.939,normal,0.0,within normal range,none
+1791259438.939,normal,0.0,within normal range,none
+1791259439.939,normal,0.0,within normal range,none
+1791259440.939,normal,0.0,within normal range,none
+1791259441.939,normal,0.0,within normal range,none
+1791259442.939,normal,0.0,within normal range,none
+1791259443.939,normal,0.0,within normal range,none
+1791259444.939,normal,0.0,within normal range,none
+1791259445.939,normal,0.017,within normal range,none
+1791259446.939,normal,0.0,within normal range,none
+1791259447.939,normal,0.0,within normal range,none
+1791259448.939,normal,0.0,within normal range,none
+1791259449.939,normal,0.017,within normal range,none
+1791259450.939,normal,0.0,within normal range,none
+1791259451.939,normal,0.0,within normal range,none
+1791259452.939,normal,0.0,within normal range,none
+1791259453.939,normal,0.017,within normal range,none
+1791259454.939,normal,0.0,within normal range,none
+1791259455.939,normal,0.0,within normal range,none
+1791259456.939,normal,0.0,within normal range,none
+1791259457.939,normal,0.017,within normal range,none
+1791259458.939,normal,0.0,within normal range,none
+1791259459.939,normal,0.0,within normal range,none
+1791259460.939,normal,0.0,within normal range,none
+1791259461.939,normal,0.0,within normal range,none
+1791259462.939,normal,0.0,within normal range,none
+1791259463.939,normal,0.0,within normal range,none
+1791259464.939,normal,0.0,within normal range,none
+1791259465.939,normal,0.0,within normal range,none
+1791259466.939,normal,0.0,within normal range,none
+1791259467.939,normal,0.0,within normal range,none
+1791259468.939,normal,0.0,within normal range,none
+1791259469.939,normal,0.0,within normal range,none
+1791259470.939,normal,0.0,within normal range,none
+1791259471.939,normal,0.0,within normal range,none
+1791259472.939,normal,0.0,within normal range,none
+1791259473.939,normal,0.0,within normal range,none
+1791259474.939,normal,0.017,within normal range,none
+1791259475.939,normal,0.0,within normal range,none
+1791259476.939,normal,0.0,within normal range,none
+1791259477.939,normal,0.0,within normal range,none
+1791259478.939,normal,0.0,within normal range,none
+1791259479.939,normal,0.0,within normal range,none
+1791259480.939,normal,0.0,within normal range,none
+1791259481.939,normal,0.0,within normal range,none
+1791259482.939,normal,0.0,within normal range,none
+1791259483.939,normal,0.0,within normal range,none
+1791259484.939,normal,0.0,within normal range,none
+1791259485.939,normal,0.0,within normal range,none
+1791259486.939,normal,0.017,within normal range,none
+1791259487.939,normal,0.0,within normal range,none
+1791259488.939,normal,0.0,within normal range,none
+1791259489.939,normal,0.0,within normal range,none
+1791259490.939,normal,0.0,within normal range,none
+1791259491.939,normal,0.0,within normal range,none
+1791259492.939,normal,0.0,within normal range,none
+1791259493.939,normal,0.0,within normal range,none
+1791259494.939,normal,0.0,within normal range,none
+1791259495.939,normal,0.0,within normal range,none
+1791259496.939,normal,0.0,within normal range,none
+1791259497.939,normal,0.0,within normal range,none
+1791259498.939,normal,0.0,within normal range,none
+1791259499.939,normal,0.0,within normal range,none
+1791259500.939,normal,0.0,within normal range,none
+1791259501.939,normal,0.0,within normal range,none
+1791259502.939,normal,0.0,within normal range,none
+1791259503.939,normal,0.0,within normal range,none
+1791259504.939,normal,0.0,within normal range,none
+1791259505.939,normal,0.0,within normal range,none
+1791259506.939,normal,0.0,within normal range,none
+1791259507.939,normal,0.0,within normal range,none
+1791259508.939,normal,0.0,within normal range,none
+1791259509.939,normal,0.0,within normal range,none
+1791259510.939,normal,0.0,within normal range,none
+1791259511.939,normal,0.0,within normal range,none
+1791259512.939,normal,0.0,within normal range,none
+1791259513.939,normal,0.0,within normal range,none
+1791259514.939,normal,0.0,within normal range,none
+1791259515.939,normal,0.0,within normal range,none
+1791259516.939,normal,0.0,within normal range,none
+1791259517.939,normal,0.0,within normal range,none
+1791259518.939,normal,0.0,within normal range,none
+1791259519.939,normal,0.0,within normal range,none
+1791259520.939,normal,0.0,within normal range,none
+1791259521.939,normal,0.0,within normal range,none
+1791259522.939,normal,0.0,within normal range,none
+1791259523.939,normal,0.0,within normal range,none
+1791259524.939,normal,0.0,within normal range,none
+1791259525.939,normal,0.0,within normal range,none
+1791259526.939,normal,0.0,within normal range,none
+1791259527.939,normal,0.0,within normal range,none
+1791259528.939,normal,0.0,within normal range,none
+1791259529.939,normal,0.0,within normal range,none
+1791259530.939,normal,0.0,within normal range,none
+1791259531.939,normal,0.0,within normal range,none
+1791259532.939,normal,0.0,within normal range,none
+1791259533.939,normal,0.0,within normal range,none
