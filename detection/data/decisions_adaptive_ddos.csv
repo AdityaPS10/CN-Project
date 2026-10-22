@@ -1,0 +1,105 @@
+timestamp,traffic_class,score,reason,rule
+1791259924.07,normal,0.0,within normal range,none
+1791259925.07,normal,0.0,within normal range,none
+1791259926.07,normal,0.233,within normal range,none
+1791259927.07,normal,0.067,within normal range,none
+1791259928.07,normal,0.0,within normal range,none
+1791259929.07,normal,0.017,within normal range,none
+1791259930.07,normal,0.05,within normal range,none
+1791259931.07,normal,0.033,within normal range,none
+1791259932.07,normal,0.0,within normal range,none
+1791259933.07,normal,0.0,within normal range,none
+1791259934.07,normal,0.0,within normal range,none
+1791259935.07,normal,0.0,within normal range,none
+1791259936.07,normal,0.0,within normal range,none
+1791259937.07,normal,0.0,within normal range,none
+1791259938.07,normal,0.033,within normal range,none
+1791259939.07,normal,0.033,within normal range,none
+1791259940.07,normal,0.033,within normal range,none
+1791259941.07,normal,0.0,within normal range,none
+1791259942.07,normal,0.0,within normal range,none
+1791259943.07,normal,0.0,within normal range,none
+1791259944.07,normal,0.0,within normal range,none
+1791259945.07,normal,0.0,within normal range,none
+1791259946.07,normal,0.0,within normal range,none
+1791259947.07,normal,0.0,within normal range,none
+1791259948.07,normal,0.0,within normal range,none
+1791259949.07,normal,0.0,within normal range,none
+1791259950.07,normal,0.0,within normal range,none
+1791259951.07,normal,0.0,within normal range,none
+1791259952.07,normal,0.0,within normal range,none
+1791259953.07,normal,0.033,within normal range,none
+1791259954.07,normal,0.0,within normal range,none
+1791259955.07,normal,0.017,within normal range,none
+1791259956.07,normal,0.033,within normal range,none
+1791259957.07,normal,0.017,within normal range,none
+1791259958.07,normal,0.0,within normal range,none
+1791259959.07,normal,0.0,within normal range,none
+1791259960.07,normal,0.233,within normal range,none
+1791259961.07,normal,0.467,within normal range,none
+1791259962.07,normal,0.75,within normal range,none
+1791259963.07,flash_crowd,1.9,"rate 78 above limit 60, gradual onset",threshold
+1791259964.07,flash_crowd,2.0,"rate 103 above limit 60, gradual onset",threshold
+1791259965.07,flash_crowd,2.0,"rate 61 above limit 60, gradual onset",threshold
+1791259966.07,flash_crowd,2.25,"rate 135 above limit 60, gradual onset",threshold
+1791259967.07,flash_crowd,2.55,"rate 153 above limit 60, gradual onset",threshold
+1791259968.07,flash_crowd,2.55,"rate 153 above limit 60, gradual onset",threshold
+1791259969.07,flash_crowd,2.333,"rate 140 above limit 60, gradual onset",threshold
+1791259970.07,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1791259971.07,flash_crowd,1.375,CUSUM sustained rise (S=55 > h=40),cusum
+1791259972.07,normal,0.75,within normal range,none
+1791259973.07,normal,0.125,within normal range,none
+1791259974.07,normal,0.85,within normal range,none
+1791259975.07,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1791259976.07,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1791259977.07,adaptive_ddos,2.483,repeated bursts separated by pauses,repeat_burst
+1791259978.07,adaptive_ddos,2.75,repeated bursts separated by pauses,repeat_burst
+1791259979.07,adaptive_ddos,2.733,repeated bursts separated by pauses,repeat_burst
+1791259980.07,adaptive_ddos,2.65,repeated bursts separated by pauses,repeat_burst
+1791259981.07,adaptive_ddos,2.65,repeated bursts separated by pauses,repeat_burst
+1791259982.07,adaptive_ddos,2.65,repeated bursts separated by pauses,repeat_burst
+1791259983.07,adaptive_ddos,2.65,repeated bursts separated by pauses,repeat_burst
+1791259984.07,adaptive_ddos,2.483,repeated bursts separated by pauses,repeat_burst
+1791259985.07,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1791259986.07,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1791259987.07,adaptive_ddos,1.375,repeated bursts separated by pauses,repeat_burst
+1791259988.07,adaptive_ddos,0.75,pause inside repeated-burst pattern,hold
+1791259989.07,adaptive_ddos,0.125,pause inside repeated-burst pattern,hold
+1791259990.07,adaptive_ddos,1.05,repeated bursts separated by pauses,repeat_burst
+1791259991.07,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1791259992.07,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1791259993.07,adaptive_ddos,1.975,repeated bursts separated by pauses,repeat_burst
+1791259994.07,adaptive_ddos,1.35,repeated bursts separated by pauses,repeat_burst
+1791259995.07,adaptive_ddos,0.85,pause inside repeated-burst pattern,hold
+1791259996.07,adaptive_ddos,0.225,pause inside repeated-burst pattern,hold
+1791259997.07,adaptive_ddos,0.033,pause inside repeated-burst pattern,hold
+1791259998.07,adaptive_ddos,0.0,pause inside repeated-burst pattern,hold
+1791259999.07,normal,0.0,within normal range,none
+1791260000.07,normal,0.0,within normal range,none
+1791260001.07,normal,0.0,within normal range,none
+1791260002.07,normal,0.0,within normal range,none
+1791260003.07,normal,0.0,within normal range,none
+1791260004.07,normal,0.0,within normal range,none
+1791260005.07,normal,0.0,within normal range,none
+1791260006.07,normal,0.0,within normal range,none
+1791260007.07,normal,0.0,within normal range,none
+1791260008.07,normal,0.0,within normal range,none
+1791260009.07,normal,0.0,within normal range,none
+1791260010.07,normal,0.0,within normal range,none
+1791260011.07,normal,0.0,within normal range,none
+1791260012.07,normal,0.0,within normal range,none
+1791260013.07,normal,0.0,within normal range,none
+1791260014.07,normal,0.0,within normal range,none
+1791260015.07,normal,0.0,within normal range,none
+1791260016.07,normal,0.0,within normal range,none
+1791260017.07,normal,0.0,within normal range,none
+1791260018.07,normal,0.0,within normal range,none
+1791260019.07,normal,0.0,within normal range,none
+1791260020.07,normal,0.0,within normal range,none
+1791260021.07,normal,0.0,within normal range,none
+1791260022.07,normal,0.0,within normal range,none
+1791260023.07,normal,0.0,within normal range,none
+1791260024.07,normal,0.0,within normal range,none
+1791260025.07,normal,0.0,within normal range,none
+1791260026.07,normal,0.0,within normal range,none
+1791260027.07,normal,0.0,within normal range,none
