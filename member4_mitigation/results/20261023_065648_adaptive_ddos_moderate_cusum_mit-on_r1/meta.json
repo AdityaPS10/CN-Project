@@ -1,0 +1,53 @@
+{
+  "run_id": "20261023_065648_adaptive_ddos_moderate_cusum_mit-on_r1",
+  "scenario": "adaptive_ddos",
+  "attack_level": "moderate",
+  "detector": "cusum",
+  "mitigation": "on",
+  "config_overrides": {},
+  "tag": "r1",
+  "attack_hosts": [
+    "h2",
+    "h3",
+    "h4",
+    "h5"
+  ],
+  "legit_hosts": [
+    "h6"
+  ],
+  "scenario_hosts": [
+    "h2",
+    "h3",
+    "h4",
+    "h5"
+  ],
+  "server": "h1",
+  "legit_bg_host": "h6",
+  "legit_bg_rate_pps": 10,
+  "warmup_s": 10.0,
+  "lead_s": 15.0,
+  "cooldown_s": 25.0,
+  "t_run_start": 1792738612.4386318,
+  "git_commit": "c1f06b699b00656bc9c52366d4e50e9123b05f11",
+  "port_map": {
+    "1": "h1",
+    "2": "h2",
+    "3": "h3",
+    "4": "h4",
+    "5": "h5",
+    "6": "h6"
+  },
+  "host_ips": {
+    "h1": "10.0.0.1",
+    "h2": "10.0.0.2",
+    "h3": "10.0.0.3",
+    "h4": "10.0.0.4",
+    "h5": "10.0.0.5",
+    "h6": "10.0.0.6"
+  },
+  "t_bg_start": 1792738650.7197087,
+  "t_scenario_start": 1792738665.7637253,
+  "t_scenario_end": 1792738706.9148307,
+  "t_stop": 1792738731.9156585,
+  "t_run_end": 1792738737.393871
+}

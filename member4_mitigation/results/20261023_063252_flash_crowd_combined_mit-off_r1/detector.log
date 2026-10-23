@@ -1,0 +1,82 @@
+Baseline from features_normal.csv: {'DataPlanePacketRate': 20.0}
+Following /home/minato/Documents/CN-Project/detection/../sdn-ddos-monitoring/data/features.csv (Ctrl+C to stop)
+   1  t=1792737176.15  normal        score=0.0    within normal range
+   2  t=1792737177.15  normal        score=0.0    within normal range
+   3  t=1792737178.15  normal        score=0.233  within normal range
+   4  t=1792737179.15  normal        score=0.033  within normal range
+   5  t=1792737180.15  normal        score=0.033  within normal range
+   6  t=1792737181.15  normal        score=0.0    within normal range
+   7  t=1792737182.15  normal        score=0.05   within normal range
+   8  t=1792737183.15  normal        score=0.05   within normal range
+   9  t=1792737184.15  normal        score=0.0    within normal range
+  10  t=1792737185.15  normal        score=0.0    within normal range
+  11  t=1792737186.15  normal        score=0.0    within normal range
+  12  t=1792737187.15  normal        score=0.0    within normal range
+  13  t=1792737188.15  normal        score=0.0    within normal range
+  14  t=1792737189.15  normal        score=0.0    within normal range
+  15  t=1792737190.15  normal        score=0.067  within normal range
+  16  t=1792737191.15  normal        score=0.033  within normal range
+  17  t=1792737192.15  normal        score=0.167  within normal range
+  18  t=1792737193.15  normal        score=0.233  within normal range
+  19  t=1792737194.15  normal        score=0.217  within normal range
+  20  t=1792737195.15  normal        score=0.2    within normal range
+  21  t=1792737196.15  normal        score=0.233  within normal range
+  22  t=1792737197.15  normal        score=0.267  within normal range
+  23  t=1792737198.15  normal        score=0.233  within normal range
+  24  t=1792737199.15  normal        score=0.233  within normal range
+  25  t=1792737200.15  normal        score=0.233  within normal range
+  26  t=1792737201.15  normal        score=0.233  within normal range
+  27  t=1792737202.15  normal        score=0.217  within normal range
+  28  t=1792737203.15  normal        score=0.25   within normal range
+  29  t=1792737204.15  normal        score=0.217  within normal range
+  30  t=1792737205.15  normal        score=0.283  within normal range
+  31  t=1792737206.15  normal        score=0.283  within normal range
+  32  t=1792737207.15  normal        score=0.367  within normal range
+  33  t=1792737208.15  normal        score=0.633  within normal range
+  34  t=1792737209.15  flash_crowd   score=1.1    CUSUM sustained rise (S=44 > h=40)
+  35  t=1792737210.15  flash_crowd   score=2.0    rate 83 above limit 60, gradual onset
+  36  t=1792737211.15  flash_crowd   score=2.0    rate 84 above limit 60, gradual onset
+  37  t=1792737212.15  flash_crowd   score=2.0    rate 89 above limit 60, gradual onset
+  38  t=1792737213.15  flash_crowd   score=2.0    rate 98 above limit 60, gradual onset
+  39  t=1792737214.15  flash_crowd   score=2.0    rate 119 above limit 60, gradual onset
+  40  t=1792737215.15  flash_crowd   score=2.483  rate 149 above limit 60, gradual onset
+  41  t=1792737216.15  flash_crowd   score=2.633  rate 158 above limit 60, gradual onset
+  42  t=1792737217.15  flash_crowd   score=2.767  rate 166 above limit 60, gradual onset
+  43  t=1792737218.15  flash_crowd   score=2.717  rate 163 above limit 60, gradual onset
+  44  t=1792737219.15  flash_crowd   score=2.767  rate 166 above limit 60, gradual onset
+  45  t=1792737220.15  flash_crowd   score=2.7    rate 162 above limit 60, gradual onset
+  46  t=1792737221.15  flash_crowd   score=2.683  rate 161 above limit 60, gradual onset
+  47  t=1792737222.15  flash_crowd   score=2.783  rate 167 above limit 60, gradual onset
+  48  t=1792737223.15  flash_crowd   score=2.617  rate 157 above limit 60, gradual onset
+  49  t=1792737224.15  flash_crowd   score=2.767  rate 166 above limit 60, gradual onset
+  50  t=1792737225.15  flash_crowd   score=2.733  rate 164 above limit 60, gradual onset
+  51  t=1792737226.15  flash_crowd   score=2.667  rate 160 above limit 60, gradual onset
+  52  t=1792737227.15  flash_crowd   score=2.667  rate 160 above limit 60, gradual onset
+  53  t=1792737228.15  flash_crowd   score=2.683  rate 161 above limit 60, gradual onset
+  54  t=1792737229.15  flash_crowd   score=2.0    rate 110 above limit 60, gradual onset
+  55  t=1792737230.15  flash_crowd   score=1.725  CUSUM sustained rise (S=69 > h=40)
+  56  t=1792737231.15  flash_crowd   score=1.425  CUSUM sustained rise (S=57 > h=40)
+  57  t=1792737232.15  flash_crowd   score=1.15   CUSUM sustained rise (S=46 > h=40)
+  58  t=1792737233.15  normal        score=0.875  within normal range
+  59  t=1792737234.15  normal        score=0.625  within normal range
+  60  t=1792737235.15  normal        score=0.4    within normal range
+  61  t=1792737236.15  normal        score=0.233  within normal range
+  62  t=1792737237.15  normal        score=0.233  within normal range
+  63  t=1792737238.15  normal        score=0.267  within normal range
+  64  t=1792737239.15  normal        score=0.233  within normal range
+  65  t=1792737240.15  normal        score=0.217  within normal range
+  66  t=1792737241.15  normal        score=0.25   within normal range
+  67  t=1792737242.15  normal        score=0.233  within normal range
+  68  t=1792737243.15  normal        score=0.217  within normal range
+  69  t=1792737244.15  normal        score=0.233  within normal range
+  70  t=1792737245.15  normal        score=0.233  within normal range
+  71  t=1792737246.15  normal        score=0.267  within normal range
+  72  t=1792737247.15  normal        score=0.233  within normal range
+  73  t=1792737248.15  normal        score=0.267  within normal range
+  74  t=1792737249.15  normal        score=0.217  within normal range
+  75  t=1792737250.15  normal        score=0.233  within normal range
+  76  t=1792737251.15  normal        score=0.233  within normal range
+  77  t=1792737252.15  normal        score=0.233  within normal range
+
+Stopped.
+77 decisions written to /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063252_flash_crowd_combined_mit-off_r1/decisions.csv

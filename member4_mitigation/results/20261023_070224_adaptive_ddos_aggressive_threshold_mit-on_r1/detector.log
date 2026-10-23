@@ -1,0 +1,102 @@
+[baseline_detectors] mode=threshold (Member 3's live loop, ThresholdOnlyDetector classifier)
+Baseline from features_normal.csv: {'DataPlanePacketRate': 20.0}
+Following /home/minato/Documents/CN-Project/detection/../sdn-ddos-monitoring/data/features.csv (Ctrl+C to stop)
+   1  t=1792738947.98  normal        score=0.0    within normal range
+   2  t=1792738948.98  normal        score=0.0    within normal range
+   3  t=1792738949.98  normal        score=0.167  within normal range
+   4  t=1792738950.98  normal        score=0.033  within normal range
+   5  t=1792738951.98  normal        score=0.0    within normal range
+   6  t=1792738952.98  normal        score=0.0    within normal range
+   7  t=1792738953.98  normal        score=0.067  within normal range
+   8  t=1792738954.98  normal        score=0.033  within normal range
+   9  t=1792738955.98  normal        score=0.0    within normal range
+  10  t=1792738956.98  normal        score=0.0    within normal range
+  11  t=1792738957.98  normal        score=0.0    within normal range
+  12  t=1792738958.98  normal        score=0.0    within normal range
+  13  t=1792738959.98  normal        score=0.0    within normal range
+  14  t=1792738960.98  normal        score=0.0    within normal range
+  15  t=1792738961.98  normal        score=0.05   within normal range
+  16  t=1792738962.98  normal        score=0.05   within normal range
+  17  t=1792738963.98  normal        score=0.167  within normal range
+  18  t=1792738964.98  normal        score=0.233  within normal range
+  19  t=1792738965.98  normal        score=0.233  within normal range
+  20  t=1792738966.98  normal        score=0.233  within normal range
+  21  t=1792738967.98  normal        score=0.233  within normal range
+  22  t=1792738968.98  normal        score=0.233  within normal range
+  23  t=1792738969.98  normal        score=0.233  within normal range
+  24  t=1792738970.98  normal        score=0.233  within normal range
+  25  t=1792738971.98  normal        score=0.217  within normal range
+  26  t=1792738972.98  normal        score=0.233  within normal range
+  27  t=1792738973.98  normal        score=0.233  within normal range
+  28  t=1792738974.98  normal        score=0.233  within normal range
+  29  t=1792738975.98  normal        score=0.217  within normal range
+  30  t=1792738976.98  normal        score=0.267  within normal range
+  31  t=1792738977.98  normal        score=0.233  within normal range
+  32  t=1792738978.98  normal        score=0.25   within normal range
+  33  t=1792738979.98  normal        score=0.267  within normal range
+  34  t=1792738980.98  normal        score=0.233  within normal range
+  35  t=1792738981.98  normal        score=0.25   within normal range
+  36  t=1792738982.98  naive_ddos    score=1.133  baseline threshold alarm: rate 68 > 60
+  37  t=1792738983.98  naive_ddos    score=2.083  baseline threshold alarm: rate 125 > 60
+  38  t=1792738984.98  naive_ddos    score=5.033  baseline threshold alarm: rate 302 > 60
+  39  t=1792738985.98  naive_ddos    score=7.5    baseline threshold alarm: rate 450 > 60
+  40  t=1792738986.98  naive_ddos    score=8.067  baseline threshold alarm: rate 484 > 60
+  41  t=1792738987.98  naive_ddos    score=7.967  baseline threshold alarm: rate 478 > 60
+  42  t=1792738988.98  naive_ddos    score=7.667  baseline threshold alarm: rate 460 > 60
+  43  t=1792738989.98  naive_ddos    score=7.283  baseline threshold alarm: rate 437 > 60
+  44  t=1792738990.98  naive_ddos    score=8.083  baseline threshold alarm: rate 485 > 60
+  45  t=1792738991.98  naive_ddos    score=7.917  baseline threshold alarm: rate 475 > 60
+  46  t=1792738992.98  naive_ddos    score=7.467  baseline threshold alarm: rate 448 > 60
+  47  t=1792738993.98  naive_ddos    score=6.833  baseline threshold alarm: rate 410 > 60
+  48  t=1792738994.98  naive_ddos    score=8.317  baseline threshold alarm: rate 499 > 60
+  49  t=1792738995.98  naive_ddos    score=8.333  baseline threshold alarm: rate 500 > 60
+  50  t=1792738996.98  naive_ddos    score=4.567  baseline threshold alarm: rate 274 > 60
+  51  t=1792738997.98  normal        score=0.217  within normal range
+  52  t=1792738998.98  naive_ddos    score=2.983  baseline threshold alarm: rate 179 > 60
+  53  t=1792738999.98  normal        score=0.0    within normal range
+  54  t=1792739000.98  naive_ddos    score=7.667  baseline threshold alarm: rate 460 > 60
+  55  t=1792739001.98  normal        score=0.25   within normal range
+  56  t=1792739002.98  naive_ddos    score=7.433  baseline threshold alarm: rate 446 > 60
+  57  t=1792739003.98  normal        score=0.3    within normal range
+  58  t=1792739004.98  naive_ddos    score=7.8    baseline threshold alarm: rate 468 > 60
+  59  t=1792739005.98  normal        score=0.033  within normal range
+  60  t=1792739006.98  naive_ddos    score=7.75   baseline threshold alarm: rate 465 > 60
+  61  t=1792739007.98  naive_ddos    score=4.55   baseline threshold alarm: rate 273 > 60
+  62  t=1792739008.98  naive_ddos    score=8.467  baseline threshold alarm: rate 508 > 60
+  63  t=1792739009.98  naive_ddos    score=8.167  baseline threshold alarm: rate 490 > 60
+  64  t=1792739010.98  naive_ddos    score=8.0    baseline threshold alarm: rate 480 > 60
+  65  t=1792739011.98  naive_ddos    score=7.45   baseline threshold alarm: rate 447 > 60
+  66  t=1792739012.98  naive_ddos    score=7.767  baseline threshold alarm: rate 466 > 60
+  67  t=1792739013.98  naive_ddos    score=3.733  baseline threshold alarm: rate 224 > 60
+  68  t=1792739014.98  normal        score=0.267  within normal range
+  69  t=1792739015.98  naive_ddos    score=3.817  baseline threshold alarm: rate 229 > 60
+  70  t=1792739016.98  normal        score=0.0    within normal range
+  71  t=1792739017.98  naive_ddos    score=7.75   baseline threshold alarm: rate 465 > 60
+  72  t=1792739018.98  normal        score=0.0    within normal range
+  73  t=1792739019.98  normal        score=0.183  within normal range
+  74  t=1792739020.98  normal        score=0.2    within normal range
+  75  t=1792739021.98  normal        score=0.233  within normal range
+  76  t=1792739022.98  normal        score=0.317  within normal range
+  77  t=1792739023.98  normal        score=0.1    within normal range
+  78  t=1792739024.98  normal        score=0.25   within normal range
+  79  t=1792739025.98  normal        score=0.233  within normal range
+  80  t=1792739026.98  normal        score=0.2    within normal range
+  81  t=1792739027.98  normal        score=0.233  within normal range
+  82  t=1792739028.98  normal        score=0.233  within normal range
+  83  t=1792739029.98  normal        score=0.233  within normal range
+  84  t=1792739030.98  normal        score=0.217  within normal range
+  85  t=1792739031.98  normal        score=0.267  within normal range
+  86  t=1792739032.98  normal        score=0.2    within normal range
+  87  t=1792739033.98  normal        score=0.233  within normal range
+  88  t=1792739034.98  normal        score=0.233  within normal range
+  89  t=1792739035.98  normal        score=0.233  within normal range
+  90  t=1792739036.98  normal        score=0.233  within normal range
+  91  t=1792739037.98  normal        score=0.233  within normal range
+  92  t=1792739038.98  normal        score=0.217  within normal range
+  93  t=1792739039.98  normal        score=0.217  within normal range
+  94  t=1792739040.98  normal        score=0.233  within normal range
+  95  t=1792739041.98  normal        score=0.217  within normal range
+  96  t=1792739042.98  normal        score=0.233  within normal range
+
+Stopped.
+96 decisions written to /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_070224_adaptive_ddos_aggressive_threshold_mit-on_r1/decisions.csv

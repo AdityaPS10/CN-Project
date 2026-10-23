@@ -8,3 +8,7 @@ __pycache__/
 
 # Controller's own runtime log (regenerated each run)
 controller.log
+
+# Live/replay outputs of the detector (regenerated each run)
+detection/data/decisions_live.csv
+detection/data/replay_features.csv

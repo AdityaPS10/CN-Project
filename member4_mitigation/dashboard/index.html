@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SDN Mitigation Live</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10);
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4;
+  --s6: #008300; --s7: #4a3aa7; --s8: #e34948;
+  --good: #0ca30c; --warning: #fab219; --serious: #ec835a; --critical: #d03b3b;
+  --span: rgba(208,59,59,0.09);
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
+    --s6: #008300; --s7: #9085e9; --s8: #e66767;
+    --span: rgba(230,103,103,0.13);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181;
+  --s6: #008300; --s7: #9085e9; --s8: #e66767;
+  --span: rgba(230,103,103,0.13);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink);
+       font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 16px; }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-bottom: 14px; }
+h1 { font-size: 18px; margin: 0; font-weight: 650; }
+.sub { color: var(--ink-2); font-size: 13px; }
+.controls { display: flex; gap: 10px; align-items: center; margin-left: auto; flex-wrap: wrap; }
+select, button { font: inherit; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--ring); border-radius: 8px; padding: 5px 9px; max-width: 100%; min-width: 0; }
+#runSel { width: 330px; text-overflow: ellipsis; }
+header > div:first-child { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 640px) { .controls { margin-left: 0; width: 100%; } #runSel { flex: 1 1 0; width: auto; } }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px;
+  border: 1px solid var(--ring); background: var(--surface); font-size: 12px; font-weight: 600; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.live .dot { background: var(--good); animation: pulse 1.6s infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .live .dot { animation: none; } }
+.grid { display: grid; gap: 12px; }
+.tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.two { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+@media (max-width: 900px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+                            .two { grid-template-columns: minmax(0, 1fr); } }
+.card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 14px 16px;
+        min-width: 0; }
+.card h2 { font-size: 13px; font-weight: 600; margin: 0 0 2px; }
+.card .note { color: var(--muted); font-size: 12px; margin: 0 0 8px; }
+.tile .label { color: var(--ink-2); font-size: 12px; }
+.tile .value { font-size: 24px; font-weight: 650; margin-top: 4px; display: flex; align-items: center; gap: 8px;
+               overflow-wrap: anywhere; }
+.tile .detail { color: var(--muted); font-size: 12px; margin-top: 2px; min-height: 17px; overflow-wrap: anywhere; }
+.badge { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px;
+         border-radius: 6px; color: #fff; font-size: 13px; font-weight: 700; flex: none; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--ring); border-radius: 999px;
+        padding: 2px 9px; font-size: 13px; font-weight: 600; }
+.key { width: 14px; height: 2px; border-radius: 1px; display: inline-block; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--ink-2); margin: 4px 0 6px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart { position: relative; width: 100%; height: 230px; }
+.chart svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.chart text { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--ring);
+       border-radius: 8px; padding: 6px 9px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.12);
+       display: none; white-space: nowrap; z-index: 2; }
+.tip .row { display: flex; align-items: center; gap: 6px; }
+.tip b { font-variant-numeric: tabular-nums; min-width: 34px; display: inline-block; text-align: right; }
+.strip { display: flex; gap: 2px; height: 26px; align-items: stretch; margin-top: 6px; }
+.strip div { flex: 1 1 0; min-width: 0; border-radius: 2px; }
+.strip div:hover, .strip div:focus { outline: 2px solid var(--ink); outline-offset: 1px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--ink-2); font-weight: 600; }
+td.num { font-variant-numeric: tabular-nums; text-align: right; }
+.events td:nth-child(3) { overflow-wrap: anywhere; }
+details summary { cursor: pointer; color: var(--ink-2); font-size: 12px; margin-top: 6px; }
+.empty { color: var(--muted); padding: 24px 0; text-align: center; }
+.stale { opacity: .55; transition: opacity .2s; }
+.warn { color: var(--critical); font-size: 12px; margin-top: 8px; }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 13px; }
+.kv dt { color: var(--ink-2); } .kv dd { margin: 0; overflow-wrap: anywhere; }
+nav.tabs { display: flex; gap: 4px; border: 1px solid var(--ring); border-radius: 10px; padding: 3px;
+           background: var(--surface); }
+nav.tabs a { color: var(--ink-2); text-decoration: none; padding: 4px 12px; border-radius: 7px; font-weight: 600;
+             font-size: 13px; }
+nav.tabs a[aria-current="page"] { background: var(--page); color: var(--ink); box-shadow: inset 0 0 0 1px var(--ring); }
+.form { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: end; }
+.form label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--ink-2); min-width: 0; }
+button { cursor: pointer; font-weight: 600; }
+button:disabled, select:disabled { opacity: .5; cursor: not-allowed; }
+button.primary { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.msg { font-size: 12px; margin-top: 8px; min-height: 17px; overflow-wrap: anywhere; }
+.msg.err { color: var(--critical); } .msg.ok { color: var(--ink-2); }
+pre.log { background: var(--page); border: 1px solid var(--ring); border-radius: 8px; padding: 8px; margin: 8px 0 0;
+          font: 11px/1.4 ui-monospace, "DejaVu Sans Mono", monospace; max-height: 170px; overflow: auto;
+          white-space: pre-wrap; overflow-wrap: anywhere; }
+.bars { position: relative; width: 100%; height: 250px; }
+.bars svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.bars text { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.bars rect.bar:hover, .bars rect.bar:focus { opacity: .8; outline: none; }
+.bars .key { height: 10px; width: 10px; border-radius: 2px; }
+.tablewrap { overflow-x: auto; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <header>
+    <div>
+      <h1>SDN DDoS Mitigation Dashboard</h1>
+      <div class="sub" id="runline">Connecting…</div>
+    </div>
+    <div class="controls">
+      <nav class="tabs" aria-label="Views">
+        <a href="#live" id="navLive">Live run</a>
+        <a href="#results" id="navResults">Results</a>
+      </nav>
+      <span class="pill" id="health" title="Dashboard server status"><span class="dot"></span><span id="healthText">server…</span></span>
+    </div>
+  </header>
+
+<main id="viewLive">
+  <section class="card" style="margin-bottom:12px" aria-labelledby="ctlTitle">
+    <h2 id="ctlTitle">Experiment control</h2>
+    <p class="note" id="ctlNote">Checking whether this server may start experiments…</p>
+    <div class="form">
+      <label>Scenario <select id="cScenario">
+        <option value="normal">Normal traffic</option><option value="flash_crowd">Genuine flash crowd</option>
+        <option value="naive_ddos">Naive low-rate DDoS</option>
+        <option value="adaptive_ddos">Adaptive (flash-crowd-mimicking) DDoS</option></select></label>
+      <label>Adaptive level <select id="cLevel">
+        <option value="subtle">subtle</option><option value="moderate" selected>moderate</option>
+        <option value="aggressive">aggressive</option></select></label>
+      <label>Detector <select id="cDetector">
+        <option value="combined">combined (proposed)</option><option value="threshold">threshold-only</option>
+        <option value="cusum">CUSUM-only</option><option value="entropy">entropy-only</option></select></label>
+      <label>Mitigation <select id="cMitigation">
+        <option value="on">on</option><option value="off">off (monitor only)</option></select></label>
+      <button class="primary" id="bStart">Start experiment</button>
+      <button id="bStop">Stop</button>
+      <button id="bCleanup" title="Runs 'mn -c' to clear leftover Mininet state">Clean up Mininet</button>
+    </div>
+    <div class="msg" id="ctlMsg" role="status" aria-live="polite"></div>
+    <details id="ctlLogBox"><summary>Runner output</summary><pre class="log" id="ctlLog"></pre></details>
+  </section>
+
+  <div class="controls" style="margin:0 0 12px; justify-content:flex-start">
+    <span class="pill" id="status"><span class="dot"></span><span id="statusText">—</span></span>
+    <label class="sub" for="runSel">Showing</label>
+    <select id="runSel"><option value="">Follow newest run</option></select>
+  </div>
+
+  <section class="grid tiles" aria-label="Current state">
+    <div class="card tile"><div class="label">Detector decision (Member 3)</div>
+      <div class="value" id="tClass">—</div><div class="detail" id="tClassD"></div></div>
+    <div class="card tile"><div class="label">Mitigation (Member 4)</div>
+      <div class="value" id="tMit">—</div><div class="detail" id="tMitD"></div></div>
+    <div class="card tile"><div class="label">Rate-limited hosts</div>
+      <div class="value"><div class="chips" id="tLim">—</div></div><div class="detail" id="tLimD"></div></div>
+    <div class="card tile"><div class="label">Detector score</div>
+      <div class="value" id="tScore">—</div><div class="detail">above 1.0 = abnormal (ratio to limit, not a probability)</div></div>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>Packets each host sends into the switch</h2>
+    <p class="note">pkt/s, switch port counters (before any meter). Shaded = mitigation on. Dashed: offender threshold and meter rate.</p>
+    <div class="legend" id="legend1"></div>
+    <div class="chart" id="chart1"></div>
+    <details><summary>Data table</summary><div id="table1"></div></details>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>Packets delivered to the victim h1</h2>
+    <p class="note">pkt/s received per sender, measured at h1 (after the meters). A drop here while the line above stays high is the meter working.</p>
+    <div class="legend" id="legend2"></div>
+    <div class="chart" id="chart2"></div>
+    <details><summary>Data table</summary><div id="table2"></div></details>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>Decision per 1-second window</h2>
+    <p class="note" id="stripNote">Hover a cell for the detector's reason.</p>
+    <div class="legend" id="stripLegend"></div>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <section class="grid two" style="margin-top:12px">
+    <div class="card">
+      <h2>Mitigation events</h2>
+      <p class="note">From the controller app's event log (newest last). Times in s since run start.</p>
+      <div id="events"></div>
+    </div>
+    <div class="card">
+      <h2>Run and resources</h2>
+      <p class="note">Controller and detector sampled every second (CPU = % of one core).</p>
+      <dl class="kv" id="info"></dl>
+      <div class="warn" id="warn"></div>
+    </div>
+  </section>
+</main>
+
+<main id="viewResults" hidden>
+  <section class="card">
+    <h2>Recorded results</h2>
+    <p class="note" id="resNote">Loading…</p>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>A. Detection on identical traffic (replay of the recorded features)</h2>
+    <p class="note">All detectors processed exactly the same 1-second feature windows of every recorded run.
+      Positive = attack (naive or adaptive). Windows pooled over all runs.</p>
+    <div class="tablewrap" id="detTable"></div>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>B. Legitimate traffic delivered during the scenario</h2>
+    <p class="note">Packet delivery ratio (received at h1 ÷ sent) of the legitimate hosts during the attack, or during
+      the scenario for normal / flash-crowd runs. 1.0 = nothing lost. Mean over recorded runs; hover a bar for n.</p>
+    <div class="legend" id="cfgLegend1"></div>
+    <div class="bars" id="barsLegit"></div>
+    <details><summary>Data table</summary><div class="tablewrap" id="tblLegit"></div></details>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>C. Attack traffic delivered to the victim</h2>
+    <p class="note">Packet delivery ratio of the attack hosts during the attack. Lower = more attack traffic stopped.
+      'No mitigation' is the baseline (≈1.0).</p>
+    <div class="legend" id="cfgLegend2"></div>
+    <div class="bars" id="barsAttack"></div>
+    <details><summary>Data table</summary><div class="tablewrap" id="tblAttack"></div></details>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h2>D. Mitigation timing, collateral damage and overhead</h2>
+    <p class="note">Means over recorded runs. Response = attack start → meters confirmed on the switch.
+      Release = last attack packet → meters removed. "Lifted during attack" = runs in which mitigation was
+      removed while the attack was still running (e.g. during an adaptive attacker's pause). CPU in % of one core.</p>
+    <div class="tablewrap" id="tblMit"></div>
+  </section>
+</main>
+</div>
+
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const SLOT = ["--s1","--s2","--s3","--s4","--s5","--s6","--s7","--s8"];
+const HOST_ORDER = ["h2","h3","h4","h5","h6","h1"];      // color follows the host, never its rank
+const hostColor = (h) => { const i = HOST_ORDER.indexOf(h); return css(SLOT[i >= 0 ? i : 7]); };
+const CLASS = {
+  normal:        { label: "Normal",          icon: "✓", color: "--good" },
+  flash_crowd:   { label: "Flash crowd",     icon: "◆", color: "--warning" },
+  naive_ddos:    { label: "Naive DDoS",      icon: "!", color: "--critical" },
+  adaptive_ddos: { label: "Adaptive DDoS",   icon: "!", color: "--critical" },
+  unknown:       { label: "Unknown",         icon: "?", color: "--muted" },
+};
+const ROLE = { attacker: "attacker", legitimate: "legitimate", idle: "idle" };
+let selected = "";
+let last = null;
+
+function el(tag, attrs = {}, text) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+function svgEl(tag, attrs = {}) {
+  const e = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  return e;
+}
+const fmt = (v, d = 1) => (v === null || v === undefined || Number.isNaN(v)) ? "—" : Number(v).toFixed(d);
+function niceStep(v) {
+  if (v <= 0) return 1;
+  const p = Math.pow(10, Math.floor(Math.log10(v)));
+  for (const m of [1, 2, 5, 10]) if (m * p >= v) return m * p;
+  return 10 * p;
+}
+
+function badge(cls) {
+  const c = CLASS[cls] || CLASS.unknown;
+  const b = el("span", { class: "badge", "aria-hidden": "true" }, c.icon);
+  b.style.background = css(c.color);
+  return b;
+}
+
+function legend(target, hosts) {
+  target.replaceChildren();
+  for (const h of hosts) {
+    const s = el("span");
+    const k = el("span", { class: "key" }); k.style.background = hostColor(h.name);
+    s.append(k, document.createTextNode(h.name + " · " + (ROLE[h.role] || h.role)));
+    target.append(s);
+  }
+}
+
+function lineChart(box, opts) {
+  const W = Math.max(box.clientWidth, 280), H = box.clientHeight;
+  const m = { l: 40, r: 12, t: 10, b: 22 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const [x0, x1] = opts.x;
+  let ymax = opts.refs.reduce((a, r) => Math.max(a, r.y), 0);
+  for (const s of opts.series) for (const p of s.points) ymax = Math.max(ymax, p[1]);
+  const ystep = niceStep(Math.max(ymax * 1.08, 10) / 4);
+  const nt = Math.max(1, Math.ceil(ymax * 1.08 / ystep));
+  ymax = ystep * nt;
+  const X = (x) => m.l + (x1 > x0 ? (x - x0) / (x1 - x0) : 0) * iw;
+  const Y = (y) => m.t + ih - (y / ymax) * ih;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": opts.aria });
+
+  for (const sp of opts.spans) {
+    const a = Math.max(sp[0], x0), b = sp[1] === null ? x1 : Math.min(sp[1], x1);
+    if (b > a) svg.append(svgEl("rect", { x: X(a), y: m.t, width: X(b) - X(a), height: ih, fill: css("--span") }));
+  }
+  for (let i = 0; i <= nt; i++) {
+    const v = ystep * i, y = Y(v);
+    svg.append(svgEl("line", { x1: m.l, x2: m.l + iw, y1: y, y2: y,
+      stroke: i === 0 ? css("--axis") : css("--grid"), "stroke-width": 1 }));
+    const t = svgEl("text", { x: m.l - 6, y: y + 4, "text-anchor": "end" }); t.textContent = fmt(v, 0);
+    svg.append(t);
+  }
+  const step = niceStep((x1 - x0) / 6) || 10;
+  for (let v = Math.ceil(x0 / step) * step; v <= x1; v += step) {
+    const t = svgEl("text", { x: X(v), y: H - 6, "text-anchor": "middle" }); t.textContent = fmt(v, 0) + "s";
+    svg.append(t);
+  }
+  for (const vl of opts.vlines) {
+    if (vl.x < x0 || vl.x > x1) continue;
+    svg.append(svgEl("line", { x1: X(vl.x), x2: X(vl.x), y1: m.t, y2: m.t + ih,
+      stroke: css("--ink-2"), "stroke-width": 1, "stroke-dasharray": "2 3" }));
+    const t = svgEl("text", { x: X(vl.x) + 4, y: m.t + 11 }); t.textContent = vl.label; svg.append(t);
+  }
+  let prevY = null;
+  for (const r of opts.refs) {
+    svg.append(svgEl("line", { x1: m.l, x2: m.l + iw, y1: Y(r.y), y2: Y(r.y),
+      stroke: css("--ink-2"), "stroke-width": 1, "stroke-dasharray": "6 4", opacity: .7 }));
+    // Two close reference lines: put the second label at the left so they don't collide.
+    const left = prevY !== null && Math.abs(prevY - Y(r.y)) < 14;
+    prevY = Y(r.y);
+    const t = svgEl("text", left ? { x: m.l + 4, y: Y(r.y) - 4, "text-anchor": "start" }
+                                 : { x: m.l + iw - 2, y: Y(r.y) - 4, "text-anchor": "end" });
+    t.textContent = r.label; svg.append(t);
+  }
+  for (const s of opts.series) {
+    if (!s.points.length) continue;
+    const d = s.points.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1)).join("");
+    svg.append(svgEl("path", { d, fill: "none", stroke: s.color, "stroke-width": 2,
+      "stroke-linejoin": "round", "stroke-linecap": "round" }));
+  }
+  const cross = svgEl("line", { y1: m.t, y2: m.t + ih, stroke: css("--ink-2"), "stroke-width": 1, visibility: "hidden" });
+  svg.append(cross);
+  const hit = svgEl("rect", { x: m.l, y: m.t, width: iw, height: ih, fill: "transparent", tabindex: 0 });
+  svg.append(hit);
+
+  const tip = el("div", { class: "tip" });
+  const show = (px) => {
+    const xv = x0 + (px - m.l) / iw * (x1 - x0);
+    cross.setAttribute("x1", X(xv)); cross.setAttribute("x2", X(xv)); cross.setAttribute("visibility", "visible");
+    tip.replaceChildren(el("div", { class: "sub" }, fmt(xv, 0) + " s"));
+    for (const s of opts.series) {
+      let best = null;
+      for (const p of s.points) if (!best || Math.abs(p[0] - xv) < Math.abs(best[0] - xv)) best = p;
+      const row = el("div", { class: "row" });
+      const k = el("span", { class: "key" }); k.style.background = s.color;
+      row.append(k, el("b", {}, best && Math.abs(best[0] - xv) <= 2 ? fmt(best[1], 0) : "—"),
+                 document.createTextNode(s.name));
+      tip.append(row);
+    }
+    tip.style.display = "block";
+    const left = Math.min(X(xv) + 12, W - tip.offsetWidth - 4);
+    tip.style.left = Math.max(0, left) + "px"; tip.style.top = m.t + "px";
+  };
+  // The chart is redrawn every second; remember where the pointer is so the
+  // crosshair and tooltip survive the redraw instead of flickering away.
+  hit.addEventListener("pointermove", (e) => {
+    const r = svg.getBoundingClientRect(); box._hoverPx = (e.clientX - r.left) * W / r.width; show(box._hoverPx);
+  });
+  hit.addEventListener("pointerleave", () => { box._hoverPx = null; tip.style.display = "none"; cross.setAttribute("visibility", "hidden"); });
+  hit.addEventListener("focus", () => show(m.l + iw));
+  hit.addEventListener("blur", () => { tip.style.display = "none"; cross.setAttribute("visibility", "hidden"); });
+  box.replaceChildren(svg, tip);
+  if (box._hoverPx != null) show(Math.min(Math.max(box._hoverPx, m.l), m.l + iw));
+}
+
+function dataTable(target, hosts, series) {
+  const tbl = el("table");
+  const head = el("tr"); head.append(el("th", {}, "Host"), el("th", {}, "Role"),
+    el("th", {}, "Latest (pkt/s)"), el("th", {}, "Max in view (pkt/s)"));
+  tbl.append(head);
+  for (const h of hosts) {
+    const pts = series[h.name] || [];
+    const tr = el("tr");
+    tr.append(el("td", {}, h.name), el("td", {}, ROLE[h.role] || h.role),
+      el("td", { class: "num" }, pts.length ? fmt(pts[pts.length - 1][1], 0) : "—"),
+      el("td", { class: "num" }, pts.length ? fmt(Math.max(...pts.map(p => p[1])), 0) : "—"));
+    tbl.append(tr);
+  }
+  target.replaceChildren(tbl);
+}
+
+function render(s) {
+  const run = s.run;
+  const bits = [run.scenario || "manual session", run.attack_level, run.detector && ("detector: " + run.detector),
+                run.mitigation && ("mitigation: " + run.mitigation)].filter(Boolean);
+  $("runline").textContent = run.id + " — " + bits.join(" · ");
+  $("status").className = "pill" + (run.live ? " live" : "");
+  $("statusText").textContent = (run.live ? "LIVE · " : (run.status || "finished") + " · ") + fmt(run.elapsed_s, 0) + " s";
+
+  const d = s.decision;
+  const cls = d ? (CLASS[d.cls] || CLASS.unknown) : null;
+  $("tClass").replaceChildren(...(d ? [badge(d.cls), document.createTextNode(cls.label)] : [document.createTextNode("waiting…")]));
+  $("tClassD").textContent = d ? d.reason : "no decisions yet";
+  $("tScore").textContent = d ? fmt(d.score, 2) : "—";
+
+  const mit = s.mitigation;
+  const mb = el("span", { class: "badge", "aria-hidden": "true" }, mit.active ? "■" : "○");
+  mb.style.background = css(mit.active ? "--serious" : "--muted");
+  $("tMit").replaceChildren(mb, document.createTextNode(mit.active ? "ON" : "OFF"));
+  $("tMitD").textContent = (mit.enforcement === "False" ? "monitor-only run (no rules installed) · " : "") +
+    s.totals.limits_installed + " limit(s) installed so far" + (s.totals.of_errors ? " · " + s.totals.of_errors + " switch errors" : "");
+
+  const roleOf = Object.fromEntries(s.hosts.map(h => [h.name, h.role]));
+  $("tLim").replaceChildren(...(mit.limited.length ? mit.limited.map(h => {
+    const c = el("span", { class: "chip" }); const k = el("span", { class: "key" }); k.style.background = hostColor(h);
+    c.append(k, document.createTextNode(h)); return c; }) : [document.createTextNode("none")]));
+  const wrong = mit.limited.filter(h => roleOf[h] === "legitimate");
+  $("tLimD").textContent = mit.meter_rate_pps ? ("each capped at " + fmt(mit.meter_rate_pps, 0) + " pkt/s" +
+    (wrong.length ? " · legitimate host limited: " + wrong.join(", ") : "")) : "";
+
+  const hosts = s.hosts.filter(h => h.name !== "h1");
+  const vlines = [];
+  if (s.run.phases.scenario_start !== undefined) vlines.push({ x: s.run.phases.scenario_start, label: "scenario start" });
+  if (s.run.phases.scenario_end !== undefined) vlines.push({ x: s.run.phases.scenario_end, label: "scenario end" });
+  const x = [s.run.x_from, Math.max(s.run.x_to, s.run.x_from + 10)];
+  const refs = [];
+  if (mit.offender_min_pps) refs.push({ y: mit.offender_min_pps, label: "offender threshold " + fmt(mit.offender_min_pps, 0) });
+  if (mit.meter_rate_pps) refs.push({ y: mit.meter_rate_pps, label: "meter " + fmt(mit.meter_rate_pps, 0) });
+  const mk = (src) => hosts.map(h => ({ name: h.name, color: hostColor(h.name), points: src[h.name] || [] }));
+  legend($("legend1"), hosts); legend($("legend2"), hosts);
+  lineChart($("chart1"), { x, series: mk(s.series.port_rate), refs, spans: mit.spans, vlines,
+    aria: "Packets per second each host sends into the switch" });
+  lineChart($("chart2"), { x, series: mk(s.series.victim_rx), refs: [], spans: mit.spans, vlines,
+    aria: "Packets per second delivered to the victim, per sender" });
+  dataTable($("table1"), hosts, s.series.port_rate);
+  dataTable($("table2"), hosts, s.series.victim_rx);
+
+  const strip = $("strip"); strip.replaceChildren();
+  // Keep the 2px surface gap only while cells stay wider than the gap.
+  strip.style.gap = s.decisions.length * 4 > strip.clientWidth ? "0" : "2px";
+  for (const r of s.decisions) {
+    const c = CLASS[r.cls] || CLASS.unknown;
+    const cell = el("div", { tabindex: 0, title: `${fmt(r.t, 0)} s · ${c.label} · ${r.rule} · ${r.reason}`,
+      "aria-label": `${fmt(r.t, 0)} seconds: ${c.label}` });
+    cell.style.background = css(c.color);
+    if (r.rule === "hold") cell.style.opacity = .55;
+    strip.append(cell);
+  }
+  if (!s.decisions.length) strip.append(el("span", { class: "sub" }, "no decisions yet"));
+  $("stripNote").textContent = `${s.totals.windows} windows so far, ${s.totals.attack_windows} labelled attack. ` +
+    "Faded cells = 'hold' (pause inside an adaptive attack). Hover a cell for the reason.";
+
+  const evBox = $("events");
+  if (!s.events.length) evBox.replaceChildren(el("div", { class: "empty" }, "no events yet"));
+  else {
+    const tbl = el("table", { class: "events" });
+    const head = el("tr"); head.append(el("th", {}, "t (s)"), el("th", {}, "Event"), el("th", {}, "Detail"));
+    tbl.append(head);
+    for (const e of s.events) {
+      const tr = el("tr");
+      tr.append(el("td", { class: "num" }, fmt(e.t, 1)),
+        el("td", {}, e.event.replaceAll("_", " ") + (e.hosts.length ? " — " + e.hosts.join(", ") : "")),
+        el("td", {}, e.detail));
+      tbl.append(tr);
+    }
+    evBox.replaceChildren(tbl);
+  }
+
+  const info = $("info"); info.replaceChildren();
+  const add = (k, v) => info.append(el("dt", {}, k), el("dd", {}, v));
+  add("Attackers", hosts.filter(h => h.role === "attacker").map(h => h.name).join(", ") || "none");
+  add("Legitimate", hosts.filter(h => h.role === "legitimate").map(h => h.name).join(", ") || "—");
+  for (const [name, r] of Object.entries(s.resources))
+    add(name[0].toUpperCase() + name.slice(1), `CPU ${fmt(r.cpu_pct, 1)} % · memory ${fmt(r.rss_mib, 1)} MiB`);
+  $("warn").textContent = s.warnings.length ? "Read warnings: " + s.warnings.join("; ") : "";
+}
+
+async function refreshRuns() {
+  try {
+    const r = await fetch("api/runs", { cache: "no-store" });
+    const j = await r.json();
+    const sel = $("runSel");
+    if (j.fixed) { sel.disabled = true; return; }
+    const keep = sel.value;
+    const opts = [el("option", { value: "" }, "Follow newest run")];
+    for (const run of j.runs) opts.push(el("option", { value: run.id },
+      run.id + (run.status === "running" || run.status === "starting" ? "  (live)" :
+                run.status === "aborted" ? "  (stopped)" : "")));
+    sel.replaceChildren(...opts);
+    sel.value = keep;
+  } catch (e) { /* server restarting; try again later */ }
+}
+
+async function tick() {
+  if (currentView() !== "live") return;
+  const app = $("app");
+  try {
+    const r = await fetch("api/state?run=" + encodeURIComponent(selected), { cache: "no-store" });
+    const s = await r.json();
+    if (s.error) { $("runline").textContent = s.error; app.classList.remove("stale"); }
+    else { last = s; render(s); app.classList.remove("stale"); }
+  } catch (e) {
+    app.classList.add("stale");                    // keep the last frame, dimmed
+    $("statusText").textContent = "dashboard server not reachable";
+  }
+}
+
+// ------------------------------------------------------------ views
+const currentView = () => (location.hash === "#results" ? "results" : "live");
+function showView() {
+  const v = currentView();
+  $("viewLive").hidden = v !== "live";
+  $("viewResults").hidden = v !== "results";
+  $("navLive").setAttribute("aria-current", v === "live" ? "page" : "false");
+  $("navResults").setAttribute("aria-current", v === "results" ? "page" : "false");
+  if (v === "results") loadResults(); else { tick(); refreshControl(); }
+}
+
+// ------------------------------------------------------------ server health
+async function refreshHealth() {
+  const pill = $("health");
+  try {
+    const r = await fetch("api/health", { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const h = await r.json();
+    pill.className = "pill live";
+    $("healthText").textContent = "server OK · " + (h.control_enabled ? "control mode" : "read-only");
+  } catch (e) {
+    pill.className = "pill";
+    $("healthText").textContent = "server unreachable";
+  }
+}
+
+// ------------------------------------------------------------ experiment control
+let ctlEnabled = false, ctlBusy = false;
+function setCtlMsg(text, isErr) {
+  const m = $("ctlMsg"); m.textContent = text; m.className = "msg " + (isErr ? "err" : "ok");
+}
+function syncLevel() { $("cLevel").disabled = !ctlEnabled || $("cScenario").value !== "adaptive_ddos"; }
+async function refreshControl() {
+  let st;
+  try {
+    const r = await fetch("api/control", { cache: "no-store" });
+    st = await r.json();
+  } catch (e) {
+    $("ctlNote").textContent = "Dashboard server not reachable.";
+    return;
+  }
+  ctlEnabled = !!st.enabled;
+  const running = !!st.running;
+  for (const id of ["cScenario", "cDetector", "cMitigation"]) $(id).disabled = !ctlEnabled || running;
+  syncLevel(); if (running) $("cLevel").disabled = true;
+  $("bStart").disabled = !ctlEnabled || running || ctlBusy;
+  $("bStop").disabled = !ctlEnabled || !running || ctlBusy;
+  $("bCleanup").disabled = !ctlEnabled || running || ctlBusy;
+  if (!ctlEnabled) {
+    $("ctlNote").textContent = "Read-only mode: this page shows experiments but cannot start them. To start " +
+      "experiments from here, restart the server with: sudo python3 member4_mitigation/dashboard/server.py --control " +
+      "(or run member4_mitigation/run_experiment.py in a terminal — this page follows it automatically).";
+    $("ctlLogBox").hidden = true;
+    return;
+  }
+  $("ctlLogBox").hidden = false;
+  const p = st.params || {};
+  const desc = p.scenario ? [p.scenario, p.level, "detector " + p.detector, "mitigation " + p.mitigation]
+    .filter(Boolean).join(" · ") : "";
+  if (running) {
+    $("ctlNote").textContent = "Running: " + desc + " — " + fmt(st.elapsed_s, 0) + " s (a run takes about 1.5–2 min). " +
+      "The charts below follow it live.";
+  } else if (st.last_exit_code !== null && st.last_exit_code !== undefined) {
+    $("ctlNote").textContent = "Last experiment (" + desc + ") " + (st.stop_requested ? "was stopped" :
+      st.last_exit_code === 0 ? "finished successfully" : "failed (exit code " + st.last_exit_code + ")") +
+      ". Choose a scenario and press Start.";
+  } else {
+    $("ctlNote").textContent = "Control mode: choose a scenario and press Start. One experiment runs at a time.";
+  }
+  $("ctlLog").textContent = (st.log_tail || []).join("\n") || "(no output yet)";
+}
+async function postControl(path, body, busyText) {
+  ctlBusy = true; setCtlMsg(busyText, false); await refreshControl();
+  try {
+    const r = await fetch(path, { method: "POST", cache: "no-store",
+      headers: { "Content-Type": "application/json", "X-M4-Request": "1" }, body: JSON.stringify(body || {}) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.error || ("HTTP " + r.status));
+    return j;
+  } finally { ctlBusy = false; }
+}
+$("cScenario").addEventListener("change", syncLevel);
+$("bStart").addEventListener("click", async () => {
+  const body = { scenario: $("cScenario").value, detector: $("cDetector").value, mitigation: $("cMitigation").value };
+  if (body.scenario === "adaptive_ddos") body.level = $("cLevel").value;
+  try {
+    await postControl("api/control/start", body, "Starting…");
+    setCtlMsg("Started. The run appears below within a few seconds.", false);
+    selected = ""; $("runSel").value = "";
+  } catch (e) { setCtlMsg("Could not start: " + e.message, true); }
+  refreshControl(); refreshRuns();
+});
+$("bStop").addEventListener("click", async () => {
+  try { await postControl("api/control/stop", {}, "Stopping (the runner cleans up first)…");
+        setCtlMsg("Stop sent; the runner is stopping traffic, Mininet and the controller.", false); }
+  catch (e) { setCtlMsg("Could not stop: " + e.message, true); }
+  refreshControl();
+});
+$("bCleanup").addEventListener("click", async () => {
+  try { const j = await postControl("api/control/cleanup", {}, "Running mn -c…");
+        setCtlMsg(j.ok ? "Mininet cleanup finished." : "mn -c failed (exit " + j.exit_code + "): " +
+                  (j.output_tail || []).join(" "), !j.ok); }
+  catch (e) { setCtlMsg("Cleanup refused: " + e.message, true); }
+  refreshControl();
+});
+
+// ------------------------------------------------------------ results view
+const CONFIGS = [
+  { key: "combined|on",  label: "Proposed (combined + mitigation)", slot: "--s1" },
+  { key: "combined|off", label: "No mitigation (combined, monitor only)", slot: "--s2" },
+  { key: "threshold|on", label: "Threshold-only + mitigation", slot: "--s3" },
+  { key: "cusum|on",     label: "CUSUM-only + mitigation", slot: "--s4" },
+  { key: "entropy|on",   label: "Entropy-only + mitigation", slot: "--s5" },
+];
+const GROUPS = [
+  { key: "normal", label: "Normal", attack: false }, { key: "flash_crowd", label: "Flash crowd", attack: false },
+  { key: "naive_ddos", label: "Naive DDoS", attack: true },
+  { key: "adaptive_ddos/subtle", label: "Adaptive subtle", attack: true },
+  { key: "adaptive_ddos/moderate", label: "Adaptive moderate", attack: true },
+  { key: "adaptive_ddos/aggressive", label: "Adaptive aggressive", attack: true },
+];
+const groupOf = (r) => r.scenario + (r.attack_level ? "/" + r.attack_level : "");
+const meanOf = (rows, col) => {
+  const xs = rows.map(r => r[col]).filter(v => v !== null && v !== undefined && v !== "");
+  return xs.length ? { v: xs.reduce((a, b) => a + Number(b), 0) / xs.length, n: xs.length } : null;
+};
+
+function cfgLegend(target, cfgs) {
+  target.replaceChildren();
+  for (const c of cfgs) {
+    const s = el("span"); const k = el("span", { class: "key" });
+    k.style.background = css(c.slot); k.style.height = "10px"; k.style.width = "10px"; k.style.borderRadius = "2px";
+    s.append(k, document.createTextNode(c.label)); target.append(s);
+  }
+}
+
+function barChart(box, groups, cfgs, cell, aria) {
+  const W = Math.max(box.clientWidth, 300), H = box.clientHeight;
+  const m = { l: 36, r: 8, t: 10, b: 34 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const Y = (v) => m.t + ih - v * ih;
+  const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": aria });
+  for (let i = 0; i <= 4; i++) {
+    const v = i / 4;
+    svg.append(svgEl("line", { x1: m.l, x2: m.l + iw, y1: Y(v), y2: Y(v),
+      stroke: i === 0 ? css("--axis") : css("--grid"), "stroke-width": 1 }));
+    const t = svgEl("text", { x: m.l - 6, y: Y(v) + 4, "text-anchor": "end" }); t.textContent = v.toFixed(2);
+    svg.append(t);
+  }
+  const gw = iw / groups.length, bw = Math.max(3, (gw * 0.78) / cfgs.length - 2);
+  const tip = el("div", { class: "tip" });
+  groups.forEach((g, gi) => {
+    const gx = m.l + gi * gw + (gw - cfgs.length * (bw + 2)) / 2;
+    const lab = svgEl("text", { x: m.l + gi * gw + gw / 2, y: H - 14, "text-anchor": "middle" });
+    lab.textContent = g.label; svg.append(lab);
+    cfgs.forEach((c, ci) => {
+      const d = cell(g, c);
+      if (!d) return;
+      const v = Math.max(0, Math.min(1, d.v)), x = gx + ci * (bw + 2), y = Y(v), h = Y(0) - y;
+      const r = Math.min(4, bw / 2, h);
+      const path = h <= 0.5 ? `M${x} ${Y(0) - 1}h${bw}v1h${-bw}Z` :
+        `M${x} ${Y(0)}V${y + r}Q${x} ${y} ${x + r} ${y}H${x + bw - r}Q${x + bw} ${y} ${x + bw} ${y + r}V${Y(0)}Z`;
+      const bar = svgEl("path", { d: path, fill: css(c.slot), class: "bar", tabindex: 0,
+        "aria-label": `${g.label}, ${c.label}: ${d.v.toFixed(3)} (n=${d.n})` });
+      const hit = svgEl("rect", { x: x - 1, y: m.t, width: bw + 2, height: ih, fill: "transparent" });
+      const show = () => {
+        tip.replaceChildren(el("div", { class: "sub" }, g.label));
+        const row = el("div", { class: "row" }); const k = el("span", { class: "key" }); k.style.background = css(c.slot);
+        row.append(k, el("b", {}, d.v.toFixed(3)), document.createTextNode(c.label + " · n=" + d.n));
+        tip.append(row); tip.style.display = "block";
+        tip.style.left = Math.max(0, Math.min(x + bw + 8, W - tip.offsetWidth - 4)) + "px"; tip.style.top = m.t + "px";
+      };
+      const hide = () => { tip.style.display = "none"; };
+      for (const n of [bar, hit]) { n.addEventListener("pointerenter", show); n.addEventListener("pointerleave", hide); }
+      bar.addEventListener("focus", show); bar.addEventListener("blur", hide);
+      svg.append(bar, hit);
+    });
+  });
+  box.replaceChildren(svg, tip);
+}
+
+function simpleTable(target, header, rows) {
+  const t = el("table"); const tr = el("tr");
+  header.forEach(h => tr.append(el("th", {}, h))); t.append(tr);
+  for (const r of rows) {
+    const row = el("tr");
+    r.forEach((v) => {
+      const isNum = typeof v === "number" || /^-?\d+(\.\d+)?$/.test(String(v));
+      row.append(el("td", isNum ? { class: "num" } : {}, v === null || v === undefined ? "—" : String(v)));
+    });
+    t.append(row);
+  }
+  target.replaceChildren(t);
+}
+
+let resultsCache = null;
+async function loadResults() {
+  $("runline").textContent = "Recorded experiment results";
+  try {
+    const r = await fetch("api/summary", { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    resultsCache = await r.json();
+    renderResults(resultsCache);
+  } catch (e) {
+    $("resNote").textContent = "Could not load results from the server: " + e.message;
+  }
+}
+
+function renderResults(data) {
+  const runs = data.runs.filter(r => !r.overrides);
+  if (!runs.length) {
+    $("resNote").textContent = "No evaluated runs yet. Run experiments (member4_mitigation/run_all.sh or the " +
+      "control panel); each finished run adds its metrics here.";
+    for (const id of ["detTable", "barsLegit", "barsAttack", "tblMit", "tblLegit", "tblAttack"]) $(id).replaceChildren();
+    return;
+  }
+  const by = {};
+  for (const r of runs) (by[groupOf(r) + "#" + r.detector + "|" + r.mitigation] ||= []).push(r);
+  const rowsFor = (g, c) => by[g.key + "#" + c.key] || [];
+  const present = CONFIGS.filter(c => runs.some(r => r.detector + "|" + r.mitigation === c.key));
+  $("resNote").textContent = `${runs.length} evaluated runs from member4_mitigation/results/ — real measurements ` +
+    "from the Mininet/OVS testbed (not simulated). Single runs per configuration unless n > 1. " +
+    (data.offline_available ? "" : "Detection replay not generated yet: python3 -m member4_mitigation.offline_detection");
+
+  // A. detection (offline replay)
+  const pooled = {};
+  for (const r of data.offline_detection) {
+    const p = (pooled[r.detector] ||= { tp: 0, fp: 0, fn: 0, tn: 0, runs: new Set(), fcFp: 0 });
+    p.tp += r.tp; p.fp += r.fp; p.fn += r.fn; p.tn += r.tn; p.runs.add(r.run_id);
+    if (r.scenario === "flash_crowd") p.fcFp += r.fp;
+  }
+  const q = (a, b) => b ? (a / b).toFixed(3) : "n/a";
+  const detRows = ["combined", "threshold", "cusum", "entropy"].filter(d => pooled[d]).map(d => {
+    const p = pooled[d], prec = p.tp / (p.tp + p.fp), rec = p.tp / (p.tp + p.fn);
+    return [d === "combined" ? "combined (proposed)" : d + "-only", p.runs.size, p.tp, p.fp, p.fn, p.tn,
+      q(p.tp, p.tp + p.fp), q(p.tp, p.tp + p.fn),
+      (prec + rec) ? (2 * prec * rec / (prec + rec)).toFixed(3) : "n/a",
+      q(p.fp, p.fp + p.tn), q(p.fn, p.fn + p.tp), p.fcFp];
+  });
+  if (detRows.length) simpleTable($("detTable"), ["Detector", "Runs", "TP", "FP", "FN", "TN", "Precision", "Recall",
+    "F1", "FPR", "FNR", "Flash-crowd false alarms"], detRows);
+  else $("detTable").replaceChildren(el("div", { class: "empty" }, "No detection replay yet (see note above)."));
+
+  // B. legitimate PDR
+  cfgLegend($("cfgLegend1"), present);
+  const legitCell = (g, c) => meanOf(rowsFor(g, c), "legit_pdr_focus");
+  barChart($("barsLegit"), GROUPS, present, legitCell, "Legitimate packet delivery ratio per scenario and configuration");
+  simpleTable($("tblLegit"), ["Scenario", "Configuration", "Legit PDR (mean)", "Runs"],
+    GROUPS.flatMap(g => present.map(c => { const d = legitCell(g, c); return d ? [g.label, c.label, d.v.toFixed(3), d.n] : null; }))
+      .filter(Boolean));
+
+  // C. attack PDR
+  const atk = GROUPS.filter(g => g.attack);
+  cfgLegend($("cfgLegend2"), present);
+  const atkCell = (g, c) => meanOf(rowsFor(g, c), "attack_pdr_focus");
+  barChart($("barsAttack"), atk, present, atkCell, "Attack packet delivery ratio per attack and configuration");
+  simpleTable($("tblAttack"), ["Attack", "Configuration", "Attack PDR (mean)", "Runs"],
+    atk.flatMap(g => present.map(c => { const d = atkCell(g, c); return d ? [g.label, c.label, d.v.toFixed(3), d.n] : null; }))
+      .filter(Boolean));
+
+  // D. timing / collateral / overhead
+  const f1 = (d, k = 1) => d ? d.v.toFixed(k) : "—";
+  const mitRows = [];
+  for (const g of GROUPS) for (const c of present) {
+    const rs = rowsFor(g, c); if (!rs.length) continue;
+    const early = rs.filter(r => r.released_before_attack_end === true).length;
+    mitRows.push([g.label, c.label, rs.length, f1(meanOf(rs, "response_time_s")), f1(meanOf(rs, "release_delay_s")),
+      // "—" if not applicable, or if an older server does not report the field at all
+      g.attack && rs.some(r => r.response_time_s !== null) && rs.some(r => "released_before_attack_end" in r)
+        ? early + " of " + rs.length : "—",
+      f1(meanOf(rs, "legit_hosts_limited")), f1(meanOf(rs, "attack_hosts_limited")),
+      f1(meanOf(rs, "ovs_meter_dropped"), 0), f1(meanOf(rs, "controller_cpu_mean_pct")),
+      f1(meanOf(rs, "controller_rss_max_mib"))]);
+  }
+  simpleTable($("tblMit"), ["Scenario", "Configuration", "Runs", "Response (s)", "Release (s)", "Lifted during attack",
+    "Legit hosts limited",
+    "Attack hosts limited", "Meter-dropped pkts (switch)", "Controller CPU (%)", "Controller RSS (MiB)"], mitRows);
+}
+
+(function stripLegend() {
+  const box = $("stripLegend");
+  for (const key of ["normal", "flash_crowd", "naive_ddos", "unknown"]) {
+    const c = CLASS[key];
+    const s = el("span"); const b = badge(key); b.style.width = b.style.height = "16px"; b.style.fontSize = "10px";
+    s.append(b, document.createTextNode(key === "naive_ddos" ? "Attack (naive or adaptive)" : c.label));
+    box.append(s);
+  }
+})();
+
+$("runSel").addEventListener("change", (e) => { selected = e.target.value; tick(); });
+window.addEventListener("resize", () => {
+  if (currentView() === "live" && last) render(last);
+  if (currentView() === "results" && resultsCache) renderResults(resultsCache);
+});
+window.addEventListener("hashchange", showView);
+refreshRuns(); refreshHealth(); showView();
+setInterval(tick, 1000);
+setInterval(() => { if (currentView() === "live") refreshControl(); }, 2000);
+setInterval(refreshRuns, 5000);
+setInterval(refreshHealth, 5000);
+</script>
+</body>
+</html>

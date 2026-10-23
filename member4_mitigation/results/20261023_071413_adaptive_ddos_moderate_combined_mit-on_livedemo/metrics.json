@@ -1,0 +1,149 @@
+{
+  "run_id": "20261023_071413_adaptive_ddos_moderate_combined_mit-on_livedemo",
+  "scenario": "adaptive_ddos",
+  "attack_level": "moderate",
+  "detector": "combined",
+  "mitigation": "on",
+  "config_overrides": {},
+  "duration_s": 102.67800998687744,
+  "attack_interval_s": 36.64840602874756,
+  "detection": {
+    "windows": 79,
+    "tp": 23,
+    "fp": 5,
+    "fn": 15,
+    "tn": 36,
+    "precision": 0.8214285714285714,
+    "recall": 0.6052631578947368,
+    "f1": 0.6969696969696969,
+    "fpr": 0.12195121951219512,
+    "fnr": 0.39473684210526316,
+    "class_counts": {
+      "normal": 38,
+      "flash_crowd": 13,
+      "adaptive_ddos": 28
+    },
+    "detection_latency_s": 17.231359004974365,
+    "decision_received_latency_s": 17.285359144210815
+  },
+  "mitigation_actions": {
+    "mitigation_starts": 1,
+    "mitigation_active_windows": 28,
+    "rate_limits_installed": 4,
+    "openflow_rules_installed": 8,
+    "of_errors": 0,
+    "no_offender_found_events": 0,
+    "limited_hosts": [
+      "h2",
+      "h3",
+      "h4",
+      "h5"
+    ],
+    "attack_hosts_limited": [
+      "h2",
+      "h3",
+      "h4",
+      "h5"
+    ],
+    "legit_hosts_limited": [],
+    "response_time_s": 17.30635905265808,
+    "decision_to_rule_applied_ms": 21.9,
+    "release_delay_s": 8.731953144073486,
+    "released_before_attack_end": false
+  },
+  "traffic": {
+    "legit_whole_run": {
+      "sent_packets": 779,
+      "received_packets": 779,
+      "pdr": 1.0,
+      "sent_pps": 9.7375,
+      "received_pps": 9.7375,
+      "received_kbps": 9.9712,
+      "seconds": 80
+    },
+    "legit_before_scenario": {
+      "sent_packets": 127,
+      "received_packets": 127,
+      "pdr": 1.0,
+      "sent_pps": 9.76923076923077,
+      "received_pps": 9.76923076923077,
+      "received_kbps": 10.003692307692308,
+      "seconds": 13
+    },
+    "legit_during_focus": {
+      "sent_packets": 360,
+      "received_packets": 360,
+      "pdr": 1.0,
+      "sent_pps": 9.72972972972973,
+      "received_pps": 9.72972972972973,
+      "received_kbps": 9.963243243243243,
+      "seconds": 37
+    },
+    "legit_bg_host_during_focus": {
+      "sent_packets": 360,
+      "received_packets": 360,
+      "pdr": 1.0,
+      "sent_pps": 9.72972972972973,
+      "received_pps": 9.72972972972973,
+      "received_kbps": 9.963243243243243,
+      "seconds": 37
+    },
+    "attack_during_focus": {
+      "sent_packets": 3498,
+      "received_packets": 2059,
+      "pdr": 0.5886220697541452,
+      "sent_pps": 94.54054054054055,
+      "received_pps": 55.648648648648646,
+      "received_kbps": 56.98421621621622,
+      "seconds": 37
+    },
+    "victim_total_during_focus": {
+      "sent_packets": 3858,
+      "received_packets": 2419,
+      "pdr": 0.6270088128564023,
+      "sent_pps": 104.27027027027027,
+      "received_pps": 65.37837837837837,
+      "received_kbps": 66.94745945945947,
+      "seconds": 37
+    },
+    "focus": "attack interval"
+  },
+  "ping_h6": {
+    "sent": 160,
+    "received": 160,
+    "loss_pct": 0.0,
+    "rtt_avg_ms": 0.07944999999999999,
+    "rtt_avg_during_focus_ms": 0.03968493150684931,
+    "rtt_max_during_focus_ms": 0.117
+  },
+  "switch": {
+    "flow_table_max_entries": 15.0,
+    "flow_table_mean_entries": 8.969696969696969,
+    "packet_in_total": 59.0,
+    "packet_in_during_focus": 8.0,
+    "window_s": 1
+  },
+  "switch_view": {
+    "samples": 0,
+    "max_m4_flows_on_switch": null,
+    "max_meters_on_switch": null,
+    "meter_packets_dropped_max": null,
+    "m4_flows_at_end": null
+  },
+  "resources": {
+    "controller": {
+      "cpu_mean_pct": 0.5670103092783505,
+      "cpu_max_pct": 5.0,
+      "rss_mean_mib": 46.04030927835051,
+      "rss_max_mib": 46.06,
+      "samples": 97
+    },
+    "detector": {
+      "cpu_mean_pct": 0.17525773195876287,
+      "cpu_max_pct": 4.0,
+      "rss_mean_mib": 16.71,
+      "rss_max_mib": 16.71,
+      "samples": 97
+    }
+  }
+}

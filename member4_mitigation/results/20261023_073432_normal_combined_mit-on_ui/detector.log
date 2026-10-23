@@ -1,0 +1,18 @@
+Baseline from features_normal.csv: {'DataPlanePacketRate': 20.0}
+Following /home/minato/Documents/CN-Project/detection/../sdn-ddos-monitoring/data/features.csv (Ctrl+C to stop)
+   1  t=1792740879.23  normal        score=0.0    within normal range
+   2  t=1792740880.23  normal        score=0.0    within normal range
+   3  t=1792740881.23  normal        score=0.117  within normal range
+   4  t=1792740882.23  normal        score=0.0    within normal range
+   5  t=1792740883.23  normal        score=0.0    within normal range
+   6  t=1792740884.23  normal        score=0.067  within normal range
+   7  t=1792740885.23  normal        score=0.033  within normal range
+   8  t=1792740886.23  normal        score=0.0    within normal range
+   9  t=1792740887.23  normal        score=0.0    within normal range
+  10  t=1792740888.23  normal        score=0.0    within normal range
+  11  t=1792740889.23  normal        score=0.0    within normal range
+  12  t=1792740890.23  normal        score=0.0    within normal range
+  13  t=1792740891.23  normal        score=0.0    within normal range
+
+Stopped.
+13 decisions written to /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_073432_normal_combined_mit-on_ui/decisions.csv

@@ -1,0 +1,61 @@
+wall_time,event,dpid,ports,detail
+1792738945.494,app_started,,,enforcement=True meter_rate_pps=10 offender_min_pps=20.0
+1792738946.951,switch_connected,0000000000000001,,
+1792738946.974,cleanup_confirmed,0000000000000001,,switch_ms=19.7
+1792738983.146,limit_sent,0000000000000001,3,peak_pps=40.0 meter_rate_pps=10
+1792738983.146,limit_sent,0000000000000001,4,peak_pps=36.0 meter_rate_pps=10
+1792738983.146,limit_sent,0000000000000001,5,peak_pps=27.0 meter_rate_pps=10
+1792738983.147,limit_confirmed,0000000000000001,3 4 5,switch_ms=1.8 decision_to_applied_ms=2.1
+1792738984.153,limit_sent,0000000000000001,2,peak_pps=76.9 meter_rate_pps=10
+1792738984.153,limit_confirmed,0000000000000001,2,switch_ms=1.0 decision_to_applied_ms=1.2
+1792738998.274,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792738998.274,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=0.9
+1792738999.278,limit_sent,0000000000000001,5,peak_pps=138.7 meter_rate_pps=10
+1792738999.279,limit_sent,0000000000000001,4,peak_pps=132.6 meter_rate_pps=10
+1792738999.279,limit_sent,0000000000000001,3,peak_pps=129.0 meter_rate_pps=10
+1792738999.279,limit_sent,0000000000000001,2,peak_pps=108.9 meter_rate_pps=10
+1792738999.279,limit_confirmed,0000000000000001,5 4 3 2,switch_ms=1.3 decision_to_applied_ms=1.5
+1792739000.285,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792739000.286,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=1.1
+1792739001.296,limit_sent,0000000000000001,5,peak_pps=138.7 meter_rate_pps=10
+1792739001.296,limit_sent,0000000000000001,4,peak_pps=130.8 meter_rate_pps=10
+1792739001.297,limit_sent,0000000000000001,3,peak_pps=129.0 meter_rate_pps=10
+1792739001.297,limit_sent,0000000000000001,2,peak_pps=107.0 meter_rate_pps=10
+1792739001.297,limit_confirmed,0000000000000001,5 4 3 2,switch_ms=1.2 decision_to_applied_ms=1.4
+1792739002.309,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792739002.310,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=1.2
+1792739003.314,limit_sent,0000000000000001,5,peak_pps=138.7 meter_rate_pps=10
+1792739003.314,limit_sent,0000000000000001,4,peak_pps=130.8 meter_rate_pps=10
+1792739003.315,limit_sent,0000000000000001,3,peak_pps=129.0 meter_rate_pps=10
+1792739003.315,limit_sent,0000000000000001,2,peak_pps=107.0 meter_rate_pps=10
+1792739003.315,limit_confirmed,0000000000000001,5 4 3 2,switch_ms=1.8 decision_to_applied_ms=2.0
+1792739004.326,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792739004.327,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=1.0
+1792739005.336,limit_sent,0000000000000001,4,peak_pps=128.9 meter_rate_pps=10
+1792739005.337,limit_sent,0000000000000001,5,peak_pps=124.9 meter_rate_pps=10
+1792739005.337,limit_sent,0000000000000001,3,peak_pps=117.9 meter_rate_pps=10
+1792739005.337,limit_sent,0000000000000001,2,peak_pps=108.9 meter_rate_pps=10
+1792739005.338,limit_confirmed,0000000000000001,4 5 3 2,switch_ms=3.3 decision_to_applied_ms=3.5
+1792739006.341,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792739006.341,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=0.6
+1792739007.345,limit_sent,0000000000000001,4,peak_pps=134.9 meter_rate_pps=10
+1792739007.345,limit_sent,0000000000000001,3,peak_pps=131.9 meter_rate_pps=10
+1792739007.346,limit_sent,0000000000000001,5,peak_pps=124.9 meter_rate_pps=10
+1792739007.346,limit_sent,0000000000000001,2,peak_pps=113.9 meter_rate_pps=10
+1792739007.346,limit_confirmed,0000000000000001,4 3 5 2,switch_ms=1.1 decision_to_applied_ms=1.2
+1792739015.204,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792739015.205,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=0.5
+1792739016.213,limit_sent,0000000000000001,3,peak_pps=140.4 meter_rate_pps=10
+1792739016.213,limit_sent,0000000000000001,4,peak_pps=137.0 meter_rate_pps=10
+1792739016.213,limit_sent,0000000000000001,2,peak_pps=125.0 meter_rate_pps=10
+1792739016.214,limit_sent,0000000000000001,5,peak_pps=110.9 meter_rate_pps=10
+1792739016.214,limit_confirmed,0000000000000001,3 4 2 5,switch_ms=1.3 decision_to_applied_ms=1.4
+1792739017.225,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792739017.243,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=18.1
+1792739018.230,limit_sent,0000000000000001,4,peak_pps=137.0 meter_rate_pps=10
+1792739018.230,limit_sent,0000000000000001,2,peak_pps=125.0 meter_rate_pps=10
+1792739018.230,limit_sent,0000000000000001,3,peak_pps=122.1 meter_rate_pps=10
+1792739018.230,limit_sent,0000000000000001,5,peak_pps=111.9 meter_rate_pps=10
+1792739018.231,limit_confirmed,0000000000000001,4 2 3 5,switch_ms=1.4 decision_to_applied_ms=1.9
+1792739019.036,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792739019.037,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=0.7

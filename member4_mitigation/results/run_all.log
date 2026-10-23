@@ -1,0 +1,591 @@
+
+######## repeat 1: --scenario normal --detector combined --mitigation on --tag r1
+[run_experiment 06:25:12] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062512_normal_combined_mit-on_r1
+[run_experiment 06:25:14] controller up (pid 21520)
+[run_experiment 06:25:14] detector 'combined' up (pid 21534)
+[run_experiment 06:25:20] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:25:20] warm-up 10s
+[run_experiment 06:25:31] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:25:46] scenario 'normal' running on h2, h3
+[run_experiment 06:26:16] scenario finished; cool-down 25s
+[run_experiment 06:26:46] evaluating ...
+
+=== 20261023_062512_normal_combined_mit-on_r1 ===
+detection : TP=0 FP=0 FN=0 TN=69  precision=n/a recall=n/a F1=n/a FPR=0.000  latency=n/a s
+mitigation: starts=0 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=1.000 (before: 1.000)  legit rx=28.6 pkt/s
+ping h6   : loss=0.0% rtt avg=0.149 ms (during: 0.037 ms)
+switch    : flow entries max=7  Packet-In total=57 (during: 5)
+controller: CPU mean=0.5% max=7.0%  RSS max=46.1 MiB
+detector  : CPU mean=0.1% max=4.0%  RSS max=16.6 MiB
+duration  : 92.0 s
+[run_experiment 06:26:46] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062512_normal_combined_mit-on_r1
+
+######## repeat 1: --scenario normal --detector combined --mitigation off --tag r1
+[run_experiment 06:26:46] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062646_normal_combined_mit-off_r1
+[run_experiment 06:26:48] controller up (pid 21995)
+[run_experiment 06:26:48] detector 'combined' up (pid 22005)
+[run_experiment 06:26:54] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:26:54] warm-up 10s
+[run_experiment 06:27:05] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:27:20] scenario 'normal' running on h2, h3
+[run_experiment 06:27:50] scenario finished; cool-down 25s
+[run_experiment 06:28:20] evaluating ...
+
+=== 20261023_062646_normal_combined_mit-off_r1 ===
+detection : TP=0 FP=0 FN=0 TN=69  precision=n/a recall=n/a F1=n/a FPR=0.000  latency=n/a s
+mitigation: starts=0 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=1.000 (before: 1.000)  legit rx=28.4 pkt/s
+ping h6   : loss=0.0% rtt avg=0.164 ms (during: 0.040 ms)
+switch    : flow entries max=7  Packet-In total=61 (during: 0)
+controller: CPU mean=0.5% max=3.0%  RSS max=46.0 MiB
+detector  : CPU mean=0.1% max=3.0%  RSS max=16.6 MiB
+duration  : 92.1 s
+[run_experiment 06:28:20] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062646_normal_combined_mit-off_r1
+
+######## repeat 1: --scenario normal --detector threshold --mitigation on --tag r1
+[run_experiment 06:28:20] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062820_normal_threshold_mit-on_r1
+[run_experiment 06:28:21] controller up (pid 22466)
+[run_experiment 06:28:21] detector 'threshold' up (pid 22476)
+[run_experiment 06:28:27] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:28:27] warm-up 10s
+[run_experiment 06:28:38] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:28:53] scenario 'normal' running on h2, h3
+[run_experiment 06:29:23] scenario finished; cool-down 25s
+[run_experiment 06:29:53] evaluating ...
+
+=== 20261023_062820_normal_threshold_mit-on_r1 ===
+detection : TP=0 FP=0 FN=0 TN=69  precision=n/a recall=n/a F1=n/a FPR=0.000  latency=n/a s
+mitigation: starts=0 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=1.000 (before: 1.000)  legit rx=28.6 pkt/s
+ping h6   : loss=0.0% rtt avg=0.137 ms (during: 0.042 ms)
+switch    : flow entries max=7  Packet-In total=59 (during: 5)
+controller: CPU mean=0.5% max=4.0%  RSS max=46.1 MiB
+detector  : CPU mean=0.2% max=5.8%  RSS max=16.5 MiB
+duration  : 91.9 s
+[run_experiment 06:29:53] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062820_normal_threshold_mit-on_r1
+
+######## repeat 1: --scenario normal --detector cusum --mitigation on --tag r1
+[run_experiment 06:29:53] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062953_normal_cusum_mit-on_r1
+[run_experiment 06:29:55] controller up (pid 22915)
+[run_experiment 06:29:55] detector 'cusum' up (pid 22925)
+[run_experiment 06:30:00] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:30:00] warm-up 10s
+[run_experiment 06:30:11] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:30:26] scenario 'normal' running on h2, h3
+[run_experiment 06:30:57] scenario finished; cool-down 25s
+[run_experiment 06:31:26] evaluating ...
+
+=== 20261023_062953_normal_cusum_mit-on_r1 ===
+detection : TP=0 FP=29 FN=0 TN=40  precision=0.000 recall=n/a F1=0.000 FPR=0.420  latency=n/a s
+mitigation: starts=1 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=1.000 (before: 1.000)  legit rx=28.1 pkt/s
+ping h6   : loss=0.0% rtt avg=0.097 ms (during: 0.041 ms)
+switch    : flow entries max=7  Packet-In total=61 (during: 5)
+controller: CPU mean=0.7% max=12.0%  RSS max=46.0 MiB
+detector  : CPU mean=0.2% max=4.9%  RSS max=16.6 MiB
+duration  : 91.9 s
+[run_experiment 06:31:26] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_062953_normal_cusum_mit-on_r1
+
+######## repeat 1: --scenario flash_crowd --detector combined --mitigation on --tag r1
+[run_experiment 06:31:27] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063127_flash_crowd_combined_mit-on_r1
+[run_experiment 06:31:28] controller up (pid 23368)
+[run_experiment 06:31:28] detector 'combined' up (pid 23378)
+[run_experiment 06:31:34] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:31:34] warm-up 10s
+[run_experiment 06:31:45] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:32:00] scenario 'flash_crowd' running on h2, h3, h4
+[run_experiment 06:32:22] scenario finished; cool-down 25s
+[run_experiment 06:32:52] evaluating ...
+
+=== 20261023_063127_flash_crowd_combined_mit-on_r1 ===
+detection : TP=0 FP=0 FN=0 TN=61  precision=n/a recall=n/a F1=n/a FPR=0.000  latency=n/a s
+mitigation: starts=0 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=1.000 (before: 1.000)  legit rx=135.1 pkt/s
+ping h6   : loss=0.0% rtt avg=0.111 ms (during: 0.040 ms)
+switch    : flow entries max=9  Packet-In total=66 (during: 10)
+controller: CPU mean=0.5% max=8.0%  RSS max=46.0 MiB
+detector  : CPU mean=0.2% max=4.0%  RSS max=16.6 MiB
+duration  : 84.1 s
+[run_experiment 06:32:52] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063127_flash_crowd_combined_mit-on_r1
+
+######## repeat 1: --scenario flash_crowd --detector combined --mitigation off --tag r1
+[run_experiment 06:32:52] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063252_flash_crowd_combined_mit-off_r1
+[run_experiment 06:32:53] controller up (pid 23822)
+[run_experiment 06:32:53] detector 'combined' up (pid 23832)
+[run_experiment 06:32:59] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:32:59] warm-up 10s
+[run_experiment 06:33:10] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:33:25] scenario 'flash_crowd' running on h2, h3, h4
+[run_experiment 06:33:47] scenario finished; cool-down 25s
+[run_experiment 06:34:17] evaluating ...
+
+=== 20261023_063252_flash_crowd_combined_mit-off_r1 ===
+detection : TP=0 FP=0 FN=0 TN=60  precision=n/a recall=n/a F1=n/a FPR=0.000  latency=n/a s
+mitigation: starts=0 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=1.000 (before: 1.000)  legit rx=124.2 pkt/s
+ping h6   : loss=0.0% rtt avg=0.084 ms (during: 0.029 ms)
+switch    : flow entries max=9  Packet-In total=64 (during: 0)
+controller: CPU mean=0.5% max=4.0%  RSS max=46.0 MiB
+detector  : CPU mean=0.2% max=6.0%  RSS max=16.5 MiB
+duration  : 83.5 s
+[run_experiment 06:34:17] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063252_flash_crowd_combined_mit-off_r1
+
+######## repeat 1: --scenario flash_crowd --detector threshold --mitigation on --tag r1
+[run_experiment 06:34:17] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063417_flash_crowd_threshold_mit-on_r1
+[run_experiment 06:34:18] controller up (pid 24246)
+[run_experiment 06:34:18] detector 'threshold' up (pid 24256)
+[run_experiment 06:34:24] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:34:24] warm-up 10s
+[run_experiment 06:34:35] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:34:50] scenario 'flash_crowd' running on h2, h3, h4
+[run_experiment 06:35:12] scenario finished; cool-down 25s
+[run_experiment 06:35:42] evaluating ...
+
+=== 20261023_063417_flash_crowd_threshold_mit-on_r1 ===
+detection : TP=0 FP=20 FN=0 TN=41  precision=0.000 recall=n/a F1=0.000 FPR=0.328  latency=n/a s
+mitigation: starts=1 limits=3 hosts=['h2', 'h3', 'h4'] (legit limited: ['h2', 'h3', 'h4']) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=0.319 (before: 1.000)  legit rx=42.0 pkt/s
+ping h6   : loss=0.0% rtt avg=0.185 ms (during: 0.041 ms)
+switch    : flow entries max=12  Packet-In total=65 (during: 8)
+controller: CPU mean=0.6% max=3.0%  RSS max=46.1 MiB
+detector  : CPU mean=0.1% max=2.0%  RSS max=16.5 MiB
+duration  : 84.3 s
+[run_experiment 06:35:42] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063417_flash_crowd_threshold_mit-on_r1
+
+######## repeat 1: --scenario flash_crowd --detector cusum --mitigation on --tag r1
+[run_experiment 06:35:43] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063543_flash_crowd_cusum_mit-on_r1
+[run_experiment 06:35:45] controller up (pid 24722)
+[run_experiment 06:35:45] detector 'cusum' up (pid 24736)
+[run_experiment 06:35:50] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:35:50] warm-up 10s
+[run_experiment 06:36:01] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:36:16] scenario 'flash_crowd' running on h2, h3, h4
+[run_experiment 06:36:38] scenario finished; cool-down 25s
+[run_experiment 06:37:09] evaluating ...
+
+=== 20261023_063543_flash_crowd_cusum_mit-on_r1 ===
+detection : TP=0 FP=22 FN=0 TN=39  precision=0.000 recall=n/a F1=0.000 FPR=0.361  latency=n/a s
+mitigation: starts=1 limits=3 hosts=['h2', 'h3', 'h4'] (legit limited: ['h2', 'h3', 'h4']) response=n/a s release=n/a s errors=0
+traffic (scenario interval): legit PDR=0.371 (before: 1.000)  legit rx=42.0 pkt/s
+ping h6   : loss=0.0% rtt avg=0.158 ms (during: 0.033 ms)
+switch    : flow entries max=12  Packet-In total=54 (during: 10)
+controller: CPU mean=0.6% max=7.0%  RSS max=46.1 MiB
+detector  : CPU mean=0.2% max=3.0%  RSS max=16.5 MiB
+duration  : 84.3 s
+[run_experiment 06:37:09] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063543_flash_crowd_cusum_mit-on_r1
+
+######## repeat 1: --scenario naive_ddos --detector combined --mitigation on --tag r1
+[run_experiment 06:37:09] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063709_naive_ddos_combined_mit-on_r1
+[run_experiment 06:37:10] controller up (pid 25174)
+[run_experiment 06:37:10] detector 'combined' up (pid 25184)
+[run_experiment 06:37:16] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:37:16] warm-up 10s
+[run_experiment 06:37:27] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:37:42] scenario 'naive_ddos' running on h2, h3, h4, h5
+[run_experiment 06:38:02] scenario finished; cool-down 25s
+[run_experiment 06:38:32] evaluating ...
+
+=== 20261023_063709_naive_ddos_combined_mit-on_r1 ===
+detection : TP=21 FP=2 FN=0 TN=36  precision=0.913 recall=1.000 F1=0.955 FPR=0.053  latency=2.3 s
+mitigation: starts=1 limits=4 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=2.48 s release=5.49 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.8 pkt/s
+            attack PDR=0.225  attack rx=73.3 pkt/s (sent 325.5 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.115 ms (during: 0.087 ms)
+switch    : flow entries max=15  Packet-In total=67 (during: 1)
+controller: CPU mean=0.4% max=2.0%  RSS max=46.1 MiB
+detector  : CPU mean=0.1% max=3.0%  RSS max=16.7 MiB
+duration  : 81.9 s
+[run_experiment 06:38:32] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063709_naive_ddos_combined_mit-on_r1
+
+######## repeat 1: --scenario naive_ddos --detector combined --mitigation off --tag r1
+[run_experiment 06:38:32] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063832_naive_ddos_combined_mit-off_r1
+[run_experiment 06:38:34] controller up (pid 25605)
+[run_experiment 06:38:34] detector 'combined' up (pid 25615)
+[run_experiment 06:38:39] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:38:39] warm-up 10s
+[run_experiment 06:38:50] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:39:05] scenario 'naive_ddos' running on h2, h3, h4, h5
+[run_experiment 06:39:25] scenario finished; cool-down 25s
+[run_experiment 06:39:55] evaluating ...
+
+=== 20261023_063832_naive_ddos_combined_mit-off_r1 ===
+detection : TP=21 FP=2 FN=0 TN=35  precision=0.913 recall=1.000 F1=0.955 FPR=0.054  latency=2.8 s
+mitigation: starts=1 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.9 pkt/s
+            attack PDR=1.000  attack rx=323.7 pkt/s (sent 323.7 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.087 ms (during: 0.026 ms)
+switch    : flow entries max=11  Packet-In total=111 (during: 1)
+controller: CPU mean=0.9% max=28.9%  RSS max=46.1 MiB
+detector  : CPU mean=0.1% max=3.0%  RSS max=16.6 MiB
+duration  : 82.0 s
+[run_experiment 06:39:55] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063832_naive_ddos_combined_mit-off_r1
+
+######## repeat 1: --scenario naive_ddos --detector threshold --mitigation on --tag r1
+[run_experiment 06:39:56] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063956_naive_ddos_threshold_mit-on_r1
+[run_experiment 06:39:57] controller up (pid 26021)
+[run_experiment 06:39:57] detector 'threshold' up (pid 26031)
+[run_experiment 06:40:02] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:40:02] warm-up 10s
+[run_experiment 06:40:13] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:40:28] scenario 'naive_ddos' running on h2, h3, h4, h5
+[run_experiment 06:40:49] scenario finished; cool-down 25s
+[run_experiment 06:41:19] evaluating ...
+
+=== 20261023_063956_naive_ddos_threshold_mit-on_r1 ===
+detection : TP=20 FP=1 FN=1 TN=37  precision=0.952 recall=0.952 F1=0.952 FPR=0.026  latency=1.7 s
+mitigation: starts=1 limits=4 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=1.93 s release=2.86 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.8 pkt/s
+            attack PDR=0.202  attack rx=65.8 pkt/s (sent 326.5 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.233 ms (during: 0.032 ms)
+switch    : flow entries max=15  Packet-In total=123 (during: 0)
+controller: CPU mean=0.8% max=14.0%  RSS max=46.1 MiB
+detector  : CPU mean=0.2% max=5.0%  RSS max=16.6 MiB
+duration  : 82.1 s
+[run_experiment 06:41:19] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063956_naive_ddos_threshold_mit-on_r1
+
+######## repeat 1: --scenario naive_ddos --detector cusum --mitigation on --tag r1
+[run_experiment 06:41:19] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064119_naive_ddos_cusum_mit-on_r1
+[run_experiment 06:41:21] controller up (pid 26434)
+[run_experiment 06:41:21] detector 'cusum' up (pid 26444)
+[run_experiment 06:41:26] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:41:26] warm-up 10s
+[run_experiment 06:41:37] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:41:52] scenario 'naive_ddos' running on h2, h3, h4, h5
+[run_experiment 06:42:12] scenario finished; cool-down 25s
+[run_experiment 06:42:42] evaluating ...
+
+=== 20261023_064119_naive_ddos_cusum_mit-on_r1 ===
+detection : TP=21 FP=2 FN=0 TN=36  precision=0.913 recall=1.000 F1=0.955 FPR=0.053  latency=2.2 s
+mitigation: starts=1 limits=4 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=2.51 s release=5.53 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.8 pkt/s
+            attack PDR=0.229  attack rx=75.5 pkt/s (sent 329.0 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.206 ms (during: 0.037 ms)
+switch    : flow entries max=15  Packet-In total=68 (during: 3)
+controller: CPU mean=0.5% max=8.0%  RSS max=46.0 MiB
+detector  : CPU mean=0.1% max=3.0%  RSS max=16.5 MiB
+duration  : 81.5 s
+[run_experiment 06:42:42] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064119_naive_ddos_cusum_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector combined --mitigation on --tag r1 --level subtle
+[run_experiment 06:42:42] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064242_adaptive_ddos_subtle_combined_mit-on_r1
+[run_experiment 06:42:44] controller up (pid 26848)
+[run_experiment 06:42:44] detector 'combined' up (pid 26858)
+[run_experiment 06:42:49] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:42:49] warm-up 10s
+[run_experiment 06:43:00] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:43:15] scenario 'adaptive_ddos' (subtle) running on h2, h3, h4, h5
+[run_experiment 06:43:56] scenario finished; cool-down 25s
+[run_experiment 06:44:33] evaluating ...
+
+=== 20261023_064242_adaptive_ddos_subtle_combined_mit-on_r1 ===
+detection : TP=4 FP=5 FN=30 TN=41  precision=0.444 recall=0.118 F1=0.186 FPR=0.109  latency=32.7 s
+mitigation: starts=1 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.2 pkt/s
+            attack PDR=1.000  attack rx=27.2 pkt/s (sent 27.2 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.161 ms (during: 0.119 ms)
+switch    : flow entries max=11  Packet-In total=67 (during: 12)
+controller: CPU mean=1.9% max=13.9%  RSS max=46.1 MiB
+detector  : CPU mean=0.3% max=3.0%  RSS max=16.6 MiB
+duration  : 109.4 s
+[run_experiment 06:44:33] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064242_adaptive_ddos_subtle_combined_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector combined --mitigation off --tag r1 --level subtle
+[run_experiment 06:44:34] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064434_adaptive_ddos_subtle_combined_mit-off_r1
+[run_experiment 06:44:42] controller up (pid 27353)
+[run_experiment 06:44:42] detector 'combined' up (pid 27370)
+[run_experiment 06:45:06] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:45:06] warm-up 10s
+[run_experiment 06:45:17] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:45:32] scenario 'adaptive_ddos' (subtle) running on h2, h3, h4, h5
+[run_experiment 06:46:13] scenario finished; cool-down 25s
+[run_experiment 06:46:49] evaluating ...
+
+=== 20261023_064434_adaptive_ddos_subtle_combined_mit-off_r1 ===
+detection : TP=0 FP=0 FN=35 TN=46  precision=n/a recall=0.000 F1=0.000 FPR=0.000  latency=n/a s
+mitigation: starts=0 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 0.992)  legit rx=8.8 pkt/s
+            attack PDR=1.000  attack rx=25.1 pkt/s (sent 25.1 pkt/s)
+ping h6   : loss=0.0% rtt avg=1.205 ms (during: 0.043 ms)
+switch    : flow entries max=11  Packet-In total=46 (during: 20)
+controller: CPU mean=3.9% max=19.8%  RSS max=46.0 MiB
+detector  : CPU mean=0.6% max=21.4%  RSS max=16.6 MiB
+duration  : 130.7 s
+[run_experiment 06:46:50] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064434_adaptive_ddos_subtle_combined_mit-off_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector threshold --mitigation on --tag r1 --level subtle
+[run_experiment 06:46:50] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064650_adaptive_ddos_subtle_threshold_mit-on_r1
+[run_experiment 06:46:53] controller up (pid 27947)
+[run_experiment 06:46:53] detector 'threshold' up (pid 27958)
+[run_experiment 06:47:05] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:47:05] warm-up 10s
+[run_experiment 06:47:16] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:47:31] scenario 'adaptive_ddos' (subtle) running on h2, h3, h4, h5
+[run_experiment 06:48:12] scenario finished; cool-down 25s
+[run_experiment 06:48:47] evaluating ...
+
+=== 20261023_064650_adaptive_ddos_subtle_threshold_mit-on_r1 ===
+detection : TP=9 FP=0 FN=28 TN=43  precision=1.000 recall=0.243 F1=0.391 FPR=0.000  latency=20.2 s
+mitigation: starts=3 limits=1 hosts=['h4'] (legit limited: none) response=34.33 s release=2.55 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.6 pkt/s
+            attack PDR=0.996  attack rx=29.8 pkt/s (sent 29.9 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.541 ms (during: 0.071 ms)
+switch    : flow entries max=12  Packet-In total=43 (during: 8)
+controller: CPU mean=1.9% max=20.8%  RSS max=46.1 MiB
+detector  : CPU mean=0.4% max=17.9%  RSS max=16.5 MiB
+duration  : 114.5 s
+[run_experiment 06:48:47] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064650_adaptive_ddos_subtle_threshold_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector cusum --mitigation on --tag r1 --level subtle
+[run_experiment 06:48:47] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064847_adaptive_ddos_subtle_cusum_mit-on_r1
+[run_experiment 06:48:51] controller up (pid 28422)
+[run_experiment 06:48:51] detector 'cusum' up (pid 28432)
+[run_experiment 06:49:02] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:49:02] warm-up 10s
+[run_experiment 06:49:13] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:49:28] scenario 'adaptive_ddos' (subtle) running on h2, h3, h4, h5
+[run_experiment 06:50:09] scenario finished; cool-down 25s
+[run_experiment 06:50:45] evaluating ...
+
+=== 20261023_064847_adaptive_ddos_subtle_cusum_mit-on_r1 ===
+detection : TP=22 FP=1 FN=14 TN=44  precision=0.957 recall=0.611 F1=0.746 FPR=0.022  latency=8.3 s
+mitigation: starts=3 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.5 pkt/s
+            attack PDR=1.000  attack rx=27.5 pkt/s (sent 27.5 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.285 ms (during: 0.123 ms)
+switch    : flow entries max=11  Packet-In total=41 (during: 14)
+controller: CPU mean=1.9% max=19.7%  RSS max=46.0 MiB
+detector  : CPU mean=0.3% max=5.9%  RSS max=16.6 MiB
+duration  : 114.9 s
+[run_experiment 06:50:45] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064847_adaptive_ddos_subtle_cusum_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector combined --mitigation on --tag r1 --level moderate
+[run_experiment 06:50:45] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065045_adaptive_ddos_moderate_combined_mit-on_r1
+[run_experiment 06:50:48] controller up (pid 28880)
+[run_experiment 06:50:48] detector 'combined' up (pid 28890)
+[run_experiment 06:50:58] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:50:58] warm-up 10s
+[run_experiment 06:51:09] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:51:25] scenario 'adaptive_ddos' (moderate) running on h2, h3, h4, h5
+[run_experiment 06:52:05] scenario finished; cool-down 25s
+[run_experiment 06:52:40] evaluating ...
+
+=== 20261023_065045_adaptive_ddos_moderate_combined_mit-on_r1 ===
+detection : TP=22 FP=5 FN=15 TN=38  precision=0.815 recall=0.595 F1=0.688 FPR=0.116  latency=17.8 s
+mitigation: starts=1 limits=4 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=18.20 s release=8.84 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.5 pkt/s
+            attack PDR=0.606  attack rx=50.8 pkt/s (sent 83.7 pkt/s)
+ping h6   : loss=0.0% rtt avg=1.451 ms (during: 0.110 ms)
+switch    : flow entries max=15  Packet-In total=42 (during: 8)
+controller: CPU mean=2.4% max=40.8%  RSS max=46.0 MiB
+detector  : CPU mean=0.4% max=6.9%  RSS max=16.6 MiB
+duration  : 112.9 s
+[run_experiment 06:52:40] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065045_adaptive_ddos_moderate_combined_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector combined --mitigation off --tag r1 --level moderate
+[run_experiment 06:52:41] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065241_adaptive_ddos_moderate_combined_mit-off_r1
+[run_experiment 06:52:44] controller up (pid 29376)
+[run_experiment 06:52:44] detector 'combined' up (pid 29386)
+[run_experiment 06:52:55] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:52:55] warm-up 10s
+[run_experiment 06:53:06] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:53:21] scenario 'adaptive_ddos' (moderate) running on h2, h3, h4, h5
+[run_experiment 06:54:02] scenario finished; cool-down 25s
+[run_experiment 06:54:38] evaluating ...
+
+=== 20261023_065241_adaptive_ddos_moderate_combined_mit-off_r1 ===
+detection : TP=23 FP=5 FN=15 TN=38  precision=0.821 recall=0.605 F1=0.697 FPR=0.116  latency=17.9 s
+mitigation: starts=1 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.2 pkt/s
+            attack PDR=1.000  attack rx=90.5 pkt/s (sent 90.5 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.302 ms (during: 0.186 ms)
+switch    : flow entries max=11  Packet-In total=49 (during: 16)
+controller: CPU mean=3.6% max=17.9%  RSS max=46.0 MiB
+detector  : CPU mean=0.5% max=9.9%  RSS max=16.7 MiB
+duration  : 115.1 s
+[run_experiment 06:54:38] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065241_adaptive_ddos_moderate_combined_mit-off_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector threshold --mitigation on --tag r1 --level moderate
+[run_experiment 06:54:39] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065439_adaptive_ddos_moderate_threshold_mit-on_r1
+[run_experiment 06:54:44] controller up (pid 29897)
+[run_experiment 06:54:44] detector 'threshold' up (pid 29907)
+[run_experiment 06:55:04] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:55:04] warm-up 10s
+[run_experiment 06:55:15] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:55:30] scenario 'adaptive_ddos' (moderate) running on h2, h3, h4, h5
+[run_experiment 06:56:10] scenario finished; cool-down 25s
+[run_experiment 06:56:46] evaluating ...
+
+=== 20261023_065439_adaptive_ddos_moderate_threshold_mit-on_r1 ===
+detection : TP=23 FP=0 FN=15 TN=43  precision=1.000 recall=0.605 F1=0.754 FPR=0.000  latency=6.1 s
+mitigation: starts=3 limits=12 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=6.38 s release=2.28 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.1 pkt/s
+            attack PDR=0.542  attack rx=42.8 pkt/s (sent 78.9 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.220 ms (during: 0.089 ms)
+switch    : flow entries max=15  Packet-In total=48 (during: 20)
+controller: CPU mean=4.1% max=27.2%  RSS max=46.0 MiB
+detector  : CPU mean=0.7% max=30.1%  RSS max=16.5 MiB
+duration  : 122.7 s
+[run_experiment 06:56:46] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065439_adaptive_ddos_moderate_threshold_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector cusum --mitigation on --tag r1 --level moderate
+[run_experiment 06:56:48] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065648_adaptive_ddos_moderate_cusum_mit-on_r1
+[run_experiment 06:56:53] controller up (pid 30429)
+[run_experiment 06:56:53] detector 'cusum' up (pid 30439)
+[run_experiment 06:57:19] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:57:19] warm-up 10s
+[run_experiment 06:57:30] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:57:45] scenario 'adaptive_ddos' (moderate) running on h2, h3, h4, h5
+[run_experiment 06:58:26] scenario finished; cool-down 25s
+[run_experiment 06:58:57] evaluating ...
+
+=== 20261023_065648_adaptive_ddos_moderate_cusum_mit-on_r1 ===
+detection : TP=34 FP=2 FN=4 TN=40  precision=0.944 recall=0.895 F1=0.919 FPR=0.048  latency=5.3 s
+mitigation: starts=2 limits=8 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=5.47 s release=5.51 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.008)  legit rx=9.3 pkt/s
+            attack PDR=0.423  attack rx=41.4 pkt/s (sent 97.9 pkt/s)
+ping h6   : loss=0.0% rtt avg=1.590 ms (during: 0.108 ms)
+switch    : flow entries max=15  Packet-In total=48 (during: 19)
+controller: CPU mean=3.3% max=23.9%  RSS max=46.2 MiB
+detector  : CPU mean=0.7% max=41.8%  RSS max=16.5 MiB
+duration  : 125.0 s
+[run_experiment 06:58:57] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065648_adaptive_ddos_moderate_cusum_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector combined --mitigation on --tag r1 --level aggressive
+[run_experiment 06:58:57] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065857_adaptive_ddos_aggressive_combined_mit-on_r1
+[run_experiment 06:58:58] controller up (pid 31030)
+[run_experiment 06:58:58] detector 'combined' up (pid 31040)
+[run_experiment 06:59:04] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 06:59:04] warm-up 10s
+[run_experiment 06:59:15] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 06:59:30] scenario 'adaptive_ddos' (aggressive) running on h2, h3, h4, h5
+[run_experiment 07:00:10] scenario finished; cool-down 25s
+[run_experiment 07:00:40] evaluating ...
+
+=== 20261023_065857_adaptive_ddos_aggressive_combined_mit-on_r1 ===
+detection : TP=36 FP=2 FN=2 TN=38  precision=0.947 recall=0.947 F1=0.947 FPR=0.050  latency=4.2 s
+mitigation: starts=1 limits=4 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=4.48 s release=5.91 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.8 pkt/s
+            attack PDR=0.169  attack rx=62.5 pkt/s (sent 370.5 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.083 ms (during: 0.030 ms)
+switch    : flow entries max=15  Packet-In total=61 (during: 5)
+controller: CPU mean=0.4% max=2.0%  RSS max=46.0 MiB
+detector  : CPU mean=0.1% max=4.0%  RSS max=16.6 MiB
+duration  : 101.9 s
+[run_experiment 07:00:40] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065857_adaptive_ddos_aggressive_combined_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector combined --mitigation off --tag r1 --level aggressive
+[run_experiment 07:00:40] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_070040_adaptive_ddos_aggressive_combined_mit-off_r1
+[run_experiment 07:00:42] controller up (pid 31657)
+[run_experiment 07:00:42] detector 'combined' up (pid 31667)
+[run_experiment 07:00:47] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 07:00:47] warm-up 10s
+[run_experiment 07:00:58] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 07:01:13] scenario 'adaptive_ddos' (aggressive) running on h2, h3, h4, h5
+[run_experiment 07:01:54] scenario finished; cool-down 25s
+[run_experiment 07:02:23] evaluating ...
+
+=== 20261023_070040_adaptive_ddos_aggressive_combined_mit-off_r1 ===
+detection : TP=22 FP=2 FN=17 TN=38  precision=0.917 recall=0.564 F1=0.698 FPR=0.050  latency=19.1 s
+mitigation: starts=1 limits=0 hosts=- (legit limited: none) response=n/a s release=n/a s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.8 pkt/s
+            attack PDR=1.000  attack rx=361.6 pkt/s (sent 361.6 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.081 ms (during: 0.025 ms)
+switch    : flow entries max=11  Packet-In total=65 (during: 9)
+controller: CPU mean=0.4% max=2.0%  RSS max=46.0 MiB
+detector  : CPU mean=0.1% max=4.0%  RSS max=16.7 MiB
+duration  : 101.8 s
+[run_experiment 07:02:23] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_070040_adaptive_ddos_aggressive_combined_mit-off_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector threshold --mitigation on --tag r1 --level aggressive
+[run_experiment 07:02:24] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_070224_adaptive_ddos_aggressive_threshold_mit-on_r1
+[run_experiment 07:02:25] controller up (pid 32293)
+[run_experiment 07:02:25] detector 'threshold' up (pid 32303)
+[run_experiment 07:02:31] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 07:02:31] warm-up 10s
+[run_experiment 07:02:42] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 07:02:57] scenario 'adaptive_ddos' (aggressive) running on h2, h3, h4, h5
+[run_experiment 07:03:37] scenario finished; cool-down 25s
+[run_experiment 07:04:07] evaluating ...
+
+=== 20261023_070224_adaptive_ddos_aggressive_threshold_mit-on_r1 ===
+detection : TP=29 FP=0 FN=9 TN=41  precision=1.000 recall=0.763 F1=0.866 FPR=0.000  latency=2.4 s
+mitigation: starts=8 limits=32 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=2.57 s release=1.68 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.8 pkt/s
+            attack PDR=0.322  attack rx=116.4 pkt/s (sent 361.6 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.071 ms (during: 0.035 ms)
+switch    : flow entries max=15  Packet-In total=60 (during: 5)
+controller: CPU mean=0.6% max=9.9%  RSS max=46.0 MiB
+detector  : CPU mean=0.2% max=3.0%  RSS max=16.5 MiB
+duration  : 102.3 s
+[run_experiment 07:04:07] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_070224_adaptive_ddos_aggressive_threshold_mit-on_r1
+
+######## repeat 1: --scenario adaptive_ddos --detector cusum --mitigation on --tag r1 --level aggressive
+[run_experiment 07:04:07] run folder: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_070407_adaptive_ddos_aggressive_cusum_mit-on_r1
+[run_experiment 07:04:09] controller up (pid 32907)
+[run_experiment 07:04:09] detector 'cusum' up (pid 32917)
+[run_experiment 07:04:15] network up, switch connected; port map {'1': 'h1', '2': 'h2', '3': 'h3', '4': 'h4', '5': 'h5', '6': 'h6'}
+[run_experiment 07:04:15] warm-up 10s
+[run_experiment 07:04:26] sink, legitimate client h6 (10 pkt/s) and ping started; scenario in 15s
+[run_experiment 07:04:41] scenario 'adaptive_ddos' (aggressive) running on h2, h3, h4, h5
+[run_experiment 07:05:21] scenario finished; cool-down 25s
+[run_experiment 07:05:51] evaluating ...
+
+=== 20261023_070407_adaptive_ddos_aggressive_cusum_mit-on_r1 ===
+detection : TP=36 FP=2 FN=1 TN=40  precision=0.947 recall=0.973 F1=0.960 FPR=0.048  latency=3.6 s
+mitigation: starts=1 limits=4 hosts=['h2', 'h3', 'h4', 'h5'] (legit limited: none) response=3.89 s release=5.48 s errors=0
+traffic (attack interval): legit PDR=1.000 (before: 1.000)  legit rx=9.6 pkt/s
+            attack PDR=0.157  attack rx=54.4 pkt/s (sent 345.6 pkt/s)
+ping h6   : loss=0.0% rtt avg=0.085 ms (during: 0.045 ms)
+switch    : flow entries max=15  Packet-In total=67 (during: 5)
+controller: CPU mean=0.6% max=11.9%  RSS max=46.1 MiB
+detector  : CPU mean=0.1% max=3.0%  RSS max=16.5 MiB
+duration  : 102.3 s
+[run_experiment 07:05:51] done: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_070407_adaptive_ddos_aggressive_cusum_mit-on_r1
+# Member 4 results summary
+
+Generated by `python3 -m member4_mitigation.compare` from 25 recorded run(s).
+Units: PDR = delivered/sent (0-1); pps = packets/s at the victim; times in s;
+CPU in %% of one core; memory in MiB. 'focus' = attack interval (attack runs)
+or scenario interval (normal / flash-crowd runs).
+
+## A. Detection (per detector, windows pooled over all its runs)
+
+| Detector | Runs | TP | FP | FN | TN | Precision | Recall | F1 | FPR | FNR | Mean latency (s) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| combined | 13 | 170 | 25 | 114 | 605 | 0.872 | 0.599 | 0.710 | 0.040 | 0.401 | adaptive_ddos/aggressive 11.6, adaptive_ddos/moderate 17.9, adaptive_ddos/subtle 32.7, naive_ddos 2.5 |
+| cusum | 6 | 113 | 58 | 19 | 239 | 0.661 | 0.856 | 0.746 | 0.195 | 0.144 | adaptive_ddos/aggressive 3.6, adaptive_ddos/moderate 5.3, adaptive_ddos/subtle 8.3, naive_ddos 2.2 |
+| threshold | 6 | 81 | 21 | 53 | 274 | 0.794 | 0.604 | 0.686 | 0.071 | 0.396 | adaptive_ddos/aggressive 2.4, adaptive_ddos/moderate 6.1, adaptive_ddos/subtle 20.2, naive_ddos 1.7 |
+
+## B. Mitigation and network impact (mean over runs of each configuration)
+
+| Scenario | Level | Detector | Mitigation | Overrides | Runs | legit_pdr_focus | legit_rx_pps_focus | attack_pdr_focus | attack_rx_pps_focus | response_time_s | release_delay_s | legit_hosts_limited | ping_rtt_focus_ms | flow_table_max | packet_in_total | controller_cpu_mean_pct | controller_rss_max_mib |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| adaptive_ddos | aggressive | combined | off | - | 1 | 1.000 | 9.8 | 1.000 | 361.6 | n/a | n/a | 0.0 | 0.0 | 11.0 | 65.0 | 0.4 | 46.0 |
+| adaptive_ddos | aggressive | combined | on | - | 1 | 1.000 | 9.8 | 0.169 | 62.5 | 4.5 | 5.9 | 0.0 | 0.0 | 15.0 | 61.0 | 0.4 | 46.0 |
+| adaptive_ddos | aggressive | cusum | on | - | 1 | 1.000 | 9.6 | 0.157 | 54.4 | 3.9 | 5.5 | 0.0 | 0.0 | 15.0 | 67.0 | 0.6 | 46.1 |
+| adaptive_ddos | aggressive | threshold | on | - | 1 | 1.000 | 9.8 | 0.322 | 116.4 | 2.6 | 1.7 | 0.0 | 0.0 | 15.0 | 60.0 | 0.6 | 46.0 |
+| adaptive_ddos | moderate | combined | off | - | 1 | 1.000 | 9.2 | 1.000 | 90.5 | n/a | n/a | 0.0 | 0.2 | 11.0 | 49.0 | 3.6 | 46.0 |
+| adaptive_ddos | moderate | combined | on | - | 1 | 1.000 | 9.5 | 0.606 | 50.8 | 18.2 | 8.8 | 0.0 | 0.1 | 15.0 | 42.0 | 2.4 | 46.0 |
+| adaptive_ddos | moderate | cusum | on | - | 1 | 1.000 | 9.3 | 0.423 | 41.4 | 5.5 | 5.5 | 0.0 | 0.1 | 15.0 | 48.0 | 3.3 | 46.2 |
+| adaptive_ddos | moderate | threshold | on | - | 1 | 1.000 | 9.1 | 0.542 | 42.8 | 6.4 | 2.3 | 0.0 | 0.1 | 15.0 | 48.0 | 4.1 | 46.0 |
+| adaptive_ddos | subtle | combined | off | - | 1 | 1.000 | 8.8 | 1.000 | 25.1 | n/a | n/a | 0.0 | 0.0 | 11.0 | 46.0 | 3.9 | 46.0 |
+| adaptive_ddos | subtle | combined | on | - | 1 | 1.000 | 9.2 | 1.000 | 27.2 | n/a | n/a | 0.0 | 0.1 | 11.0 | 67.0 | 1.9 | 46.1 |
+| adaptive_ddos | subtle | cusum | on | - | 1 | 1.000 | 9.5 | 1.000 | 27.5 | n/a | n/a | 0.0 | 0.1 | 11.0 | 41.0 | 1.9 | 46.0 |
+| adaptive_ddos | subtle | threshold | on | - | 1 | 1.000 | 9.6 | 0.996 | 29.8 | 34.3 | 2.6 | 0.0 | 0.1 | 12.0 | 43.0 | 1.9 | 46.1 |
+| flash_crowd | - | combined | off | - | 1 | 1.000 | 124.2 | n/a | n/a | n/a | n/a | 0.0 | 0.0 | 9.0 | 64.0 | 0.5 | 46.0 |
+| flash_crowd | - | combined | on | - | 1 | 1.000 | 135.1 | n/a | n/a | n/a | n/a | 0.0 | 0.0 | 9.0 | 66.0 | 0.5 | 46.0 |
+| flash_crowd | - | cusum | on | - | 1 | 0.371 | 42.0 | n/a | n/a | n/a | n/a | 3.0 | 0.0 | 12.0 | 54.0 | 0.6 | 46.1 |
+| flash_crowd | - | threshold | on | - | 1 | 0.319 | 42.0 | n/a | n/a | n/a | n/a | 3.0 | 0.0 | 12.0 | 65.0 | 0.6 | 46.1 |
+| naive_ddos | - | combined | off | - | 1 | 1.000 | 9.9 | 1.000 | 323.7 | n/a | n/a | 0.0 | 0.0 | 11.0 | 111.0 | 0.9 | 46.1 |
+| naive_ddos | - | combined | on | - | 2 | 1.000 | 9.7 | 0.231 | 75.7 | 2.6 | 5.5 | 0.0 | 0.1 | 15.0 | 73.0 | 0.6 | 46.3 |
+| naive_ddos | - | cusum | on | - | 1 | 1.000 | 9.8 | 0.229 | 75.5 | 2.5 | 5.5 | 0.0 | 0.0 | 15.0 | 68.0 | 0.5 | 46.0 |
+| naive_ddos | - | threshold | on | - | 1 | 1.000 | 9.8 | 0.202 | 65.8 | 1.9 | 2.9 | 0.0 | 0.0 | 15.0 | 123.0 | 0.8 | 46.1 |
+| normal | - | combined | off | - | 1 | 1.000 | 28.4 | n/a | n/a | n/a | n/a | 0.0 | 0.0 | 7.0 | 61.0 | 0.5 | 46.0 |
+| normal | - | combined | on | - | 1 | 1.000 | 28.6 | n/a | n/a | n/a | n/a | 0.0 | 0.0 | 7.0 | 57.0 | 0.5 | 46.1 |
+| normal | - | cusum | on | - | 1 | 1.000 | 28.1 | n/a | n/a | n/a | n/a | 0.0 | 0.0 | 7.0 | 61.0 | 0.7 | 46.0 |
+| normal | - | threshold | on | - | 1 | 1.000 | 28.6 | n/a | n/a | n/a | n/a | 0.0 | 0.0 | 7.0 | 59.0 | 0.5 | 46.1 |
+
+written: /home/minato/Documents/CN-Project/member4_mitigation/results/summary.csv and summary.md
+
+All runs finished.

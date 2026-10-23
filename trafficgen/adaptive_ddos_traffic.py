@@ -82,7 +82,8 @@ Run (inside Mininet, from the CLI, after the server is listening on h1):
                  --src-name=h3 --dst-name=h1 --dst-ip=10.0.0.1 \
                  --duration=30 --attack-level=moderate --start-at=START \
                  --log=logs/adaptive_h3.csv &
-(see run_adaptive.sh for a ready-made wrapper that does this for you)
+(member4_mitigation/run_experiment.py --scenario adaptive_ddos automates this
+ for h2-h5 with one shared --start-at)
 """
 import argparse
 import json

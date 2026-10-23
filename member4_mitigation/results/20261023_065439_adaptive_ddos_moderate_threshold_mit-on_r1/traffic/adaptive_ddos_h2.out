@@ -1,0 +1,2 @@
+[h2] attack_level=moderate start_at=1792738533.093 feint=AAP(A=6.0s,P=4.0s) -> meta: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065439_adaptive_ddos_moderate_threshold_mit-on_r1/traffic/adaptive_ddos_h2.json
+[h2] adaptive DDoS done: 12 worker flows spawned, 643 packets total, log: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065439_adaptive_ddos_moderate_threshold_mit-on_r1/traffic/adaptive_ddos_h2.csv

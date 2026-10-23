@@ -1,0 +1,97 @@
+wall_time,decision_timestamp,traffic_class,rule,score,action,mitigation_active,why
+1792738948.158,1792738947.982,normal,none,0.0,none,0,no attack
+1792738949.170,1792738948.982,normal,none,0.0,none,0,no attack
+1792738950.202,1792738949.982,normal,none,0.167,none,0,no attack
+1792738951.220,1792738950.982,normal,none,0.033,none,0,no attack
+1792738952.231,1792738951.982,normal,none,0.0,none,0,no attack
+1792738953.237,1792738952.982,normal,none,0.0,none,0,no attack
+1792738954.245,1792738953.982,normal,none,0.067,none,0,no attack
+1792738955.390,1792738954.982,normal,none,0.033,none,0,no attack
+1792738956.197,1792738955.982,normal,none,0.0,none,0,no attack
+1792738957.202,1792738956.982,normal,none,0.0,none,0,no attack
+1792738958.206,1792738957.982,normal,none,0.0,none,0,no attack
+1792738959.221,1792738958.982,normal,none,0.0,none,0,no attack
+1792738960.236,1792738959.982,normal,none,0.0,none,0,no attack
+1792738961.309,1792738960.982,normal,none,0.0,none,0,no attack
+1792738962.319,1792738961.982,normal,none,0.05,none,0,no attack
+1792738963.330,1792738962.982,normal,none,0.05,none,0,no attack
+1792738964.141,1792738963.982,normal,none,0.167,none,0,no attack
+1792738965.154,1792738964.982,normal,none,0.233,none,0,no attack
+1792738966.365,1792738965.982,normal,none,0.233,none,0,no attack
+1792738967.168,1792738966.982,normal,none,0.233,none,0,no attack
+1792738968.183,1792738967.982,normal,none,0.233,none,0,no attack
+1792738969.192,1792738968.982,normal,none,0.233,none,0,no attack
+1792738970.212,1792738969.982,normal,none,0.233,none,0,no attack
+1792738971.018,1792738970.982,normal,none,0.233,none,0,no attack
+1792738972.230,1792738971.982,normal,none,0.217,none,0,no attack
+1792738973.236,1792738972.982,normal,none,0.233,none,0,no attack
+1792738974.257,1792738973.982,normal,none,0.233,none,0,no attack
+1792738975.072,1792738974.982,normal,none,0.233,none,0,no attack
+1792738976.081,1792738975.982,normal,none,0.217,none,0,no attack
+1792738977.086,1792738976.982,normal,none,0.267,none,0,no attack
+1792738978.091,1792738977.982,normal,none,0.233,none,0,no attack
+1792738979.314,1792738978.982,normal,none,0.25,none,0,no attack
+1792738980.124,1792738979.982,normal,none,0.267,none,0,no attack
+1792738981.334,1792738980.982,normal,none,0.233,none,0,no attack
+1792738982.139,1792738981.982,normal,none,0.25,none,0,no attack
+1792738983.145,1792738982.982,naive_ddos,threshold,1.133,start,1,attack decision
+1792738984.152,1792738983.982,naive_ddos,threshold,2.083,keep,1,attack continues
+1792738985.356,1792738984.982,naive_ddos,threshold,5.033,keep,1,attack continues
+1792738986.361,1792738985.982,naive_ddos,threshold,7.5,keep,1,attack continues
+1792738987.366,1792738986.982,naive_ddos,threshold,8.067,keep,1,attack continues
+1792738988.374,1792738987.982,naive_ddos,threshold,7.967,keep,1,attack continues
+1792738989.377,1792738988.982,naive_ddos,threshold,7.667,keep,1,attack continues
+1792738990.184,1792738989.982,naive_ddos,threshold,7.283,keep,1,attack continues
+1792738991.192,1792738990.982,naive_ddos,threshold,8.083,keep,1,attack continues
+1792738992.211,1792738991.982,naive_ddos,threshold,7.917,keep,1,attack continues
+1792738993.220,1792738992.982,naive_ddos,threshold,7.467,keep,1,attack continues
+1792738994.226,1792738993.982,naive_ddos,threshold,6.833,keep,1,attack continues
+1792738995.232,1792738994.982,naive_ddos,threshold,8.317,keep,1,attack continues
+1792738996.260,1792738995.982,naive_ddos,threshold,8.333,keep,1,attack continues
+1792738997.269,1792738996.982,naive_ddos,threshold,4.567,keep,1,attack continues
+1792738998.273,1792738997.982,normal,none,0.217,stop,0,clean windows reached release limit
+1792738999.278,1792738998.982,naive_ddos,threshold,2.983,start,1,attack decision
+1792739000.285,1792738999.982,normal,none,0.0,stop,0,clean windows reached release limit
+1792739001.296,1792739000.982,naive_ddos,threshold,7.667,start,1,attack decision
+1792739002.309,1792739001.982,normal,none,0.25,stop,0,clean windows reached release limit
+1792739003.313,1792739002.982,naive_ddos,threshold,7.433,start,1,attack decision
+1792739004.326,1792739003.982,normal,none,0.3,stop,0,clean windows reached release limit
+1792739005.335,1792739004.982,naive_ddos,threshold,7.8,start,1,attack decision
+1792739006.341,1792739005.982,normal,none,0.033,stop,0,clean windows reached release limit
+1792739007.345,1792739006.982,naive_ddos,threshold,7.75,start,1,attack decision
+1792739008.349,1792739007.982,naive_ddos,threshold,4.55,keep,1,attack continues
+1792739009.354,1792739008.982,naive_ddos,threshold,8.467,keep,1,attack continues
+1792739010.365,1792739009.982,naive_ddos,threshold,8.167,keep,1,attack continues
+1792739011.371,1792739010.982,naive_ddos,threshold,8.0,keep,1,attack continues
+1792739012.181,1792739011.982,naive_ddos,threshold,7.45,keep,1,attack continues
+1792739013.194,1792739012.982,naive_ddos,threshold,7.767,keep,1,attack continues
+1792739014.200,1792739013.982,naive_ddos,threshold,3.733,keep,1,attack continues
+1792739015.204,1792739014.982,normal,none,0.267,stop,0,clean windows reached release limit
+1792739016.213,1792739015.982,naive_ddos,threshold,3.817,start,1,attack decision
+1792739017.225,1792739016.982,normal,none,0.0,stop,0,clean windows reached release limit
+1792739018.229,1792739017.982,naive_ddos,threshold,7.75,start,1,attack decision
+1792739019.036,1792739018.982,normal,none,0.0,stop,0,clean windows reached release limit
+1792739020.044,1792739019.982,normal,none,0.183,none,0,no attack
+1792739021.053,1792739020.982,normal,none,0.2,none,0,no attack
+1792739022.440,1792739021.982,normal,none,0.233,none,0,no attack
+1792739023.246,1792739022.982,normal,none,0.317,none,0,no attack
+1792739024.260,1792739023.982,normal,none,0.1,none,0,no attack
+1792739025.266,1792739024.982,normal,none,0.25,none,0,no attack
+1792739026.286,1792739025.982,normal,none,0.233,none,0,no attack
+1792739027.293,1792739026.982,normal,none,0.2,none,0,no attack
+1792739028.300,1792739027.982,normal,none,0.233,none,0,no attack
+1792739029.305,1792739028.982,normal,none,0.233,none,0,no attack
+1792739030.353,1792739029.982,normal,none,0.233,none,0,no attack
+1792739031.159,1792739030.982,normal,none,0.217,none,0,no attack
+1792739032.364,1792739031.982,normal,none,0.267,none,0,no attack
+1792739033.169,1792739032.982,normal,none,0.2,none,0,no attack
+1792739034.178,1792739033.982,normal,none,0.233,none,0,no attack
+1792739034.984,1792739034.982,normal,none,0.233,none,0,no attack
+1792739035.991,1792739035.982,normal,none,0.233,none,0,no attack
+1792739037.196,1792739036.982,normal,none,0.233,none,0,no attack
+1792739038.200,1792739037.982,normal,none,0.233,none,0,no attack
+1792739039.216,1792739038.982,normal,none,0.217,none,0,no attack
+1792739040.227,1792739039.982,normal,none,0.217,none,0,no attack
+1792739041.234,1792739040.982,normal,none,0.233,none,0,no attack
+1792739042.039,1792739041.982,normal,none,0.217,none,0,no attack
+1792739043.253,1792739042.982,normal,none,0.233,none,0,no attack

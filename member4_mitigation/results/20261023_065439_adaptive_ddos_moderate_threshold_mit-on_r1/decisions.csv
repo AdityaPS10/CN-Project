@@ -1,0 +1,99 @@
+timestamp,traffic_class,score,reason,rule
+1792738503.236,normal,0.0,within normal range,none
+1792738504.236,normal,0.0,within normal range,none
+1792738505.236,normal,0.0,within normal range,none
+1792738506.236,normal,0.033,within normal range,none
+1792738507.236,normal,0.017,within normal range,none
+1792738508.236,normal,0.033,within normal range,none
+1792738509.236,normal,0.0,within normal range,none
+1792738510.236,normal,0.0,within normal range,none
+1792738511.236,normal,0.0,within normal range,none
+1792738512.236,normal,0.0,within normal range,none
+1792738513.236,normal,0.017,within normal range,none
+1792738514.236,normal,0.033,within normal range,none
+1792738515.236,normal,0.017,within normal range,none
+1792738516.236,normal,0.1,within normal range,none
+1792738517.236,normal,0.183,within normal range,none
+1792738518.236,normal,0.233,within normal range,none
+1792738519.236,normal,0.217,within normal range,none
+1792738520.236,normal,0.217,within normal range,none
+1792738521.236,normal,0.25,within normal range,none
+1792738522.236,normal,0.217,within normal range,none
+1792738523.236,normal,0.167,within normal range,none
+1792738524.236,normal,0.117,within normal range,none
+1792738525.236,normal,0.233,within normal range,none
+1792738526.236,normal,0.233,within normal range,none
+1792738527.236,normal,0.233,within normal range,none
+1792738528.236,normal,0.25,within normal range,none
+1792738529.236,normal,0.233,within normal range,none
+1792738530.236,normal,0.25,within normal range,none
+1792738531.236,normal,0.25,within normal range,none
+1792738532.236,normal,0.25,within normal range,none
+1792738533.236,normal,0.25,within normal range,none
+1792738534.236,normal,0.217,within normal range,none
+1792738535.236,normal,0.383,within normal range,none
+1792738536.236,normal,0.417,within normal range,none
+1792738537.236,normal,0.583,within normal range,none
+1792738538.236,normal,0.833,within normal range,none
+1792738539.236,normal,0.9,within normal range,none
+1792738540.236,naive_ddos,1.117,baseline threshold alarm: rate 67 > 60,threshold
+1792738541.236,naive_ddos,1.733,baseline threshold alarm: rate 104 > 60,threshold
+1792738542.236,naive_ddos,1.917,baseline threshold alarm: rate 115 > 60,threshold
+1792738543.236,naive_ddos,2.45,baseline threshold alarm: rate 147 > 60,threshold
+1792738544.236,naive_ddos,2.5,baseline threshold alarm: rate 150 > 60,threshold
+1792738545.236,naive_ddos,2.483,baseline threshold alarm: rate 149 > 60,threshold
+1792738546.236,naive_ddos,2.55,baseline threshold alarm: rate 153 > 60,threshold
+1792738547.236,normal,0.283,within normal range,none
+1792738548.236,normal,0.217,within normal range,none
+1792738549.236,normal,0.0,within normal range,none
+1792738550.236,normal,0.233,within normal range,none
+1792738551.236,naive_ddos,1.617,baseline threshold alarm: rate 97 > 60,threshold
+1792738552.236,naive_ddos,1.833,baseline threshold alarm: rate 110 > 60,threshold
+1792738553.236,naive_ddos,2.3,baseline threshold alarm: rate 138 > 60,threshold
+1792738554.236,naive_ddos,2.467,baseline threshold alarm: rate 148 > 60,threshold
+1792738555.236,naive_ddos,2.7,baseline threshold alarm: rate 162 > 60,threshold
+1792738556.236,naive_ddos,2.6,baseline threshold alarm: rate 156 > 60,threshold
+1792738557.236,naive_ddos,2.717,baseline threshold alarm: rate 163 > 60,threshold
+1792738558.236,naive_ddos,2.533,baseline threshold alarm: rate 152 > 60,threshold
+1792738559.236,naive_ddos,2.217,baseline threshold alarm: rate 133 > 60,threshold
+1792738560.236,naive_ddos,2.3,baseline threshold alarm: rate 138 > 60,threshold
+1792738561.236,naive_ddos,2.3,baseline threshold alarm: rate 138 > 60,threshold
+1792738562.236,naive_ddos,2.267,baseline threshold alarm: rate 136 > 60,threshold
+1792738563.236,normal,0.467,within normal range,none
+1792738564.236,normal,0.2,within normal range,none
+1792738565.236,normal,0.0,within normal range,none
+1792738566.236,normal,0.233,within normal range,none
+1792738567.236,normal,0.95,within normal range,none
+1792738568.236,naive_ddos,1.5,baseline threshold alarm: rate 90 > 60,threshold
+1792738569.236,naive_ddos,1.917,baseline threshold alarm: rate 115 > 60,threshold
+1792738570.236,naive_ddos,2.317,baseline threshold alarm: rate 139 > 60,threshold
+1792738571.236,naive_ddos,2.3,baseline threshold alarm: rate 138 > 60,threshold
+1792738572.236,normal,0.733,within normal range,none
+1792738573.236,normal,0.25,within normal range,none
+1792738574.236,normal,0.0,within normal range,none
+1792738575.236,normal,0.217,within normal range,none
+1792738576.236,normal,0.217,within normal range,none
+1792738577.236,normal,0.233,within normal range,none
+1792738578.236,normal,0.217,within normal range,none
+1792738579.236,normal,0.217,within normal range,none
+1792738580.236,normal,0.117,within normal range,none
+1792738581.236,normal,0.233,within normal range,none
+1792738582.236,normal,0.217,within normal range,none
+1792738583.236,normal,0.217,within normal range,none
+1792738584.236,normal,0.217,within normal range,none
+1792738585.236,normal,0.233,within normal range,none
+1792738586.236,normal,0.233,within normal range,none
+1792738587.236,normal,0.25,within normal range,none
+1792738588.236,normal,0.233,within normal range,none
+1792738589.236,normal,0.233,within normal range,none
+1792738590.236,normal,0.217,within normal range,none
+1792738591.236,normal,0.2,within normal range,none
+1792738592.236,normal,0.233,within normal range,none
+1792738593.236,normal,0.217,within normal range,none
+1792738594.236,normal,0.217,within normal range,none
+1792738595.236,normal,0.233,within normal range,none
+1792738596.236,normal,0.233,within normal range,none
+1792738597.236,normal,0.167,within normal range,none
+1792738598.236,normal,0.0,within normal range,none
+1792738599.236,normal,0.0,within normal range,none
+1792738600.236,normal,0.0,within normal range,none

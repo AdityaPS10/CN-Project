@@ -1,0 +1,104 @@
+[baseline_detectors] mode=cusum (Member 3's live loop, CusumOnlyDetector classifier)
+Baseline from features_normal.csv: {'DataPlanePacketRate': 20.0}
+Following /home/minato/Documents/CN-Project/detection/../sdn-ddos-monitoring/data/features.csv (Ctrl+C to stop)
+   1  t=1792738635.71  normal        score=0.0    within normal range
+   2  t=1792738636.71  normal        score=0.0    within normal range
+   3  t=1792738637.71  normal        score=0.0    within normal range
+   4  t=1792738638.71  normal        score=0.0    within normal range
+   5  t=1792738639.71  normal        score=0.0    within normal range
+   6  t=1792738640.71  normal        score=0.0    within normal range
+   7  t=1792738641.71  normal        score=0.0    within normal range
+   8  t=1792738642.71  normal        score=0.0    within normal range
+   9  t=1792738643.71  normal        score=0.0    within normal range
+  10  t=1792738644.71  normal        score=0.0    within normal range
+  11  t=1792738645.71  normal        score=0.0    within normal range
+  12  t=1792738646.71  normal        score=0.0    within normal range
+  13  t=1792738647.71  normal        score=0.0    within normal range
+  14  t=1792738648.71  normal        score=0.0    within normal range
+  15  t=1792738649.71  normal        score=0.0    within normal range
+  16  t=1792738650.71  normal        score=0.0    within normal range
+  17  t=1792738651.71  normal        score=0.0    within normal range
+  18  t=1792738652.71  normal        score=0.0    within normal range
+  19  t=1792738653.71  normal        score=0.0    within normal range
+  20  t=1792738654.71  normal        score=0.0    within normal range
+  21  t=1792738655.71  normal        score=0.0    within normal range
+  22  t=1792738656.71  normal        score=0.0    within normal range
+  23  t=1792738657.71  normal        score=0.0    within normal range
+  24  t=1792738658.71  normal        score=0.0    within normal range
+  25  t=1792738659.71  normal        score=0.0    within normal range
+  26  t=1792738660.71  normal        score=0.0    within normal range
+  27  t=1792738661.71  normal        score=0.0    within normal range
+  28  t=1792738662.71  normal        score=0.0    within normal range
+  29  t=1792738663.71  normal        score=0.0    within normal range
+  30  t=1792738664.71  normal        score=0.0    within normal range
+  31  t=1792738665.71  normal        score=0.0    within normal range
+  32  t=1792738666.71  normal        score=0.0    within normal range
+  33  t=1792738667.71  normal        score=0.0    within normal range
+  34  t=1792738668.71  normal        score=0.0    within normal range
+  35  t=1792738669.71  normal        score=0.0    within normal range
+  36  t=1792738670.71  normal        score=0.0    within normal range
+  37  t=1792738671.71  normal        score=0.0    within normal range
+  38  t=1792738672.71  normal        score=0.5    within normal range
+  39  t=1792738673.71  normal        score=0.925  within normal range
+  40  t=1792738674.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  41  t=1792738675.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  42  t=1792738676.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  43  t=1792738677.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  44  t=1792738678.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  45  t=1792738679.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  46  t=1792738680.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  47  t=1792738681.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  48  t=1792738682.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  49  t=1792738683.71  naive_ddos    score=1.725  baseline CUSUM alarm: S=69 > h=40
+  50  t=1792738684.71  naive_ddos    score=1.425  baseline CUSUM alarm: S=57 > h=40
+  51  t=1792738685.71  naive_ddos    score=1.15   baseline CUSUM alarm: S=46 > h=40
+  52  t=1792738686.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  53  t=1792738687.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  54  t=1792738688.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  55  t=1792738689.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  56  t=1792738690.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  57  t=1792738691.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  58  t=1792738692.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  59  t=1792738693.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  60  t=1792738694.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  61  t=1792738695.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  62  t=1792738696.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  63  t=1792738697.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  64  t=1792738698.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  65  t=1792738699.71  naive_ddos    score=1.725  baseline CUSUM alarm: S=69 > h=40
+  66  t=1792738700.71  naive_ddos    score=1.275  baseline CUSUM alarm: S=51 > h=40
+  67  t=1792738701.71  normal        score=0.975  within normal range
+  68  t=1792738702.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  69  t=1792738703.71  naive_ddos    score=1.375  baseline CUSUM alarm: S=55 > h=40
+  70  t=1792738704.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  71  t=1792738705.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  72  t=1792738706.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  73  t=1792738707.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  74  t=1792738708.71  naive_ddos    score=2.0    baseline CUSUM alarm: S=80 > h=40
+  75  t=1792738709.71  naive_ddos    score=1.725  baseline CUSUM alarm: S=69 > h=40
+  76  t=1792738710.71  naive_ddos    score=1.1    baseline CUSUM alarm: S=44 > h=40
+  77  t=1792738711.71  normal        score=0.7    within normal range
+  78  t=1792738712.71  normal        score=0.3    within normal range
+  79  t=1792738713.71  normal        score=0.0    within normal range
+  80  t=1792738714.71  normal        score=0.0    within normal range
+  81  t=1792738715.71  normal        score=0.0    within normal range
+  82  t=1792738716.71  normal        score=0.0    within normal range
+  83  t=1792738717.71  normal        score=0.0    within normal range
+  84  t=1792738718.71  normal        score=0.0    within normal range
+  85  t=1792738719.71  normal        score=0.0    within normal range
+  86  t=1792738720.71  normal        score=0.0    within normal range
+  87  t=1792738721.71  normal        score=0.0    within normal range
+  88  t=1792738722.71  normal        score=0.0    within normal range
+  89  t=1792738723.71  normal        score=0.0    within normal range
+  90  t=1792738724.71  normal        score=0.0    within normal range
+  91  t=1792738725.71  normal        score=0.0    within normal range
+  92  t=1792738726.71  normal        score=0.0    within normal range
+  93  t=1792738727.71  normal        score=0.0    within normal range
+  94  t=1792738728.71  normal        score=0.0    within normal range
+  95  t=1792738729.71  normal        score=0.0    within normal range
+  96  t=1792738730.71  normal        score=0.0    within normal range
+  97  t=1792738731.71  normal        score=0.0    within normal range
+  98  t=1792738732.71  normal        score=0.0    within normal range
+
+Stopped.
+98 decisions written to /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065648_adaptive_ddos_moderate_cusum_mit-on_r1/decisions.csv

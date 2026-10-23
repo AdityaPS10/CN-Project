@@ -1,0 +1,6 @@
+# Controller side (in ~/ryu-venv, same as Members 1-2):
+os-ken==4.2.2
+eventlet==0.41.2
+# System python (experiment runner, resource monitor): apt install python3-psutil
+psutil>=5.9
+# Mininet 2.3.0 and Open vSwitch 3.7.1 come from apt, not pip.
