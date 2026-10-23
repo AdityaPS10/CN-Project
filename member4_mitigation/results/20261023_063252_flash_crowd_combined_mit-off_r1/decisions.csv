@@ -1,0 +1,78 @@
+timestamp,traffic_class,score,reason,rule
+1792737176.154,normal,0.0,within normal range,none
+1792737177.154,normal,0.0,within normal range,none
+1792737178.154,normal,0.233,within normal range,none
+1792737179.154,normal,0.033,within normal range,none
+1792737180.154,normal,0.033,within normal range,none
+1792737181.154,normal,0.0,within normal range,none
+1792737182.154,normal,0.05,within normal range,none
+1792737183.154,normal,0.05,within normal range,none
+1792737184.154,normal,0.0,within normal range,none
+1792737185.154,normal,0.0,within normal range,none
+1792737186.154,normal,0.0,within normal range,none
+1792737187.154,normal,0.0,within normal range,none
+1792737188.154,normal,0.0,within normal range,none
+1792737189.154,normal,0.0,within normal range,none
+1792737190.154,normal,0.067,within normal range,none
+1792737191.154,normal,0.033,within normal range,none
+1792737192.154,normal,0.167,within normal range,none
+1792737193.154,normal,0.233,within normal range,none
+1792737194.154,normal,0.217,within normal range,none
+1792737195.154,normal,0.2,within normal range,none
+1792737196.154,normal,0.233,within normal range,none
+1792737197.154,normal,0.267,within normal range,none
+1792737198.154,normal,0.233,within normal range,none
+1792737199.154,normal,0.233,within normal range,none
+1792737200.154,normal,0.233,within normal range,none
+1792737201.154,normal,0.233,within normal range,none
+1792737202.154,normal,0.217,within normal range,none
+1792737203.154,normal,0.25,within normal range,none
+1792737204.154,normal,0.217,within normal range,none
+1792737205.154,normal,0.283,within normal range,none
+1792737206.154,normal,0.283,within normal range,none
+1792737207.154,normal,0.367,within normal range,none
+1792737208.154,normal,0.633,within normal range,none
+1792737209.154,flash_crowd,1.1,CUSUM sustained rise (S=44 > h=40),cusum
+1792737210.154,flash_crowd,2.0,"rate 83 above limit 60, gradual onset",threshold
+1792737211.154,flash_crowd,2.0,"rate 84 above limit 60, gradual onset",threshold
+1792737212.154,flash_crowd,2.0,"rate 89 above limit 60, gradual onset",threshold
+1792737213.154,flash_crowd,2.0,"rate 98 above limit 60, gradual onset",threshold
+1792737214.154,flash_crowd,2.0,"rate 119 above limit 60, gradual onset",threshold
+1792737215.154,flash_crowd,2.483,"rate 149 above limit 60, gradual onset",threshold
+1792737216.154,flash_crowd,2.633,"rate 158 above limit 60, gradual onset",threshold
+1792737217.154,flash_crowd,2.767,"rate 166 above limit 60, gradual onset",threshold
+1792737218.154,flash_crowd,2.717,"rate 163 above limit 60, gradual onset",threshold
+1792737219.154,flash_crowd,2.767,"rate 166 above limit 60, gradual onset",threshold
+1792737220.154,flash_crowd,2.7,"rate 162 above limit 60, gradual onset",threshold
+1792737221.154,flash_crowd,2.683,"rate 161 above limit 60, gradual onset",threshold
+1792737222.154,flash_crowd,2.783,"rate 167 above limit 60, gradual onset",threshold
+1792737223.154,flash_crowd,2.617,"rate 157 above limit 60, gradual onset",threshold
+1792737224.154,flash_crowd,2.767,"rate 166 above limit 60, gradual onset",threshold
+1792737225.154,flash_crowd,2.733,"rate 164 above limit 60, gradual onset",threshold
+1792737226.154,flash_crowd,2.667,"rate 160 above limit 60, gradual onset",threshold
+1792737227.154,flash_crowd,2.667,"rate 160 above limit 60, gradual onset",threshold
+1792737228.154,flash_crowd,2.683,"rate 161 above limit 60, gradual onset",threshold
+1792737229.154,flash_crowd,2.0,"rate 110 above limit 60, gradual onset",threshold
+1792737230.154,flash_crowd,1.725,CUSUM sustained rise (S=69 > h=40),cusum
+1792737231.154,flash_crowd,1.425,CUSUM sustained rise (S=57 > h=40),cusum
+1792737232.154,flash_crowd,1.15,CUSUM sustained rise (S=46 > h=40),cusum
+1792737233.154,normal,0.875,within normal range,none
+1792737234.154,normal,0.625,within normal range,none
+1792737235.154,normal,0.4,within normal range,none
+1792737236.154,normal,0.233,within normal range,none
+1792737237.154,normal,0.233,within normal range,none
+1792737238.154,normal,0.267,within normal range,none
+1792737239.154,normal,0.233,within normal range,none
+1792737240.154,normal,0.217,within normal range,none
+1792737241.154,normal,0.25,within normal range,none
+1792737242.154,normal,0.233,within normal range,none
+1792737243.154,normal,0.217,within normal range,none
+1792737244.154,normal,0.233,within normal range,none
+1792737245.154,normal,0.233,within normal range,none
+1792737246.154,normal,0.267,within normal range,none
+1792737247.154,normal,0.233,within normal range,none
+1792737248.154,normal,0.267,within normal range,none
+1792737249.154,normal,0.217,within normal range,none
+1792737250.154,normal,0.233,within normal range,none
+1792737251.154,normal,0.233,within normal range,none
+1792737252.154,normal,0.233,within normal range,none

@@ -1,0 +1,19 @@
+wall_time,event,dpid,ports,detail
+1792738613.385,app_started,,,enforcement=True meter_rate_pps=10 offender_min_pps=20.0
+1792738634.643,switch_connected,0000000000000001,,
+1792738634.696,cleanup_confirmed,0000000000000001,,switch_ms=52.6
+1792738674.871,limit_sent,0000000000000001,4,peak_pps=35.0 meter_rate_pps=10
+1792738674.871,limit_sent,0000000000000001,5,peak_pps=28.8 meter_rate_pps=10
+1792738674.871,limit_sent,0000000000000001,3,peak_pps=27.8 meter_rate_pps=10
+1792738674.874,limit_confirmed,0000000000000001,4 5 3,switch_ms=4.2 decision_to_applied_ms=5.3
+1792738675.902,limit_sent,0000000000000001,2,peak_pps=24.2 meter_rate_pps=10
+1792738675.933,limit_confirmed,0000000000000001,2,switch_ms=42.6 decision_to_applied_ms=54.1
+1792738701.946,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792738701.978,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=38.2
+1792738702.767,limit_sent,0000000000000001,5,peak_pps=44.0 meter_rate_pps=10
+1792738702.767,limit_sent,0000000000000001,2,peak_pps=43.8 meter_rate_pps=10
+1792738702.767,limit_sent,0000000000000001,3,peak_pps=41.8 meter_rate_pps=10
+1792738702.767,limit_sent,0000000000000001,4,peak_pps=40.0 meter_rate_pps=10
+1792738702.792,limit_confirmed,0000000000000001,5 2 3 4,switch_ms=28.1 decision_to_applied_ms=28.2
+1792738712.051,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792738712.056,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=5.0

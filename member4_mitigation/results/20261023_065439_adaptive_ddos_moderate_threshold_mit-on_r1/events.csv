@@ -1,0 +1,27 @@
+wall_time,event,dpid,ports,detail
+1792738484.861,app_started,,,enforcement=True meter_rate_pps=10 offender_min_pps=20.0
+1792738502.190,switch_connected,0000000000000001,,
+1792738502.289,cleanup_confirmed,0000000000000001,,switch_ms=92.5
+1792738540.519,limit_sent,0000000000000001,3,peak_pps=35.3 meter_rate_pps=10
+1792738540.527,limit_sent,0000000000000001,4,peak_pps=24.9 meter_rate_pps=10
+1792738540.547,limit_sent,0000000000000001,2,peak_pps=24.9 meter_rate_pps=10
+1792738540.565,limit_confirmed,0000000000000001,3 4 2,switch_ms=57.2 decision_to_applied_ms=65.5
+1792738541.572,limit_sent,0000000000000001,5,peak_pps=22.5 meter_rate_pps=10
+1792738541.622,limit_confirmed,0000000000000001,5,switch_ms=50.1 decision_to_applied_ms=50.1
+1792738547.406,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792738547.436,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=34.8
+1792738551.493,limit_sent,0000000000000001,5,peak_pps=38.3 meter_rate_pps=10
+1792738551.493,limit_sent,0000000000000001,3,peak_pps=36.6 meter_rate_pps=10
+1792738551.493,limit_sent,0000000000000001,4,peak_pps=35.6 meter_rate_pps=10
+1792738551.494,limit_sent,0000000000000001,2,peak_pps=35.5 meter_rate_pps=10
+1792738551.546,limit_confirmed,0000000000000001,5 3 4 2,switch_ms=56.9 decision_to_applied_ms=57.0
+1792738563.437,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792738563.508,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=77.5
+1792738568.423,limit_sent,0000000000000001,4,peak_pps=40.1 meter_rate_pps=10
+1792738568.427,limit_sent,0000000000000001,5,peak_pps=36.2 meter_rate_pps=10
+1792738568.462,limit_sent,0000000000000001,3,peak_pps=33.1 meter_rate_pps=10
+1792738568.468,limit_sent,0000000000000001,2,peak_pps=26.5 meter_rate_pps=10
+1792738568.501,limit_confirmed,0000000000000001,4 5 3 2,switch_ms=85.3 decision_to_applied_ms=85.4
+1792738572.609,remove_sent,0000000000000001,2 3 4 5,policy_stop
+1792738572.664,remove_confirmed,0000000000000001,2 3 4 5,switch_ms=55.5
+1792738600.918,switch_disconnected,0000000000000001,,

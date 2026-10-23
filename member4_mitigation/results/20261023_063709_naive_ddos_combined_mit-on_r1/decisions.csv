@@ -1,0 +1,76 @@
+timestamp,traffic_class,score,reason,rule
+1792737433.453,normal,0.0,within normal range,none
+1792737434.453,normal,0.0,within normal range,none
+1792737435.453,normal,0.217,within normal range,none
+1792737436.453,normal,0.017,within normal range,none
+1792737437.453,normal,0.0,within normal range,none
+1792737438.453,normal,0.033,within normal range,none
+1792737439.453,normal,0.067,within normal range,none
+1792737440.453,normal,0.0,within normal range,none
+1792737441.453,normal,0.0,within normal range,none
+1792737442.453,normal,0.0,within normal range,none
+1792737443.453,normal,0.0,within normal range,none
+1792737444.453,normal,0.0,within normal range,none
+1792737445.453,normal,0.0,within normal range,none
+1792737446.453,normal,0.033,within normal range,none
+1792737447.453,normal,0.017,within normal range,none
+1792737448.453,normal,0.117,within normal range,none
+1792737449.453,normal,0.183,within normal range,none
+1792737450.453,normal,0.233,within normal range,none
+1792737451.453,normal,0.233,within normal range,none
+1792737452.453,normal,0.233,within normal range,none
+1792737453.453,normal,0.267,within normal range,none
+1792737454.453,normal,0.233,within normal range,none
+1792737455.453,normal,0.217,within normal range,none
+1792737456.453,normal,0.233,within normal range,none
+1792737457.453,normal,0.233,within normal range,none
+1792737458.453,normal,0.233,within normal range,none
+1792737459.453,normal,0.25,within normal range,none
+1792737460.453,normal,0.267,within normal range,none
+1792737461.453,normal,0.217,within normal range,none
+1792737462.453,normal,0.233,within normal range,none
+1792737463.453,normal,0.683,within normal range,none
+1792737464.453,naive_ddos,5.517,rate jumped 290 in one window (limit 140),onset_jump
+1792737465.453,naive_ddos,5.617,rate jumped 290 in one window (limit 140),onset_jump
+1792737466.453,naive_ddos,5.467,rate jumped 290 in one window (limit 140),onset_jump
+1792737467.453,naive_ddos,5.867,rate jumped 290 in one window (limit 140),onset_jump
+1792737468.453,naive_ddos,5.9,rate jumped 290 in one window (limit 140),onset_jump
+1792737469.453,naive_ddos,5.983,rate jumped 290 in one window (limit 140),onset_jump
+1792737470.453,naive_ddos,6.05,rate jumped 290 in one window (limit 140),onset_jump
+1792737471.453,naive_ddos,6.133,rate jumped 290 in one window (limit 140),onset_jump
+1792737472.453,naive_ddos,6.083,rate jumped 290 in one window (limit 140),onset_jump
+1792737473.453,naive_ddos,5.983,rate jumped 290 in one window (limit 140),onset_jump
+1792737474.453,naive_ddos,6.15,rate jumped 290 in one window (limit 140),onset_jump
+1792737475.453,naive_ddos,5.833,rate jumped 290 in one window (limit 140),onset_jump
+1792737476.453,naive_ddos,5.883,rate jumped 290 in one window (limit 140),onset_jump
+1792737477.453,naive_ddos,5.933,rate jumped 290 in one window (limit 140),onset_jump
+1792737478.453,naive_ddos,6.05,rate jumped 290 in one window (limit 140),onset_jump
+1792737479.453,naive_ddos,6.067,rate jumped 290 in one window (limit 140),onset_jump
+1792737480.453,naive_ddos,6.083,rate jumped 290 in one window (limit 140),onset_jump
+1792737481.453,naive_ddos,6.05,rate jumped 290 in one window (limit 140),onset_jump
+1792737482.453,naive_ddos,5.7,rate jumped 290 in one window (limit 140),onset_jump
+1792737483.453,naive_ddos,5.917,rate jumped 290 in one window (limit 140),onset_jump
+1792737484.453,naive_ddos,1.75,rate jumped 290 in one window (limit 140),onset_jump
+1792737485.453,naive_ddos,1.5,rate jumped 290 in one window (limit 140),onset_jump
+1792737486.453,naive_ddos,1.225,rate jumped 290 in one window (limit 140),onset_jump
+1792737487.453,normal,0.975,within normal range,none
+1792737488.453,normal,0.7,within normal range,none
+1792737489.453,normal,0.075,within normal range,none
+1792737490.453,normal,0.233,within normal range,none
+1792737491.453,normal,0.217,within normal range,none
+1792737492.453,normal,0.217,within normal range,none
+1792737493.453,normal,0.233,within normal range,none
+1792737494.453,normal,0.233,within normal range,none
+1792737495.453,normal,0.267,within normal range,none
+1792737496.453,normal,0.25,within normal range,none
+1792737497.453,normal,0.217,within normal range,none
+1792737498.453,normal,0.233,within normal range,none
+1792737499.453,normal,0.233,within normal range,none
+1792737500.453,normal,0.233,within normal range,none
+1792737501.453,normal,0.233,within normal range,none
+1792737502.453,normal,0.267,within normal range,none
+1792737503.453,normal,0.233,within normal range,none
+1792737504.453,normal,0.233,within normal range,none
+1792737505.453,normal,0.217,within normal range,none
+1792737506.453,normal,0.233,within normal range,none
+1792737507.453,normal,0.233,within normal range,none

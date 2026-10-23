@@ -1,0 +1,87 @@
+timestamp,traffic_class,score,reason,rule
+1792736810.903,normal,0.0,within normal range,none
+1792736811.903,normal,0.0,within normal range,none
+1792736812.903,normal,0.217,within normal range,none
+1792736813.903,normal,0.05,within normal range,none
+1792736814.903,normal,0.0,within normal range,none
+1792736815.903,normal,0.0,within normal range,none
+1792736816.903,normal,0.05,within normal range,none
+1792736817.903,normal,0.05,within normal range,none
+1792736818.903,normal,0.0,within normal range,none
+1792736819.903,normal,0.0,within normal range,none
+1792736820.903,normal,0.0,within normal range,none
+1792736821.903,normal,0.0,within normal range,none
+1792736822.903,normal,0.0,within normal range,none
+1792736823.903,normal,0.0,within normal range,none
+1792736824.903,normal,0.05,within normal range,none
+1792736825.903,normal,0.017,within normal range,none
+1792736826.903,normal,0.2,within normal range,none
+1792736827.903,normal,0.233,within normal range,none
+1792736828.903,normal,0.233,within normal range,none
+1792736829.903,normal,0.217,within normal range,none
+1792736830.903,normal,0.2,within normal range,none
+1792736831.903,normal,0.267,within normal range,none
+1792736832.903,normal,0.233,within normal range,none
+1792736833.903,normal,0.233,within normal range,none
+1792736834.903,normal,0.217,within normal range,none
+1792736835.903,normal,0.25,within normal range,none
+1792736836.903,normal,0.233,within normal range,none
+1792736837.903,normal,0.233,within normal range,none
+1792736838.903,normal,0.233,within normal range,none
+1792736839.903,normal,0.217,within normal range,none
+1792736840.903,normal,0.25,within normal range,none
+1792736841.903,normal,0.517,within normal range,none
+1792736842.903,normal,0.583,within normal range,none
+1792736843.903,normal,0.625,within normal range,none
+1792736844.903,normal,0.8,within normal range,none
+1792736845.903,flash_crowd,1.025,CUSUM sustained rise (S=41 > h=40),cusum
+1792736846.903,flash_crowd,1.25,CUSUM sustained rise (S=50 > h=40),cusum
+1792736847.903,flash_crowd,1.425,CUSUM sustained rise (S=57 > h=40),cusum
+1792736848.903,flash_crowd,1.475,CUSUM sustained rise (S=59 > h=40),cusum
+1792736849.903,flash_crowd,1.725,CUSUM sustained rise (S=69 > h=40),cusum
+1792736850.903,flash_crowd,1.925,CUSUM sustained rise (S=77 > h=40),cusum
+1792736851.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736852.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736853.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736854.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736855.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736856.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736857.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736858.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736859.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736860.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736861.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736862.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736863.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736864.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736865.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736866.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736867.903,flash_crowd,1.775,CUSUM sustained rise (S=71 > h=40),cusum
+1792736868.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736869.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736870.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736871.903,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792736872.903,flash_crowd,1.725,CUSUM sustained rise (S=69 > h=40),cusum
+1792736873.903,flash_crowd,1.475,CUSUM sustained rise (S=59 > h=40),cusum
+1792736874.903,flash_crowd,1.2,CUSUM sustained rise (S=48 > h=40),cusum
+1792736875.903,normal,0.95,within normal range,none
+1792736876.903,normal,0.775,within normal range,none
+1792736877.903,normal,0.55,within normal range,none
+1792736878.903,normal,0.275,within normal range,none
+1792736879.903,normal,0.267,within normal range,none
+1792736880.903,normal,0.183,within normal range,none
+1792736881.903,normal,0.233,within normal range,none
+1792736882.903,normal,0.233,within normal range,none
+1792736883.903,normal,0.233,within normal range,none
+1792736884.903,normal,0.217,within normal range,none
+1792736885.903,normal,0.233,within normal range,none
+1792736886.903,normal,0.233,within normal range,none
+1792736887.903,normal,0.233,within normal range,none
+1792736888.903,normal,0.217,within normal range,none
+1792736889.903,normal,0.25,within normal range,none
+1792736890.903,normal,0.217,within normal range,none
+1792736891.903,normal,0.25,within normal range,none
+1792736892.903,normal,0.217,within normal range,none
+1792736893.903,normal,0.233,within normal range,none
+1792736894.903,normal,0.233,within normal range,none
+1792736895.903,normal,0.217,within normal range,none

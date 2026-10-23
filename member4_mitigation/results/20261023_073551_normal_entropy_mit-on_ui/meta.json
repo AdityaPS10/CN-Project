@@ -1,0 +1,49 @@
+{
+  "run_id": "20261023_073551_normal_entropy_mit-on_ui",
+  "scenario": "normal",
+  "attack_level": null,
+  "detector": "entropy",
+  "mitigation": "on",
+  "config_overrides": {},
+  "tag": "ui",
+  "attack_hosts": [],
+  "legit_hosts": [
+    "h2",
+    "h3",
+    "h6"
+  ],
+  "scenario_hosts": [
+    "h2",
+    "h3"
+  ],
+  "server": "h1",
+  "legit_bg_host": "h6",
+  "legit_bg_rate_pps": 10,
+  "warmup_s": 10.0,
+  "lead_s": 15.0,
+  "cooldown_s": 25.0,
+  "t_run_start": 1792740953.2997913,
+  "status": "finished",
+  "git_commit": "c1f06b699b00656bc9c52366d4e50e9123b05f11",
+  "port_map": {
+    "1": "h1",
+    "2": "h2",
+    "3": "h3",
+    "4": "h4",
+    "5": "h5",
+    "6": "h6"
+  },
+  "host_ips": {
+    "h1": "10.0.0.1",
+    "h2": "10.0.0.2",
+    "h3": "10.0.0.3",
+    "h4": "10.0.0.4",
+    "h5": "10.0.0.5",
+    "h6": "10.0.0.6"
+  },
+  "t_bg_start": 1792740970.3381376,
+  "t_scenario_start": 1792740985.3847847,
+  "t_scenario_end": 1792741015.56921,
+  "t_stop": 1792741040.5705647,
+  "t_run_end": 1792741047.2699866
+}

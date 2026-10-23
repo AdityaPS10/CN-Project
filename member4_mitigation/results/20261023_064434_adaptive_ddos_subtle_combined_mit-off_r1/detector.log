@@ -1,0 +1,108 @@
+Baseline from features_normal.csv: {'DataPlanePacketRate': 20.0}
+Following /home/minato/Documents/CN-Project/detection/../sdn-ddos-monitoring/data/features.csv (Ctrl+C to stop)
+   1  t=1792737902.46  normal        score=0.0    within normal range
+   2  t=1792737903.46  normal        score=0.0    within normal range
+   3  t=1792737904.46  normal        score=0.033  within normal range
+   4  t=1792737905.46  normal        score=0.017  within normal range
+   5  t=1792737906.46  normal        score=0.033  within normal range
+   6  t=1792737907.46  normal        score=0.017  within normal range
+   7  t=1792737908.46  normal        score=0.0    within normal range
+   8  t=1792737909.46  normal        score=0.0    within normal range
+   9  t=1792737910.46  normal        score=0.0    within normal range
+  10  t=1792737911.46  normal        score=0.0    within normal range
+  11  t=1792737912.46  normal        score=0.017  within normal range
+  12  t=1792737913.46  normal        score=0.017  within normal range
+  13  t=1792737914.46  normal        score=0.033  within normal range
+  14  t=1792737915.46  normal        score=0.017  within normal range
+  15  t=1792737916.46  normal        score=0.017  within normal range
+  16  t=1792737917.46  normal        score=0.0    within normal range
+  17  t=1792737918.46  normal        score=0.0    within normal range
+  18  t=1792737919.46  normal        score=0.15   within normal range
+  19  t=1792737920.46  normal        score=0.217  within normal range
+  20  t=1792737921.46  normal        score=0.217  within normal range
+  21  t=1792737922.46  normal        score=0.217  within normal range
+  22  t=1792737923.46  normal        score=0.233  within normal range
+  23  t=1792737924.46  normal        score=0.267  within normal range
+  24  t=1792737925.46  normal        score=0.217  within normal range
+  25  t=1792737926.46  normal        score=0.233  within normal range
+  26  t=1792737927.46  normal        score=0.217  within normal range
+  27  t=1792737928.46  normal        score=0.233  within normal range
+  28  t=1792737929.46  normal        score=0.233  within normal range
+  29  t=1792737930.46  normal        score=0.3    within normal range
+  30  t=1792737931.46  normal        score=0.217  within normal range
+  31  t=1792737932.46  normal        score=0.25   within normal range
+  32  t=1792737933.46  normal        score=0.217  within normal range
+  33  t=1792737934.46  normal        score=0.233  within normal range
+  34  t=1792737935.46  normal        score=0.217  within normal range
+  35  t=1792737936.46  normal        score=0.2    within normal range
+  36  t=1792737937.46  normal        score=0.217  within normal range
+  37  t=1792737938.46  normal        score=0.233  within normal range
+  38  t=1792737939.46  normal        score=0.217  within normal range
+  39  t=1792737940.46  normal        score=0.267  within normal range
+  40  t=1792737941.46  normal        score=0.217  within normal range
+  41  t=1792737942.46  normal        score=0.283  within normal range
+  42  t=1792737943.46  normal        score=0.517  within normal range
+  43  t=1792737944.46  normal        score=0.567  within normal range
+  44  t=1792737945.46  normal        score=0.8    within normal range
+  45  t=1792737946.46  flash_crowd   score=1.525  CUSUM sustained rise (S=61 > h=40)
+  46  t=1792737947.46  flash_crowd   score=1.825  CUSUM sustained rise (S=73 > h=40)
+  47  t=1792737948.46  flash_crowd   score=1.525  CUSUM sustained rise (S=61 > h=40)
+  48  t=1792737949.46  flash_crowd   score=1.225  CUSUM sustained rise (S=49 > h=40)
+  49  t=1792737950.46  normal        score=0.9    within normal range
+  50  t=1792737951.46  normal        score=0.575  within normal range
+  51  t=1792737952.46  normal        score=0.925  within normal range
+  52  t=1792737953.46  flash_crowd   score=2.0    rate 71 above limit 60, gradual onset
+  53  t=1792737954.46  flash_crowd   score=2.0    rate 68 above limit 60, gradual onset
+  54  t=1792737955.46  flash_crowd   score=2.0    rate 68 above limit 60, gradual onset
+  55  t=1792737956.46  flash_crowd   score=2.0    rate 64 above limit 60, gradual onset
+  56  t=1792737957.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  57  t=1792737958.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  58  t=1792737959.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  59  t=1792737960.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  60  t=1792737961.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  61  t=1792737962.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  62  t=1792737963.46  flash_crowd   score=1.7    CUSUM sustained rise (S=68 > h=40)
+  63  t=1792737964.46  flash_crowd   score=1.375  CUSUM sustained rise (S=55 > h=40)
+  64  t=1792737965.46  flash_crowd   score=1.175  CUSUM sustained rise (S=47 > h=40)
+  65  t=1792737966.46  normal        score=0.875  within normal range
+  66  t=1792737967.46  normal        score=0.975  within normal range
+  67  t=1792737968.46  normal        score=0.9    within normal range
+  68  t=1792737969.46  flash_crowd   score=1.075  CUSUM sustained rise (S=43 > h=40)
+  69  t=1792737970.46  flash_crowd   score=1.75   CUSUM sustained rise (S=70 > h=40)
+  70  t=1792737971.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  71  t=1792737972.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  72  t=1792737973.46  flash_crowd   score=2.0    CUSUM sustained rise (S=80 > h=40)
+  73  t=1792737974.46  flash_crowd   score=2.0    rate 68 above limit 60, gradual onset
+  74  t=1792737975.46  flash_crowd   score=1.75   CUSUM sustained rise (S=70 > h=40)
+  75  t=1792737976.46  flash_crowd   score=1.425  CUSUM sustained rise (S=57 > h=40)
+  76  t=1792737977.46  flash_crowd   score=1.125  CUSUM sustained rise (S=45 > h=40)
+  77  t=1792737978.46  normal        score=0.825  within normal range
+  78  t=1792737979.46  normal        score=0.525  within normal range
+  79  t=1792737980.46  normal        score=0.225  within normal range
+  80  t=1792737981.46  normal        score=0.217  within normal range
+  81  t=1792737982.46  normal        score=0.2    within normal range
+  82  t=1792737983.46  normal        score=0.117  within normal range
+  83  t=1792737984.46  normal        score=0.217  within normal range
+  84  t=1792737985.46  normal        score=0.217  within normal range
+  85  t=1792737986.46  normal        score=0.233  within normal range
+  86  t=1792737987.46  normal        score=0.217  within normal range
+  87  t=1792737988.46  normal        score=0.183  within normal range
+  88  t=1792737989.46  normal        score=0.217  within normal range
+  89  t=1792737990.46  normal        score=0.217  within normal range
+  90  t=1792737991.46  normal        score=0.217  within normal range
+  91  t=1792737992.46  normal        score=0.267  within normal range
+  92  t=1792737993.46  normal        score=0.233  within normal range
+  93  t=1792737994.46  normal        score=0.233  within normal range
+  94  t=1792737995.46  normal        score=0.217  within normal range
+  95  t=1792737996.46  normal        score=0.233  within normal range
+  96  t=1792737997.46  normal        score=0.25   within normal range
+  97  t=1792737998.46  normal        score=0.217  within normal range
+  98  t=1792737999.46  normal        score=0.233  within normal range
+  99  t=1792738000.46  normal        score=0.2    within normal range
+ 100  t=1792738001.46  normal        score=0.0    within normal range
+ 101  t=1792738002.46  normal        score=0.0    within normal range
+ 102  t=1792738003.46  normal        score=0.0    within normal range
+ 103  t=1792738004.46  normal        score=0.0    within normal range
+
+Stopped.
+103 decisions written to /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064434_adaptive_ddos_subtle_combined_mit-off_r1/decisions.csv

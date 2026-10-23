@@ -1,0 +1,138 @@
+{
+  "run_id": "20261023_074216_adaptive_ddos_moderate_entropy_mit-on_ui",
+  "scenario": "adaptive_ddos",
+  "attack_level": "moderate",
+  "detector": "entropy",
+  "mitigation": "on",
+  "config_overrides": {},
+  "duration_s": 104.23511981964111,
+  "attack_interval_s": 36.411532163619995,
+  "detection": {
+    "windows": 80,
+    "tp": 1,
+    "fp": 0,
+    "fn": 36,
+    "tn": 43,
+    "precision": 1.0,
+    "recall": 0.02702702702702703,
+    "f1": 0.052631578947368425,
+    "fpr": 0.0,
+    "fnr": 0.972972972972973,
+    "class_counts": {
+      "normal": 79,
+      "naive_ddos": 1
+    },
+    "detection_latency_s": 4.486218214035034,
+    "decision_received_latency_s": 4.667218208312988
+  },
+  "mitigation_actions": {
+    "mitigation_starts": 1,
+    "mitigation_active_windows": 1,
+    "rate_limits_installed": 0,
+    "openflow_rules_installed": 0,
+    "of_errors": 0,
+    "no_offender_found_events": 1,
+    "limited_hosts": [],
+    "attack_hosts_limited": [],
+    "legit_hosts_limited": [],
+    "response_time_s": null,
+    "decision_to_rule_applied_ms": null,
+    "release_delay_s": null,
+    "released_before_attack_end": null
+  },
+  "traffic": {
+    "legit_whole_run": {
+      "sent_packets": 767,
+      "received_packets": 767,
+      "pdr": 1.0,
+      "sent_pps": 9.708860759493671,
+      "received_pps": 9.708860759493671,
+      "received_kbps": 9.941873417721519,
+      "seconds": 79
+    },
+    "legit_before_scenario": {
+      "sent_packets": 125,
+      "received_packets": 125,
+      "pdr": 1.0,
+      "sent_pps": 9.615384615384615,
+      "received_pps": 9.615384615384615,
+      "received_kbps": 9.846153846153847,
+      "seconds": 13
+    },
+    "legit_during_focus": {
+      "sent_packets": 357,
+      "received_packets": 357,
+      "pdr": 1.0,
+      "sent_pps": 9.64864864864865,
+      "received_pps": 9.64864864864865,
+      "received_kbps": 9.880216216216215,
+      "seconds": 37
+    },
+    "legit_bg_host_during_focus": {
+      "sent_packets": 357,
+      "received_packets": 357,
+      "pdr": 1.0,
+      "sent_pps": 9.64864864864865,
+      "received_pps": 9.64864864864865,
+      "received_kbps": 9.880216216216215,
+      "seconds": 37
+    },
+    "attack_during_focus": {
+      "sent_packets": 3335,
+      "received_packets": 3335,
+      "pdr": 1.0,
+      "sent_pps": 90.13513513513513,
+      "received_pps": 90.13513513513513,
+      "received_kbps": 92.29837837837837,
+      "seconds": 37
+    },
+    "victim_total_during_focus": {
+      "sent_packets": 3692,
+      "received_packets": 3692,
+      "pdr": 1.0,
+      "sent_pps": 99.78378378378379,
+      "received_pps": 99.78378378378379,
+      "received_kbps": 102.1785945945946,
+      "seconds": 37
+    },
+    "focus": "attack interval"
+  },
+  "ping_h6": {
+    "sent": 160,
+    "received": 160,
+    "loss_pct": 0.0,
+    "rtt_avg_ms": 0.17470625,
+    "rtt_avg_during_focus_ms": 0.04836111111111111,
+    "rtt_max_during_focus_ms": 0.855
+  },
+  "switch": {
+    "flow_table_max_entries": 11.0,
+    "flow_table_mean_entries": 7.887755102040816,
+    "packet_in_total": 58.0,
+    "packet_in_during_focus": 17.0,
+    "window_s": 1
+  },
+  "switch_view": {
+    "samples": 86,
+    "max_m4_flows_on_switch": 0,
+    "max_meters_on_switch": 0,
+    "meter_packets_dropped_max": 0,
+    "m4_flows_at_end": 0
+  },
+  "resources": {
+    "controller": {
+      "cpu_mean_pct": 1.6939393939393939,
+      "cpu_max_pct": 16.0,
+      "rss_mean_mib": 46.57888888888889,
+      "rss_max_mib": 46.6,
+      "samples": 99
+    },
+    "detector": {
+      "cpu_mean_pct": 0.302020202020202,
+      "cpu_max_pct": 6.9,
+      "rss_mean_mib": 16.698282828282828,
+      "rss_max_mib": 16.7,
+      "samples": 99
+    }
+  }
+}

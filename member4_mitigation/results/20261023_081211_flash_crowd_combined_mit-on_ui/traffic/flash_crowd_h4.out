@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/home/minato/Documents/CN-Project/trafficgen/flash_crowd_traffic.py", line 151, in <module>
+    main()
+    ~~~~^^
+  File "/home/minato/Documents/CN-Project/trafficgen/flash_crowd_traffic.py", line 145, in main
+    run(args.src_name, args.dst_name, args.dst_ip, args.dst_port,
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args.num_flows, args.ramp_up, args.hold,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args.rate_min, args.rate_max, args.jitter, args.pkt_size, args.log)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/minato/Documents/CN-Project/trafficgen/flash_crowd_traffic.py", line 119, in run
+    t.join()
+    ~~~~~~^^
+  File "/usr/lib/python3.14/threading.py", line 1133, in join
+    self._os_thread_handle.join(timeout)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyboardInterrupt
+Exception ignored while joining a thread in _thread._shutdown():
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/threading.py", line 1583, in _shutdown
+    _thread_shutdown()
+KeyboardInterrupt: 

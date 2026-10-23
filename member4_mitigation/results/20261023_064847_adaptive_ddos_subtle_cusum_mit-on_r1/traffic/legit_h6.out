@@ -1,0 +1,14 @@
+[h6] sent 768 packets to h1 (10.0.0.1) -> log: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_064847_adaptive_ddos_subtle_cusum_mit-on_r1/traffic/legit_h6.csv
+Traceback (most recent call last):
+  File "/home/minato/Documents/CN-Project/trafficgen/normal_traffic.py", line 89, in <module>
+    main()
+    ~~~~^^
+  File "/home/minato/Documents/CN-Project/trafficgen/normal_traffic.py", line 84, in main
+    run(args.src_name, args.dst_name, args.dst_ip, args.dst_port,
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args.rate, args.jitter, args.pkt_size, args.duration, args.log)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/minato/Documents/CN-Project/trafficgen/normal_traffic.py", line 42, in run
+    time.sleep(max(0.0, base_interval + jitter))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

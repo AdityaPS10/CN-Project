@@ -1,0 +1,96 @@
+timestamp,traffic_class,score,reason,rule
+1792738844.812,normal,0.0,within normal range,none
+1792738845.812,normal,0.0,within normal range,none
+1792738846.812,normal,0.25,within normal range,none
+1792738847.812,normal,0.017,within normal range,none
+1792738848.812,normal,0.0,within normal range,none
+1792738849.812,normal,0.0,within normal range,none
+1792738850.812,normal,0.067,within normal range,none
+1792738851.812,normal,0.033,within normal range,none
+1792738852.812,normal,0.0,within normal range,none
+1792738853.812,normal,0.0,within normal range,none
+1792738854.812,normal,0.0,within normal range,none
+1792738855.812,normal,0.0,within normal range,none
+1792738856.812,normal,0.0,within normal range,none
+1792738857.812,normal,0.0,within normal range,none
+1792738858.812,normal,0.05,within normal range,none
+1792738859.812,normal,0.117,within normal range,none
+1792738860.812,normal,0.217,within normal range,none
+1792738861.812,normal,0.233,within normal range,none
+1792738862.812,normal,0.217,within normal range,none
+1792738863.812,normal,0.217,within normal range,none
+1792738864.812,normal,0.267,within normal range,none
+1792738865.812,normal,0.233,within normal range,none
+1792738866.812,normal,0.233,within normal range,none
+1792738867.812,normal,0.217,within normal range,none
+1792738868.812,normal,0.267,within normal range,none
+1792738869.812,normal,0.2,within normal range,none
+1792738870.812,normal,0.233,within normal range,none
+1792738871.812,normal,0.233,within normal range,none
+1792738872.812,normal,0.217,within normal range,none
+1792738873.812,normal,0.25,within normal range,none
+1792738874.812,normal,0.25,within normal range,none
+1792738875.812,normal,0.25,within normal range,none
+1792738876.812,normal,0.167,within normal range,none
+1792738877.812,normal,0.383,within normal range,none
+1792738878.812,normal,0.883,within normal range,none
+1792738879.812,flash_crowd,2.0,"rate 82 above limit 60, gradual onset",threshold
+1792738880.812,flash_crowd,3.25,"rate 195 above limit 60, gradual onset",threshold
+1792738881.812,flash_crowd,5.35,"rate 321 above limit 60, gradual onset",threshold
+1792738882.812,flash_crowd,6.967,"rate 418 above limit 60, gradual onset",threshold
+1792738883.812,flash_crowd,7.667,"rate 460 above limit 60, gradual onset",threshold
+1792738884.812,flash_crowd,7.2,"rate 432 above limit 60, gradual onset",threshold
+1792738885.812,flash_crowd,7.783,"rate 467 above limit 60, gradual onset",threshold
+1792738886.812,flash_crowd,6.883,"rate 413 above limit 60, gradual onset",threshold
+1792738887.812,flash_crowd,7.65,"rate 459 above limit 60, gradual onset",threshold
+1792738888.812,flash_crowd,7.767,"rate 466 above limit 60, gradual onset",threshold
+1792738889.812,flash_crowd,8.067,"rate 484 above limit 60, gradual onset",threshold
+1792738890.812,flash_crowd,7.8,"rate 468 above limit 60, gradual onset",threshold
+1792738891.812,flash_crowd,7.933,"rate 476 above limit 60, gradual onset",threshold
+1792738892.812,flash_crowd,7.983,"rate 479 above limit 60, gradual onset",threshold
+1792738893.812,flash_crowd,2.217,"rate 133 above limit 60, gradual onset",threshold
+1792738894.812,flash_crowd,1.725,CUSUM sustained rise (S=69 > h=40),cusum
+1792738895.812,naive_ddos,5.35,rate jumped 307 in one window (limit 140),onset_jump
+1792738896.812,naive_ddos,7.5,rate jumped 307 in one window (limit 140),onset_jump
+1792738897.812,naive_ddos,8.05,rate jumped 307 in one window (limit 140),onset_jump
+1792738898.812,naive_ddos,8.083,rate jumped 307 in one window (limit 140),onset_jump
+1792738899.812,naive_ddos,7.917,rate jumped 307 in one window (limit 140),onset_jump
+1792738900.812,naive_ddos,7.817,rate jumped 307 in one window (limit 140),onset_jump
+1792738901.812,naive_ddos,8.267,rate jumped 307 in one window (limit 140),onset_jump
+1792738902.812,naive_ddos,8.267,rate jumped 307 in one window (limit 140),onset_jump
+1792738903.812,naive_ddos,7.533,rate jumped 307 in one window (limit 140),onset_jump
+1792738904.812,naive_ddos,7.45,rate jumped 307 in one window (limit 140),onset_jump
+1792738905.812,naive_ddos,7.367,rate jumped 307 in one window (limit 140),onset_jump
+1792738906.812,naive_ddos,7.483,rate jumped 307 in one window (limit 140),onset_jump
+1792738907.812,naive_ddos,7.25,rate jumped 307 in one window (limit 140),onset_jump
+1792738908.812,naive_ddos,7.883,rate jumped 307 in one window (limit 140),onset_jump
+1792738909.812,naive_ddos,7.8,rate jumped 307 in one window (limit 140),onset_jump
+1792738910.812,naive_ddos,2.0,rate jumped 307 in one window (limit 140),onset_jump
+1792738911.812,naive_ddos,1.8,rate jumped 307 in one window (limit 140),onset_jump
+1792738912.812,naive_ddos,6.633,rate jumped 381 in one window (limit 140),onset_jump
+1792738913.812,naive_ddos,8.1,rate jumped 381 in one window (limit 140),onset_jump
+1792738914.812,naive_ddos,8.217,rate jumped 381 in one window (limit 140),onset_jump
+1792738915.812,naive_ddos,2.0,rate jumped 381 in one window (limit 140),onset_jump
+1792738916.812,naive_ddos,1.725,rate jumped 381 in one window (limit 140),onset_jump
+1792738917.812,naive_ddos,1.5,rate jumped 381 in one window (limit 140),onset_jump
+1792738918.812,naive_ddos,1.225,rate jumped 381 in one window (limit 140),onset_jump
+1792738919.812,normal,0.95,within normal range,none
+1792738920.812,normal,0.65,within normal range,none
+1792738921.812,normal,0.375,within normal range,none
+1792738922.812,normal,0.233,within normal range,none
+1792738923.812,normal,0.233,within normal range,none
+1792738924.812,normal,0.233,within normal range,none
+1792738925.812,normal,0.267,within normal range,none
+1792738926.812,normal,0.25,within normal range,none
+1792738927.812,normal,0.217,within normal range,none
+1792738928.812,normal,0.233,within normal range,none
+1792738929.812,normal,0.233,within normal range,none
+1792738930.812,normal,0.233,within normal range,none
+1792738931.812,normal,0.217,within normal range,none
+1792738932.812,normal,0.233,within normal range,none
+1792738933.812,normal,0.233,within normal range,none
+1792738934.812,normal,0.217,within normal range,none
+1792738935.812,normal,0.233,within normal range,none
+1792738936.812,normal,0.217,within normal range,none
+1792738937.812,normal,0.25,within normal range,none
+1792738938.812,normal,0.233,within normal range,none

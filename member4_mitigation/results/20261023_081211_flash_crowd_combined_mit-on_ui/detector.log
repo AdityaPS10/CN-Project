@@ -1,0 +1,38 @@
+Baseline from features_normal.csv: {'DataPlanePacketRate': 20.0}
+Following /home/minato/Documents/CN-Project/detection/../sdn-ddos-monitoring/data/features.csv (Ctrl+C to stop)
+   1  t=1792743135.46  normal        score=0.0    within normal range
+   2  t=1792743136.46  normal        score=0.0    within normal range
+   3  t=1792743137.46  normal        score=0.233  within normal range
+   4  t=1792743138.46  normal        score=0.067  within normal range
+   5  t=1792743139.46  normal        score=0.0    within normal range
+   6  t=1792743140.46  normal        score=0.0    within normal range
+   7  t=1792743141.46  normal        score=0.033  within normal range
+   8  t=1792743142.46  normal        score=0.067  within normal range
+   9  t=1792743143.46  normal        score=0.0    within normal range
+  10  t=1792743144.46  normal        score=0.0    within normal range
+  11  t=1792743145.46  normal        score=0.0    within normal range
+  12  t=1792743146.46  normal        score=0.0    within normal range
+  13  t=1792743147.46  normal        score=0.0    within normal range
+  14  t=1792743148.46  normal        score=0.0    within normal range
+  15  t=1792743149.46  normal        score=0.017  within normal range
+  16  t=1792743150.46  normal        score=0.017  within normal range
+  17  t=1792743151.46  normal        score=0.133  within normal range
+  18  t=1792743152.46  normal        score=0.217  within normal range
+  19  t=1792743153.46  normal        score=0.217  within normal range
+  20  t=1792743154.46  normal        score=0.233  within normal range
+  21  t=1792743155.46  normal        score=0.2    within normal range
+  22  t=1792743156.46  normal        score=0.25   within normal range
+  23  t=1792743157.46  normal        score=0.217  within normal range
+  24  t=1792743158.46  normal        score=0.233  within normal range
+  25  t=1792743159.46  normal        score=0.217  within normal range
+  26  t=1792743160.46  normal        score=0.233  within normal range
+  27  t=1792743161.46  normal        score=0.267  within normal range
+  28  t=1792743162.46  normal        score=0.233  within normal range
+  29  t=1792743163.46  normal        score=0.183  within normal range
+  30  t=1792743164.46  normal        score=0.217  within normal range
+  31  t=1792743165.46  normal        score=0.233  within normal range
+  32  t=1792743166.46  normal        score=0.25   within normal range
+  33  t=1792743167.46  normal        score=0.25   within normal range
+
+Stopped.
+33 decisions written to /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_081211_flash_crowd_combined_mit-on_ui/decisions.csv

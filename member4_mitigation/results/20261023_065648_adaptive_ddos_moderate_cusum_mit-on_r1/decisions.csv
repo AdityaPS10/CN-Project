@@ -1,0 +1,99 @@
+timestamp,traffic_class,score,reason,rule
+1792738635.707,normal,0.0,within normal range,none
+1792738636.707,normal,0.0,within normal range,none
+1792738637.707,normal,0.0,within normal range,none
+1792738638.707,normal,0.0,within normal range,none
+1792738639.707,normal,0.0,within normal range,none
+1792738640.707,normal,0.0,within normal range,none
+1792738641.707,normal,0.0,within normal range,none
+1792738642.707,normal,0.0,within normal range,none
+1792738643.707,normal,0.0,within normal range,none
+1792738644.707,normal,0.0,within normal range,none
+1792738645.707,normal,0.0,within normal range,none
+1792738646.707,normal,0.0,within normal range,none
+1792738647.707,normal,0.0,within normal range,none
+1792738648.707,normal,0.0,within normal range,none
+1792738649.707,normal,0.0,within normal range,none
+1792738650.707,normal,0.0,within normal range,none
+1792738651.707,normal,0.0,within normal range,none
+1792738652.707,normal,0.0,within normal range,none
+1792738653.707,normal,0.0,within normal range,none
+1792738654.707,normal,0.0,within normal range,none
+1792738655.707,normal,0.0,within normal range,none
+1792738656.707,normal,0.0,within normal range,none
+1792738657.707,normal,0.0,within normal range,none
+1792738658.707,normal,0.0,within normal range,none
+1792738659.707,normal,0.0,within normal range,none
+1792738660.707,normal,0.0,within normal range,none
+1792738661.707,normal,0.0,within normal range,none
+1792738662.707,normal,0.0,within normal range,none
+1792738663.707,normal,0.0,within normal range,none
+1792738664.707,normal,0.0,within normal range,none
+1792738665.707,normal,0.0,within normal range,none
+1792738666.707,normal,0.0,within normal range,none
+1792738667.707,normal,0.0,within normal range,none
+1792738668.707,normal,0.0,within normal range,none
+1792738669.707,normal,0.0,within normal range,none
+1792738670.707,normal,0.0,within normal range,none
+1792738671.707,normal,0.0,within normal range,none
+1792738672.707,normal,0.5,within normal range,none
+1792738673.707,normal,0.925,within normal range,none
+1792738674.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738675.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738676.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738677.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738678.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738679.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738680.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738681.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738682.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738683.707,naive_ddos,1.725,baseline CUSUM alarm: S=69 > h=40,cusum
+1792738684.707,naive_ddos,1.425,baseline CUSUM alarm: S=57 > h=40,cusum
+1792738685.707,naive_ddos,1.15,baseline CUSUM alarm: S=46 > h=40,cusum
+1792738686.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738687.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738688.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738689.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738690.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738691.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738692.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738693.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738694.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738695.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738696.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738697.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738698.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738699.707,naive_ddos,1.725,baseline CUSUM alarm: S=69 > h=40,cusum
+1792738700.707,naive_ddos,1.275,baseline CUSUM alarm: S=51 > h=40,cusum
+1792738701.707,normal,0.975,within normal range,none
+1792738702.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738703.707,naive_ddos,1.375,baseline CUSUM alarm: S=55 > h=40,cusum
+1792738704.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738705.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738706.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738707.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738708.707,naive_ddos,2.0,baseline CUSUM alarm: S=80 > h=40,cusum
+1792738709.707,naive_ddos,1.725,baseline CUSUM alarm: S=69 > h=40,cusum
+1792738710.707,naive_ddos,1.1,baseline CUSUM alarm: S=44 > h=40,cusum
+1792738711.707,normal,0.7,within normal range,none
+1792738712.707,normal,0.3,within normal range,none
+1792738713.707,normal,0.0,within normal range,none
+1792738714.707,normal,0.0,within normal range,none
+1792738715.707,normal,0.0,within normal range,none
+1792738716.707,normal,0.0,within normal range,none
+1792738717.707,normal,0.0,within normal range,none
+1792738718.707,normal,0.0,within normal range,none
+1792738719.707,normal,0.0,within normal range,none
+1792738720.707,normal,0.0,within normal range,none
+1792738721.707,normal,0.0,within normal range,none
+1792738722.707,normal,0.0,within normal range,none
+1792738723.707,normal,0.0,within normal range,none
+1792738724.707,normal,0.0,within normal range,none
+1792738725.707,normal,0.0,within normal range,none
+1792738726.707,normal,0.0,within normal range,none
+1792738727.707,normal,0.0,within normal range,none
+1792738728.707,normal,0.0,within normal range,none
+1792738729.707,normal,0.0,within normal range,none
+1792738730.707,normal,0.0,within normal range,none
+1792738731.707,normal,0.0,within normal range,none
+1792738732.707,normal,0.0,within normal range,none

@@ -1,0 +1,104 @@
+timestamp,traffic_class,score,reason,rule
+1792737902.465,normal,0.0,within normal range,none
+1792737903.465,normal,0.0,within normal range,none
+1792737904.465,normal,0.033,within normal range,none
+1792737905.465,normal,0.017,within normal range,none
+1792737906.465,normal,0.033,within normal range,none
+1792737907.465,normal,0.017,within normal range,none
+1792737908.465,normal,0.0,within normal range,none
+1792737909.465,normal,0.0,within normal range,none
+1792737910.465,normal,0.0,within normal range,none
+1792737911.465,normal,0.0,within normal range,none
+1792737912.465,normal,0.017,within normal range,none
+1792737913.465,normal,0.017,within normal range,none
+1792737914.465,normal,0.033,within normal range,none
+1792737915.465,normal,0.017,within normal range,none
+1792737916.465,normal,0.017,within normal range,none
+1792737917.465,normal,0.0,within normal range,none
+1792737918.465,normal,0.0,within normal range,none
+1792737919.465,normal,0.15,within normal range,none
+1792737920.465,normal,0.217,within normal range,none
+1792737921.465,normal,0.217,within normal range,none
+1792737922.465,normal,0.217,within normal range,none
+1792737923.465,normal,0.233,within normal range,none
+1792737924.465,normal,0.267,within normal range,none
+1792737925.465,normal,0.217,within normal range,none
+1792737926.465,normal,0.233,within normal range,none
+1792737927.465,normal,0.217,within normal range,none
+1792737928.465,normal,0.233,within normal range,none
+1792737929.465,normal,0.233,within normal range,none
+1792737930.465,normal,0.3,within normal range,none
+1792737931.465,normal,0.217,within normal range,none
+1792737932.465,normal,0.25,within normal range,none
+1792737933.465,normal,0.217,within normal range,none
+1792737934.465,normal,0.233,within normal range,none
+1792737935.465,normal,0.217,within normal range,none
+1792737936.465,normal,0.2,within normal range,none
+1792737937.465,normal,0.217,within normal range,none
+1792737938.465,normal,0.233,within normal range,none
+1792737939.465,normal,0.217,within normal range,none
+1792737940.465,normal,0.267,within normal range,none
+1792737941.465,normal,0.217,within normal range,none
+1792737942.465,normal,0.283,within normal range,none
+1792737943.465,normal,0.517,within normal range,none
+1792737944.465,normal,0.567,within normal range,none
+1792737945.465,normal,0.8,within normal range,none
+1792737946.465,flash_crowd,1.525,CUSUM sustained rise (S=61 > h=40),cusum
+1792737947.465,flash_crowd,1.825,CUSUM sustained rise (S=73 > h=40),cusum
+1792737948.465,flash_crowd,1.525,CUSUM sustained rise (S=61 > h=40),cusum
+1792737949.465,flash_crowd,1.225,CUSUM sustained rise (S=49 > h=40),cusum
+1792737950.465,normal,0.9,within normal range,none
+1792737951.465,normal,0.575,within normal range,none
+1792737952.465,normal,0.925,within normal range,none
+1792737953.465,flash_crowd,2.0,"rate 71 above limit 60, gradual onset",threshold
+1792737954.465,flash_crowd,2.0,"rate 68 above limit 60, gradual onset",threshold
+1792737955.465,flash_crowd,2.0,"rate 68 above limit 60, gradual onset",threshold
+1792737956.465,flash_crowd,2.0,"rate 64 above limit 60, gradual onset",threshold
+1792737957.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737958.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737959.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737960.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737961.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737962.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737963.465,flash_crowd,1.7,CUSUM sustained rise (S=68 > h=40),cusum
+1792737964.465,flash_crowd,1.375,CUSUM sustained rise (S=55 > h=40),cusum
+1792737965.465,flash_crowd,1.175,CUSUM sustained rise (S=47 > h=40),cusum
+1792737966.465,normal,0.875,within normal range,none
+1792737967.465,normal,0.975,within normal range,none
+1792737968.465,normal,0.9,within normal range,none
+1792737969.465,flash_crowd,1.075,CUSUM sustained rise (S=43 > h=40),cusum
+1792737970.465,flash_crowd,1.75,CUSUM sustained rise (S=70 > h=40),cusum
+1792737971.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737972.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737973.465,flash_crowd,2.0,CUSUM sustained rise (S=80 > h=40),cusum
+1792737974.465,flash_crowd,2.0,"rate 68 above limit 60, gradual onset",threshold
+1792737975.465,flash_crowd,1.75,CUSUM sustained rise (S=70 > h=40),cusum
+1792737976.465,flash_crowd,1.425,CUSUM sustained rise (S=57 > h=40),cusum
+1792737977.465,flash_crowd,1.125,CUSUM sustained rise (S=45 > h=40),cusum
+1792737978.465,normal,0.825,within normal range,none
+1792737979.465,normal,0.525,within normal range,none
+1792737980.465,normal,0.225,within normal range,none
+1792737981.465,normal,0.217,within normal range,none
+1792737982.465,normal,0.2,within normal range,none
+1792737983.465,normal,0.117,within normal range,none
+1792737984.465,normal,0.217,within normal range,none
+1792737985.465,normal,0.217,within normal range,none
+1792737986.465,normal,0.233,within normal range,none
+1792737987.465,normal,0.217,within normal range,none
+1792737988.465,normal,0.183,within normal range,none
+1792737989.465,normal,0.217,within normal range,none
+1792737990.465,normal,0.217,within normal range,none
+1792737991.465,normal,0.217,within normal range,none
+1792737992.465,normal,0.267,within normal range,none
+1792737993.465,normal,0.233,within normal range,none
+1792737994.465,normal,0.233,within normal range,none
+1792737995.465,normal,0.217,within normal range,none
+1792737996.465,normal,0.233,within normal range,none
+1792737997.465,normal,0.25,within normal range,none
+1792737998.465,normal,0.217,within normal range,none
+1792737999.465,normal,0.233,within normal range,none
+1792738000.465,normal,0.2,within normal range,none
+1792738001.465,normal,0.0,within normal range,none
+1792738002.465,normal,0.0,within normal range,none
+1792738003.465,normal,0.0,within normal range,none
+1792738004.465,normal,0.0,within normal range,none

@@ -1,0 +1,11 @@
+timestamp,scenario,source_host,destination_host,packet_rate,flow_rate,inter_arrival_time,jitter,flow_id,attack_level,feint_state
+1792740891.176208,normal,h6,h1,10.0,1,0.115023,0.014304,normal-h6-h1-2fed7af0,none,none
+1792740891.288074,normal,h6,h1,10.0,1,0.111866,0.010287,normal-h6-h1-2fed7af0,none,none
+1792740891.388345,normal,h6,h1,10.0,1,0.100271,-0.000839,normal-h6-h1-2fed7af0,none,none
+1792740891.502933,normal,h6,h1,10.0,1,0.114588,0.013794,normal-h6-h1-2fed7af0,none,none
+1792740891.611802,normal,h6,h1,10.0,1,0.10887,0.007922,normal-h6-h1-2fed7af0,none,none
+1792740891.713276,normal,h6,h1,10.0,1,0.101474,0.000758,normal-h6-h1-2fed7af0,none,none
+1792740891.816391,normal,h6,h1,10.0,1,0.103115,0.002029,normal-h6-h1-2fed7af0,none,none
+1792740891.91998,normal,h6,h1,10.0,1,0.103589,0.000392,normal-h6-h1-2fed7af0,none,none
+1792740892.014782,normal,h6,h1,10.0,1,0.094803,-0.006339,normal-h6-h1-2fed7af0,none,none
+1792740892.116257,normal,h6,h1,10.0,1,0.101475,-0.000499,normal-h6-h1-2fed7af0,none,none

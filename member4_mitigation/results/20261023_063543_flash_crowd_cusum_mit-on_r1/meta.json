@@ -1,0 +1,50 @@
+{
+  "run_id": "20261023_063543_flash_crowd_cusum_mit-on_r1",
+  "scenario": "flash_crowd",
+  "attack_level": null,
+  "detector": "cusum",
+  "mitigation": "on",
+  "config_overrides": {},
+  "tag": "r1",
+  "attack_hosts": [],
+  "legit_hosts": [
+    "h2",
+    "h3",
+    "h4",
+    "h6"
+  ],
+  "scenario_hosts": [
+    "h2",
+    "h3",
+    "h4"
+  ],
+  "server": "h1",
+  "legit_bg_host": "h6",
+  "legit_bg_rate_pps": 10,
+  "warmup_s": 10.0,
+  "lead_s": 15.0,
+  "cooldown_s": 25.0,
+  "t_run_start": 1792737344.8008664,
+  "git_commit": "c1f06b699b00656bc9c52366d4e50e9123b05f11",
+  "port_map": {
+    "1": "h1",
+    "2": "h2",
+    "3": "h3",
+    "4": "h4",
+    "5": "h5",
+    "6": "h6"
+  },
+  "host_ips": {
+    "h1": "10.0.0.1",
+    "h2": "10.0.0.2",
+    "h3": "10.0.0.3",
+    "h4": "10.0.0.4",
+    "h5": "10.0.0.5",
+    "h6": "10.0.0.6"
+  },
+  "t_bg_start": 1792737361.7558637,
+  "t_scenario_start": 1792737376.7578025,
+  "t_scenario_end": 1792737398.967018,
+  "t_stop": 1792737423.9672983,
+  "t_run_end": 1792737429.1501112
+}

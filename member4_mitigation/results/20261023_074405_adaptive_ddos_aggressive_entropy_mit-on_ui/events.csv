@@ -1,0 +1,9 @@
+wall_time,event,dpid,ports,detail
+1792741447.684,app_started,,,enforcement=True meter_rate_pps=10 offender_min_pps=20.0
+1792741452.287,switch_connected,0000000000000001,,
+1792741452.303,cleanup_confirmed,0000000000000001,,switch_ms=13.5
+1792741484.490,no_offender_found,0000000000000001,,no port reached 20.0 pkt/s in the last 10.0s
+1792741485.502,limit_sent,0000000000000001,4,peak_pps=25.0 meter_rate_pps=10
+1792741485.515,limit_confirmed,0000000000000001,4,switch_ms=12.3 decision_to_applied_ms=12.3
+1792741486.518,remove_sent,0000000000000001,4,policy_stop
+1792741486.534,remove_confirmed,0000000000000001,4,switch_ms=24.0

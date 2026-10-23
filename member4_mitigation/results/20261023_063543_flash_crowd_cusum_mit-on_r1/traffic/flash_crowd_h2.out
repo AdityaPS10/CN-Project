@@ -1,0 +1,6 @@
+[h2] virtual user 0 sent 186 packets
+[h2] virtual user 1 sent 133 packets
+[h2] virtual user 3 sent 203 packets
+[h2] virtual user 4 sent 119 packets
+[h2] virtual user 2 sent 120 packets
+[h2] flash-crowd scenario done: 5 virtual users, log: /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_063543_flash_crowd_cusum_mit-on_r1/traffic/flash_crowd_h2.csv

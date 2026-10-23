@@ -1,0 +1,99 @@
+timestamp,traffic_class,score,reason,rule
+1792738257.952,normal,0.0,within normal range,none
+1792738258.952,normal,0.0,within normal range,none
+1792738259.952,normal,0.017,within normal range,none
+1792738260.952,normal,0.05,within normal range,none
+1792738261.952,normal,0.0,within normal range,none
+1792738262.952,normal,0.05,within normal range,none
+1792738263.952,normal,0.0,within normal range,none
+1792738264.952,normal,0.0,within normal range,none
+1792738265.952,normal,0.0,within normal range,none
+1792738266.952,normal,0.0,within normal range,none
+1792738267.952,normal,0.017,within normal range,none
+1792738268.952,normal,0.033,within normal range,none
+1792738269.952,normal,0.017,within normal range,none
+1792738270.952,normal,0.033,within normal range,none
+1792738271.952,normal,0.15,within normal range,none
+1792738272.952,normal,0.233,within normal range,none
+1792738273.952,normal,0.217,within normal range,none
+1792738274.952,normal,0.233,within normal range,none
+1792738275.952,normal,0.233,within normal range,none
+1792738276.952,normal,0.25,within normal range,none
+1792738277.952,normal,0.233,within normal range,none
+1792738278.952,normal,0.233,within normal range,none
+1792738279.952,normal,0.233,within normal range,none
+1792738280.952,normal,0.217,within normal range,none
+1792738281.952,normal,0.25,within normal range,none
+1792738282.952,normal,0.217,within normal range,none
+1792738283.952,normal,0.283,within normal range,none
+1792738284.952,normal,0.217,within normal range,none
+1792738285.952,normal,0.233,within normal range,none
+1792738286.952,normal,0.267,within normal range,none
+1792738287.952,normal,0.233,within normal range,none
+1792738288.952,normal,0.217,within normal range,none
+1792738289.952,normal,0.233,within normal range,none
+1792738290.952,normal,0.317,within normal range,none
+1792738291.952,normal,0.417,within normal range,none
+1792738292.952,normal,0.5,within normal range,none
+1792738293.952,normal,0.733,within normal range,none
+1792738294.952,flash_crowd,1.65,"rate 67 above limit 60, gradual onset",threshold
+1792738295.952,flash_crowd,2.0,"rate 119 above limit 60, gradual onset",threshold
+1792738296.952,flash_crowd,2.617,"rate 157 above limit 60, gradual onset",threshold
+1792738297.952,flash_crowd,2.783,"rate 167 above limit 60, gradual onset",threshold
+1792738298.952,flash_crowd,2.767,"rate 166 above limit 60, gradual onset",threshold
+1792738299.952,flash_crowd,2.567,"rate 154 above limit 60, gradual onset",threshold
+1792738300.952,flash_crowd,2.433,"rate 146 above limit 60, gradual onset",threshold
+1792738301.952,flash_crowd,2.0,"rate 68 above limit 60, gradual onset",threshold
+1792738302.952,flash_crowd,1.7,CUSUM sustained rise (S=68 > h=40),cusum
+1792738303.952,flash_crowd,1.425,CUSUM sustained rise (S=57 > h=40),cusum
+1792738304.952,flash_crowd,1.15,CUSUM sustained rise (S=46 > h=40),cusum
+1792738305.952,flash_crowd,1.65,CUSUM sustained rise (S=66 > h=40),cusum
+1792738306.952,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1792738307.952,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1792738308.952,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1792738309.952,adaptive_ddos,2.667,repeated bursts separated by pauses,repeat_burst
+1792738310.952,adaptive_ddos,2.8,repeated bursts separated by pauses,repeat_burst
+1792738311.952,adaptive_ddos,2.683,repeated bursts separated by pauses,repeat_burst
+1792738312.952,adaptive_ddos,2.517,repeated bursts separated by pauses,repeat_burst
+1792738313.952,adaptive_ddos,2.683,repeated bursts separated by pauses,repeat_burst
+1792738314.952,adaptive_ddos,2.467,repeated bursts separated by pauses,repeat_burst
+1792738315.952,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1792738316.952,adaptive_ddos,2.85,repeated bursts separated by pauses,repeat_burst
+1792738317.952,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1792738318.952,adaptive_ddos,1.75,repeated bursts separated by pauses,repeat_burst
+1792738319.952,adaptive_ddos,1.525,repeated bursts separated by pauses,repeat_burst
+1792738320.952,adaptive_ddos,1.225,repeated bursts separated by pauses,repeat_burst
+1792738321.952,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1792738322.952,adaptive_ddos,2.0,repeated bursts separated by pauses,repeat_burst
+1792738323.952,adaptive_ddos,2.033,repeated bursts separated by pauses,repeat_burst
+1792738324.952,adaptive_ddos,2.4,repeated bursts separated by pauses,repeat_burst
+1792738325.952,adaptive_ddos,2.767,repeated bursts separated by pauses,repeat_burst
+1792738326.952,adaptive_ddos,2.1,repeated bursts separated by pauses,repeat_burst
+1792738327.952,adaptive_ddos,1.7,repeated bursts separated by pauses,repeat_burst
+1792738328.952,adaptive_ddos,1.425,repeated bursts separated by pauses,repeat_burst
+1792738329.952,adaptive_ddos,1.125,repeated bursts separated by pauses,repeat_burst
+1792738330.952,adaptive_ddos,0.85,pause inside repeated-burst pattern,hold
+1792738331.952,adaptive_ddos,0.55,pause inside repeated-burst pattern,hold
+1792738332.952,adaptive_ddos,0.275,pause inside repeated-burst pattern,hold
+1792738333.952,normal,0.233,within normal range,none
+1792738334.952,normal,0.217,within normal range,none
+1792738335.952,normal,0.0,within normal range,none
+1792738336.952,normal,0.233,within normal range,none
+1792738337.952,normal,0.217,within normal range,none
+1792738338.952,normal,0.233,within normal range,none
+1792738339.952,normal,0.233,within normal range,none
+1792738340.952,normal,0.233,within normal range,none
+1792738341.952,normal,0.217,within normal range,none
+1792738342.952,normal,0.217,within normal range,none
+1792738343.952,normal,0.25,within normal range,none
+1792738344.952,normal,0.217,within normal range,none
+1792738345.952,normal,0.217,within normal range,none
+1792738346.952,normal,0.233,within normal range,none
+1792738347.952,normal,0.217,within normal range,none
+1792738348.952,normal,0.233,within normal range,none
+1792738349.952,normal,0.233,within normal range,none
+1792738350.952,normal,0.233,within normal range,none
+1792738351.952,normal,0.15,within normal range,none
+1792738352.952,normal,0.0,within normal range,none
+1792738353.952,normal,0.0,within normal range,none
+1792738354.952,normal,0.0,within normal range,none

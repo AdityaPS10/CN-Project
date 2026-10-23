@@ -1,0 +1,24 @@
+{
+  "src_name": "h4",
+  "dst_name": "h1",
+  "dst_ip": "10.0.0.1",
+  "dst_port": 5000,
+  "duration": 40.0,
+  "attack_level": "subtle",
+  "resolved_params": {
+    "ramp_up": 15.0,
+    "prob_start": 0.03,
+    "prob_end": 0.25,
+    "check_interval": 0.5,
+    "max_flows": 2,
+    "rate_min": 5.0,
+    "rate_max": 10.0,
+    "jitter": 0.2,
+    "flow_lifetime_min": 6.0,
+    "flow_lifetime_max": 14.0,
+    "feint_pattern": "AAP",
+    "attack_duration": 5.0,
+    "pause_duration": 5.0
+  },
+  "start_at": 1792738171.921
+}

@@ -1,0 +1,100 @@
+Baseline from features_normal.csv: {'DataPlanePacketRate': 20.0}
+Following /home/minato/Documents/CN-Project/detection/../sdn-ddos-monitoring/data/features.csv (Ctrl+C to stop)
+   1  t=1792738741.46  normal        score=0.0    within normal range
+   2  t=1792738742.46  normal        score=0.0    within normal range
+   3  t=1792738743.46  normal        score=0.15   within normal range
+   4  t=1792738744.46  normal        score=0.033  within normal range
+   5  t=1792738745.46  normal        score=0.0    within normal range
+   6  t=1792738746.46  normal        score=0.0    within normal range
+   7  t=1792738747.46  normal        score=0.067  within normal range
+   8  t=1792738748.46  normal        score=0.033  within normal range
+   9  t=1792738749.46  normal        score=0.0    within normal range
+  10  t=1792738750.46  normal        score=0.0    within normal range
+  11  t=1792738751.46  normal        score=0.0    within normal range
+  12  t=1792738752.46  normal        score=0.0    within normal range
+  13  t=1792738753.46  normal        score=0.0    within normal range
+  14  t=1792738754.46  normal        score=0.017  within normal range
+  15  t=1792738755.46  normal        score=0.017  within normal range
+  16  t=1792738756.46  normal        score=0.05   within normal range
+  17  t=1792738757.46  normal        score=0.183  within normal range
+  18  t=1792738758.46  normal        score=0.233  within normal range
+  19  t=1792738759.46  normal        score=0.217  within normal range
+  20  t=1792738760.46  normal        score=0.2    within normal range
+  21  t=1792738761.46  normal        score=0.2    within normal range
+  22  t=1792738762.46  normal        score=0.267  within normal range
+  23  t=1792738763.46  normal        score=0.233  within normal range
+  24  t=1792738764.46  normal        score=0.217  within normal range
+  25  t=1792738765.46  normal        score=0.217  within normal range
+  26  t=1792738766.46  normal        score=0.233  within normal range
+  27  t=1792738767.46  normal        score=0.25   within normal range
+  28  t=1792738768.46  normal        score=0.233  within normal range
+  29  t=1792738769.46  normal        score=0.25   within normal range
+  30  t=1792738770.46  normal        score=0.217  within normal range
+  31  t=1792738771.46  normal        score=0.267  within normal range
+  32  t=1792738772.46  normal        score=0.25   within normal range
+  33  t=1792738773.46  normal        score=0.233  within normal range
+  34  t=1792738774.46  normal        score=0.233  within normal range
+  35  t=1792738775.46  normal        score=0.3    within normal range
+  36  t=1792738776.46  normal        score=0.783  within normal range
+  37  t=1792738777.46  flash_crowd   score=2.0    rate 120 above limit 60, gradual onset
+  38  t=1792738778.46  naive_ddos    score=5.3    rate jumped 198 in one window (limit 140)
+  39  t=1792738779.46  naive_ddos    score=7.533  rate jumped 198 in one window (limit 140)
+  40  t=1792738780.46  naive_ddos    score=7.417  rate jumped 198 in one window (limit 140)
+  41  t=1792738781.46  naive_ddos    score=7.75   rate jumped 198 in one window (limit 140)
+  42  t=1792738782.46  naive_ddos    score=7.4    rate jumped 198 in one window (limit 140)
+  43  t=1792738783.46  naive_ddos    score=6.983  rate jumped 198 in one window (limit 140)
+  44  t=1792738784.46  naive_ddos    score=7.733  rate jumped 198 in one window (limit 140)
+  45  t=1792738785.46  naive_ddos    score=7.75   rate jumped 198 in one window (limit 140)
+  46  t=1792738786.46  naive_ddos    score=7.817  rate jumped 198 in one window (limit 140)
+  47  t=1792738787.46  naive_ddos    score=7.683  rate jumped 198 in one window (limit 140)
+  48  t=1792738788.46  naive_ddos    score=7.817  rate jumped 198 in one window (limit 140)
+  49  t=1792738789.46  naive_ddos    score=7.433  rate jumped 198 in one window (limit 140)
+  50  t=1792738790.46  naive_ddos    score=3.067  rate jumped 198 in one window (limit 140)
+  51  t=1792738791.46  naive_ddos    score=1.725  rate jumped 198 in one window (limit 140)
+  52  t=1792738792.46  naive_ddos    score=3.867  rate jumped 218 in one window (limit 140)
+  53  t=1792738793.46  naive_ddos    score=7.983  rate jumped 247 in one window (limit 140)
+  54  t=1792738794.46  naive_ddos    score=8.617  rate jumped 247 in one window (limit 140)
+  55  t=1792738795.46  naive_ddos    score=8.367  rate jumped 247 in one window (limit 140)
+  56  t=1792738796.46  naive_ddos    score=8.083  rate jumped 247 in one window (limit 140)
+  57  t=1792738797.46  naive_ddos    score=8.45   rate jumped 247 in one window (limit 140)
+  58  t=1792738798.46  naive_ddos    score=8.083  rate jumped 247 in one window (limit 140)
+  59  t=1792738799.46  naive_ddos    score=7.85   rate jumped 247 in one window (limit 140)
+  60  t=1792738800.46  naive_ddos    score=7.633  rate jumped 247 in one window (limit 140)
+  61  t=1792738801.46  naive_ddos    score=7.367  rate jumped 247 in one window (limit 140)
+  62  t=1792738802.46  naive_ddos    score=7.4    rate jumped 247 in one window (limit 140)
+  63  t=1792738803.46  naive_ddos    score=7.7    rate jumped 247 in one window (limit 140)
+  64  t=1792738804.46  naive_ddos    score=7.967  rate jumped 247 in one window (limit 140)
+  65  t=1792738805.46  naive_ddos    score=8.067  rate jumped 247 in one window (limit 140)
+  66  t=1792738806.46  naive_ddos    score=7.717  rate jumped 247 in one window (limit 140)
+  67  t=1792738807.46  naive_ddos    score=2.783  rate jumped 247 in one window (limit 140)
+  68  t=1792738808.46  naive_ddos    score=1.75   rate jumped 247 in one window (limit 140)
+  69  t=1792738809.46  naive_ddos    score=5.417  rate jumped 310 in one window (limit 140)
+  70  t=1792738810.46  naive_ddos    score=7.95   rate jumped 310 in one window (limit 140)
+  71  t=1792738811.46  naive_ddos    score=8.15   rate jumped 310 in one window (limit 140)
+  72  t=1792738812.46  naive_ddos    score=2.85   rate jumped 310 in one window (limit 140)
+  73  t=1792738813.46  naive_ddos    score=1.725  rate jumped 310 in one window (limit 140)
+  74  t=1792738814.46  naive_ddos    score=1.5    rate jumped 310 in one window (limit 140)
+  75  t=1792738815.46  naive_ddos    score=1.2    rate jumped 310 in one window (limit 140)
+  76  t=1792738816.46  normal        score=0.925  within normal range
+  77  t=1792738817.46  normal        score=0.625  within normal range
+  78  t=1792738818.46  normal        score=0.0    within normal range
+  79  t=1792738819.46  normal        score=0.233  within normal range
+  80  t=1792738820.46  normal        score=0.233  within normal range
+  81  t=1792738821.46  normal        score=0.217  within normal range
+  82  t=1792738822.46  normal        score=0.233  within normal range
+  83  t=1792738823.46  normal        score=0.25   within normal range
+  84  t=1792738824.46  normal        score=0.233  within normal range
+  85  t=1792738825.46  normal        score=0.217  within normal range
+  86  t=1792738826.46  normal        score=0.233  within normal range
+  87  t=1792738827.46  normal        score=0.233  within normal range
+  88  t=1792738828.46  normal        score=0.233  within normal range
+  89  t=1792738829.46  normal        score=0.217  within normal range
+  90  t=1792738830.46  normal        score=0.25   within normal range
+  91  t=1792738831.46  normal        score=0.217  within normal range
+  92  t=1792738832.46  normal        score=0.233  within normal range
+  93  t=1792738833.46  normal        score=0.233  within normal range
+  94  t=1792738834.46  normal        score=0.233  within normal range
+  95  t=1792738835.46  normal        score=0.233  within normal range
+
+Stopped.
+95 decisions written to /home/minato/Documents/CN-Project/member4_mitigation/results/20261023_065857_adaptive_ddos_aggressive_combined_mit-on_r1/decisions.csv

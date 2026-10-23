@@ -1,0 +1,4 @@
+wall_time,event,dpid,ports,detail
+1792736901.760,app_started,,,enforcement=True meter_rate_pps=10 offender_min_pps=20.0
+1792736903.731,switch_connected,0000000000000001,,
+1792736903.732,cleanup_confirmed,0000000000000001,,switch_ms=0.6

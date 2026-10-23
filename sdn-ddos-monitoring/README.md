@@ -28,12 +28,12 @@ packages in requirements.txt (our virtual environment is .venv-osken).
 ## Run (3 terminals)
 Terminal A (venv active):
 
-    cd ~/member2_monitoring && source .venv-osken/bin/activate
-    PYTHONPATH=$HOME/member1_traffic:$HOME/member2_monitoring python3 ~/member1_traffic/tools/osken_run.py controller.simple_switch_13 monitor 2>&1 | tee run.log
+    cd <repo root> && source ~/ryu-venv/bin/activate
+    PYTHONPATH=$PWD:$PWD/sdn-ddos-monitoring python3 tools/osken_run.py controller.simple_switch_13 monitor 2>&1 | tee run.log
 
 Terminal B (no venv):
 
-    cd ~/member1_traffic && sudo python3 topo/basic_topo.py
+    cd <repo root> && sudo python3 topo/basic_topo.py
 
 Then generate traffic at the mininet> prompt (see Member 1's docs). Stop with Ctrl+C
 in Terminal A (the "HubThread has no attribute kill" message is a harmless
@@ -69,7 +69,7 @@ Notes for Member 3:
 - The extra column DataPlanePacketRate still needs Member 3's agreement.
 
 ## Tests
-    cd ~/member2_monitoring
+    cd <repo root>/sdn-ddos-monitoring
     python3 -m unittest discover -s tests -v
     python3 tests/check_csv_format.py
     bash tests/check_scenario.sh <scenario>   # after a scenario run; compares with validation/<scenario>/

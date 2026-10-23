@@ -1,0 +1,4 @@
+wall_time,event,dpid,ports,detail
+1792738364.000,app_started,,,enforcement=False meter_rate_pps=10 offender_min_pps=20.0
+1792738374.433,switch_connected,0000000000000001,,
+1792738473.656,switch_disconnected,0000000000000001,,
